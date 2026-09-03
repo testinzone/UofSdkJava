@@ -75,7 +75,12 @@ public final class EnvironmentManager {
                     "stage-catalog.mysportsfeed.io",
                     80,
                     false, // broker has no TLS; nothing reads onlySsl today, see uf.sdk.messagingUseSsl
-                    basicRetryList
+                    // No retry list. WhoAmIReader falls back to the hosts named here when the
+                    // configured one rejects the token, so basicRetryList would silently move a
+                    // bad SAP token onto Sportradar Integration and then Production - observed
+                    // connecting to bookmaker 34948 and consuming a live feed. Empty means a bad
+                    // token fails loudly against the catalog instead.
+                    Lists.newArrayList()
                 ),
                 new EnvironmentSetting(
                     Environment.ProxySingapore,

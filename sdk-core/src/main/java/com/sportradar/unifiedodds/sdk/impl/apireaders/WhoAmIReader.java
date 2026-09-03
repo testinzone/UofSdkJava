@@ -224,7 +224,18 @@ public class WhoAmIReader {
             "Bookmaker details fetch failed from the configured environment, checking token status on other available environments..."
         );
 
+        // Which environments may be probed is declared per environment in
+        // EnvironmentManager's retry list. This used to be hardcoded to Integration then
+        // Production, which meant a token the configured host rejected was silently retried
+        // against Sportradar and, when it was accepted there, the SDK went on to consume that
+        // feed. An environment with an empty retry list now fails against its own host only.
+        java.util.List<Environment> retryOn = EnvironmentManager.getSetting(config.getEnvironment()) ==
+            null
+            ? java.util.Collections.emptyList()
+            : EnvironmentManager.getSetting(config.getEnvironment()).getEnvironmentRetryList();
+
         if (
+            retryOn.contains(Environment.Integration) &&
             !config
                 .getApi()
                 .getHost()
@@ -237,6 +248,7 @@ public class WhoAmIReader {
             );
         }
         if (
+            retryOn.contains(Environment.Production) &&
             !config.getApi().getHost().equalsIgnoreCase(EnvironmentManager.getApiHost(Environment.Production))
         ) {
             attemptTokenValidationOn(
