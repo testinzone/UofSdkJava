@@ -280,15 +280,16 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.13</version>
-                <extensions>true</extensions>
+                <!-- extensions=false is load-bearing: with extensions=true this plugin REPLACES
+                     maven-deploy-plugin in the deploy phase and uploads to oss.sonatype.org,
+                     ignoring distributionManagement. Keeping it false leaves the standard
+                     deploy:deploy bound, which is what publishes to GitHub Packages. Flip it
+                     back to true only to stage a release to OSSRH. -->
+                <extensions>false</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    <!-- extensions=true replaces the standard deploy with a Sonatype staging
-                         upload. Skip it so `mvn deploy` uses distributionManagement (GitHub
-                         Packages). Set -DskipNexusStagingDeployMojo=false to stage to OSSRH. -->
-                    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
                 </configuration>
             </plugin>
             <plugin>
