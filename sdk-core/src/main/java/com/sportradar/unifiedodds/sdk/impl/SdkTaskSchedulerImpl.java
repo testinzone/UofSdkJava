@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Sets;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
 import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

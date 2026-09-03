@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import static java.util.Optional.empty;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.common.cache.CacheBuilder;
-import com.sportradar.unifiedodds.sdk.caching.MatchStatusValues;
-import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.unifiedodds.sdk.caching.MatchStatusValues;
+import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.utils.domain.names.LanguageHolder;
 import java.util.Optional;
 
 public class SportEventStatusCaches {

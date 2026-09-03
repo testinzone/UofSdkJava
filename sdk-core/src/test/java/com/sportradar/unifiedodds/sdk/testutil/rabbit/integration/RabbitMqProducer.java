@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.integration;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.integration;
 
 import static com.google.common.collect.ImmutableMap.of;
 
@@ -9,8 +9,8 @@ import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeoutException;

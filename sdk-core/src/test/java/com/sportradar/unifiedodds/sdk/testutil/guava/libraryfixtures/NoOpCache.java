@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.guava.libraryfixtures;
+package com.testinzone.unifiedodds.sdk.testutil.guava.libraryfixtures;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheStats;

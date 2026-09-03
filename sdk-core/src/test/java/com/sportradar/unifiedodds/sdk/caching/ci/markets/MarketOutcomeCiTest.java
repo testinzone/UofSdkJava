@@ -1,9 +1,9 @@
-package com.sportradar.unifiedodds.sdk.caching.ci.markets;
+package com.testinzone.unifiedodds.sdk.caching.ci.markets;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import com.sportradar.uf.sportsapi.datamodel.DescOutcomes;
+import com.testinzone.uf.sportsapi.datamodel.DescOutcomes;
 import java.util.Locale;
 import org.junit.Test;
 

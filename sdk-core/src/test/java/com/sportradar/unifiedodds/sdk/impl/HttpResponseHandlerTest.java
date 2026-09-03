@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.Assert.assertEquals;
@@ -9,10 +9,10 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.uf.sportsapi.datamodel.Response;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DeserializationException;
-import com.sportradar.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
+import com.testinzone.uf.sportsapi.datamodel.Response;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DeserializationException;
+import com.testinzone.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import lombok.val;

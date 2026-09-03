@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.utils.Urn;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

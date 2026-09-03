@@ -1,26 +1,26 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategies;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.LocalizedNamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.NamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.ProfileCache;
-import com.sportradar.unifiedodds.sdk.caching.impl.NamedValuesProviderImpl;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameExpressionFactoryImpl;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProviderFactoryImpl;
-import com.sportradar.unifiedodds.sdk.impl.markets.OperandFactoryImpl;
-import com.sportradar.utils.domain.names.Languages;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategies;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.LocalizedNamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.NamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.ProfileCache;
+import com.testinzone.unifiedodds.sdk.caching.impl.NamedValuesProviderImpl;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameExpressionFactoryImpl;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProviderFactoryImpl;
+import com.testinzone.unifiedodds.sdk.impl.markets.OperandFactoryImpl;
+import com.testinzone.utils.domain.names.Languages;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.util.Locale;
 import java.util.Optional;
 import lombok.val;

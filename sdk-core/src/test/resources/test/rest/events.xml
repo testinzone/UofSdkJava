@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T12:02:57+00:00"
-          xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+          xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <sport_event id="sr:match:10116681" scheduled="2016-09-23T00:00:00+00:00" status="closed" liveodds="booked">
     <tournament_round type="group" number="3" group="A"/>
     <season id="sr:season:33059" name="World Cup of Hockey 2016"/>

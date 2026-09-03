@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.unifiedodds.sdk.conn.UfMarkets.WithOdds.UfOddsChangeOutcomeBuilder.activeOutcome;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.from;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.to;
-import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.testinzone.unifiedodds.sdk.conn.UfMarkets.WithOdds.UfOddsChangeOutcomeBuilder.activeOutcome;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.from;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.to;
+import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
 
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
-import com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds;
-import com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
-import com.sportradar.utils.domain.feedmessages.markets.TeamIndicators;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
+import com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds;
+import com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
+import com.testinzone.utils.domain.feedmessages.markets.TeamIndicators;
 import lombok.val;
 
 public class UfMarkets {

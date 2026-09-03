@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<match_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2018-05-23T12:29:10+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/bsa/unified/v1/xml/endpoints/unified/match_summary.xsd">
+<match_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2018-05-23T12:29:10+00:00" xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.testinzone.com/sportsapi/v1/unified http://schemas.testinzone.com/bsa/unified/v1/xml/endpoints/unified/match_summary.xsd">
   <sport_event id="sr:match:1" scheduled="2018-05-15T07:30:00+00:00" start_time_tbd="false">
     <tournament_round type="cup" name="round_of_32"/>
     <season id="sr:season:53254" name="2018 ITF Spain 07A, Women Singles" start_date="2018-05-12" end_date="2018-05-20" year="2018" tournament_id="sr:tournament:13703"/>

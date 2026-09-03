@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
 import static java.util.Collections.EMPTY_LIST;
 import static java.util.Optional.ofNullable;

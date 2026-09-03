@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.entities;
+package com.testinzone.unifiedodds.sdk.entities;
 
-import com.sportradar.utils.Urn;
+import com.testinzone.utils.Urn;
 
 /**
  * Defines methods implemented by classes representing the replay sport event

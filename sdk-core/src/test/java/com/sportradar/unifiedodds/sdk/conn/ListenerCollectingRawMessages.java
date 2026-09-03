@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.RoutingKeyInfo;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.RoutingKeyInfo;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 import java.net.URI;
 import lombok.AllArgsConstructor;
 

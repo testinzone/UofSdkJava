@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <match_timeline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T12:04:48+00:00"
-                xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+                xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <sport_event id="sr:match:8696826" scheduled="2016-10-31T18:00:00+00:00">
     <tournament_round type="group" number="25"/>
     <season id="sr:season:12346" name="Div 1, Sodra 2016"/>

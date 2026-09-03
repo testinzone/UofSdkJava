@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.utils.SdkHelper;
 import java.time.Duration;
 import java.util.Date;
 import org.apache.hc.core5.http.HttpStatus;
@@ -52,11 +52,11 @@ public class BookmakerDetailsImpl implements BookmakerDetails {
     /**
      * Initializes a new instance of {@link BookmakerDetailsImpl}
      *
-     * @param bookmakerDetails - a {@link com.sportradar.uf.sportsapi.datamodel.BookmakerDetails} containing the API response data
+     * @param bookmakerDetails - a {@link com.testinzone.uf.sportsapi.datamodel.BookmakerDetails} containing the API response data
      *
      */
     public BookmakerDetailsImpl(
-        com.sportradar.uf.sportsapi.datamodel.BookmakerDetails bookmakerDetails,
+        com.testinzone.uf.sportsapi.datamodel.BookmakerDetails bookmakerDetails,
         Duration period
     ) {
         Preconditions.checkNotNull(bookmakerDetails);

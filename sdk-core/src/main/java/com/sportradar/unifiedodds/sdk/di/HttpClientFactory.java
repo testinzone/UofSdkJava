@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import org.apache.hc.client5.http.config.ConnectionConfig;
 import org.apache.hc.client5.http.config.RequestConfig;

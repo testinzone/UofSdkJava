@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
 import java.util.Map;
 
 /**
- * The {@link ProducerManager} is used to manage Sportradar message producers
+ * The {@link ProducerManager} is used to manage Testinzone message producers
  */
 @SuppressWarnings({ "LineLength" })
 public interface ProducerManager {
     /**
-     * Returns a {@link Map} of all the available Sportradar producers
+     * Returns a {@link Map} of all the available Testinzone producers
      *
-     * @return -  {@link Map} of all the available Sportradar producers
+     * @return -  {@link Map} of all the available Testinzone producers
      */
     Map<Integer, Producer> getAvailableProducers();
 
@@ -71,7 +71,7 @@ public interface ProducerManager {
 
     /**
      * An indication if the producer is currently marked as down by the SDK
-     * @see com.sportradar.unifiedodds.sdk.oddsentities.ProducerDownReason
+     * @see com.testinzone.unifiedodds.sdk.oddsentities.ProducerDownReason
      *
      * @param producerId - the identifier of the producer for which to check
      * @return - <code>true</code> if the producer is down, otherwise <code>false</code>

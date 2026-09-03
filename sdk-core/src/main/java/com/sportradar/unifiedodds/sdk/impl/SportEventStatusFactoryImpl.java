@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
-import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCi;
-import com.sportradar.unifiedodds.sdk.entities.status.CompetitionStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.StageStatus;
-import com.sportradar.unifiedodds.sdk.impl.entities.status.CompetitionStatusImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.status.MatchStatusImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.status.SoccerStatusImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.status.StageStatusImpl;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCi;
+import com.testinzone.unifiedodds.sdk.entities.status.CompetitionStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.StageStatus;
+import com.testinzone.unifiedodds.sdk.impl.entities.status.CompetitionStatusImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.status.MatchStatusImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.status.SoccerStatusImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.status.StageStatusImpl;
+import com.testinzone.utils.Urn;
 
 /**
  * Factory used to build various sport event status instances such as {@link MatchStatus}, {@link SoccerStatus},...

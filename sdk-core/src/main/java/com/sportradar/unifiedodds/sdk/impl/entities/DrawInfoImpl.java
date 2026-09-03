@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.caching.ci.DrawInfoCi;
-import com.sportradar.unifiedodds.sdk.entities.DrawInfo;
-import com.sportradar.unifiedodds.sdk.entities.DrawType;
-import com.sportradar.unifiedodds.sdk.entities.TimeType;
+import com.testinzone.unifiedodds.sdk.caching.ci.DrawInfoCi;
+import com.testinzone.unifiedodds.sdk.entities.DrawInfo;
+import com.testinzone.unifiedodds.sdk.entities.DrawType;
+import com.testinzone.unifiedodds.sdk.entities.TimeType;
 
 /**
  * A basic implementation of the {@link DrawInfo}

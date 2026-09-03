@@ -1,30 +1,30 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ChampionshipFreeTextMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds.CORRECT_SCORE_FLEX_SCORE_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.NascarOutrightsOddEvenVariant.NASCAR_EVEN_OUTCOME_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.NascarOutrightsOddEvenVariant.NASCAR_ODD_OUTCOME_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OneXtwoMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ChampionshipFreeTextMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds.CORRECT_SCORE_FLEX_SCORE_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.NascarOutrightsOddEvenVariant.NASCAR_EVEN_OUTCOME_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.NascarOutrightsOddEvenVariant.NASCAR_ODD_OUTCOME_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OneXtwoMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.*;
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toMap;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.conn.MarketVariant.OutcomeMapping;
-import com.sportradar.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
-import com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.conn.MarketVariant.OutcomeMapping;
+import com.testinzone.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
+import com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;

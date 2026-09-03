@@ -1,38 +1,38 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 import static com.google.common.base.Predicates.not;
-import static com.sportradar.unifiedodds.sdk.conn.CompetitorsIT.SapiCompetitorsWrapper.fromGroups;
-import static com.sportradar.unifiedodds.sdk.conn.CompetitorsIT.SapiCompetitorsWrapper.fromTournament;
-import static com.sportradar.unifiedodds.sdk.conn.SapiCompetitorProfiles.BuffaloSabres.buffaloSabres;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.soccerMatchGermanyVsVirtual2024;
-import static com.sportradar.unifiedodds.sdk.conn.SapiTournaments.Euro2024.euro2024TournamentInfo;
-import static com.sportradar.unifiedodds.sdk.conn.SapiTournaments.Nascar2024.nascarCup2024TournamentInfo;
-import static com.sportradar.unifiedodds.sdk.conn.SapiTournaments.Nascar2024.replaceFirstCompetitorWithVirtual;
-import static com.sportradar.unifiedodds.sdk.conn.SapiTournaments.tournamentEuro2024;
-import static com.sportradar.unifiedodds.sdk.conn.UfMarkets.WithOdds.oddEvenMarket;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.conn.CompetitorsIT.SapiCompetitorsWrapper.fromGroups;
+import static com.testinzone.unifiedodds.sdk.conn.CompetitorsIT.SapiCompetitorsWrapper.fromTournament;
+import static com.testinzone.unifiedodds.sdk.conn.SapiCompetitorProfiles.BuffaloSabres.buffaloSabres;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.soccerMatchGermanyVsVirtual2024;
+import static com.testinzone.unifiedodds.sdk.conn.SapiTournaments.Euro2024.euro2024TournamentInfo;
+import static com.testinzone.unifiedodds.sdk.conn.SapiTournaments.Nascar2024.nascarCup2024TournamentInfo;
+import static com.testinzone.unifiedodds.sdk.conn.SapiTournaments.Nascar2024.replaceFirstCompetitorWithVirtual;
+import static com.testinzone.unifiedodds.sdk.conn.SapiTournaments.tournamentEuro2024;
+import static com.testinzone.unifiedodds.sdk.conn.UfMarkets.WithOdds.oddEvenMarket;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.github.tomakehurst.wiremock.junit5.WireMockExtension;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.uf.sportsapi.datamodel.SapiTeam;
-import com.sportradar.uf.sportsapi.datamodel.SapiTournamentInfoEndpoint;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.shared.FeedMessageBuilder;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiTeam;
+import com.testinzone.uf.sportsapi.datamodel.SapiTournamentInfoEndpoint;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.shared.FeedMessageBuilder;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.*;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;

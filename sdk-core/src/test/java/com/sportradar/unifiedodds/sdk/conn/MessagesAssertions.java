@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sportradar.uf.datamodel.UfAlive;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
+import com.testinzone.uf.datamodel.UfAlive;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
 import java.util.List;
 import lombok.AllArgsConstructor;
 

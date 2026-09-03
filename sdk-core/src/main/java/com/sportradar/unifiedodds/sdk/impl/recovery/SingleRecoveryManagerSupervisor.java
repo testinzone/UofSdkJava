@@ -1,12 +1,12 @@
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;

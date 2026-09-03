@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCourse;
-import com.sportradar.uf.sportsapi.datamodel.SapiHole;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.uf.sportsapi.datamodel.SapiCourse;
+import com.testinzone.uf.sportsapi.datamodel.SapiHole;
+import com.testinzone.utils.domain.names.Languages;
 import lombok.val;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;

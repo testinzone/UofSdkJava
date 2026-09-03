@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;

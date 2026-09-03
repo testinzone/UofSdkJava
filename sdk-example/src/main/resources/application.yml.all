@@ -1,9 +1,9 @@
 # all the configuration properties are optional, for detailed description check the "TokenSetter"
 
-sportradar:
+testinzone:
   sdk:
     uf:
-      # the access token provided by Sportradar
+      # the access token provided by Testinzone
       accessToken:
       # the node id which should be used by the SDK
       nodeId:

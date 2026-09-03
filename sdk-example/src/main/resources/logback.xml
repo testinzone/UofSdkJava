@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+  ~ Copyright (C) Testinzone AG. See LICENSE for full license governing this code
   -->
 
 <configuration scan="true" scanPeriod="30 seconds">
@@ -150,32 +150,32 @@
     <logger name="org.apache.hc" level="OFF" />
 
     <!-- execution log -->
-    <logger name="com.sportradar.unifiedodds" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkExecutionLogFileAppender" />
     </logger>
 
     <!-- traffic log config assigned to the traffic logger -->
-    <logger name="com.sportradar.unifiedodds.sdk.LoggerDefinitions$UfSdkTrafficLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds.sdk.LoggerDefinitions$UfSdkTrafficLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkTrafficLogFileAppender" />
     </logger>
 
     <!-- traffic failure log config assigned to the traffic failure logger -->
-    <logger name="com.sportradar.unifiedodds.sdk.LoggerDefinitions$UfSdkTrafficFailureLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds.sdk.LoggerDefinitions$UfSdkTrafficFailureLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkTrafficFailureLogFileAppender" />
     </logger>
 
     <!-- rest traffic log config assigned to the rest traffic logger -->
-    <logger name="com.sportradar.unifiedodds.sdk.LoggerDefinitions$UfSdkRestTrafficLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds.sdk.LoggerDefinitions$UfSdkRestTrafficLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkRestTrafficLogFileAppender" />
     </logger>
 
     <!-- client interaction log config assigned to the client interaction logger -->
-    <logger name="com.sportradar.unifiedodds.sdk.LoggerDefinitions$UfSdkClientInteractionLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds.sdk.LoggerDefinitions$UfSdkClientInteractionLog" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkClientInteractionLogFileAppender" />
     </logger>
 
     <!-- sdk example log config assigned to the example logger -->
-    <logger name="com.sportradar.unifiedodds.example" level="${UF_SDK_LOG_LEVEL}" additivity="false">
+    <logger name="com.testinzone.unifiedodds.example" level="${UF_SDK_LOG_LEVEL}" additivity="false">
         <appender-ref ref="SdkExampleLogFileAppender" />
         <appender-ref ref="STDOUT" />
     </logger>

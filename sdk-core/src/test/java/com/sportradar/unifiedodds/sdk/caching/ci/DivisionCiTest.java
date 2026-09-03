@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
 import org.junit.Test;
 
 public class DivisionCiTest {

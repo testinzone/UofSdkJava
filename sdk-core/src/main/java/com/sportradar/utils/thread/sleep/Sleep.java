@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.thread.sleep;
+package com.testinzone.utils.thread.sleep;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

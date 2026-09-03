@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Binder;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import com.sportradar.uf.datamodel.UfCashout;
-import com.sportradar.uf.sportsapi.datamodel.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.uf.datamodel.UfCashout;
+import com.testinzone.uf.sportsapi.datamodel.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.util.Locale;
 
 /**

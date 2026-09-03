@@ -1,10 +1,10 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.common.cache.Cache;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.VariantDescriptionCi;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.VariantDescriptionCi;
+import com.testinzone.utils.Urn;
 import java.io.Closeable;
 import java.util.Date;
 

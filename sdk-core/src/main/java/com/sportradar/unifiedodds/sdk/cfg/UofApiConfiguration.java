@@ -1,19 +1,19 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import java.time.Duration;
 
 public interface UofApiConfiguration {
     /**
-     * @return The Sportradar host used for API-access
+     * @return The Testinzone host used for API-access
      */
     String getHost();
 
     /**
-     * @return The port of Sportradar host used for API-access
+     * @return The port of Testinzone host used for API-access
      */
     int getPort();
 

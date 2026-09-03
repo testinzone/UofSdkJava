@@ -1,9 +1,9 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.conn.GlobalVariables;
-import com.sportradar.unifiedodds.sdk.conn.ProducerId;
-import com.sportradar.unifiedodds.sdk.conn.SportEvent;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.conn.GlobalVariables;
+import com.testinzone.unifiedodds.sdk.conn.ProducerId;
+import com.testinzone.unifiedodds.sdk.conn.SportEvent;
 import java.util.Date;
 import lombok.val;
 

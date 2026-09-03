@@ -1,18 +1,18 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 import com.google.inject.util.Modules;
-import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.conn.SdkTestModule;
-import com.sportradar.unifiedodds.sdk.di.CustomisableSdkModule;
-import com.sportradar.unifiedodds.sdk.di.MasterInjectionModule;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.extended.UofSdkExt;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.conn.SdkTestModule;
+import com.testinzone.unifiedodds.sdk.di.CustomisableSdkModule;
+import com.testinzone.unifiedodds.sdk.di.MasterInjectionModule;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.extended.UofSdkExt;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

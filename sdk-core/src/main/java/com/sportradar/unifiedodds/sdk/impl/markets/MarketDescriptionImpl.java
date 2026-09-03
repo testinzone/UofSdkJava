@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
-import static com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants.FREETEXT_VARIANT_VALUE;
-import static com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants.OUTCOMETEXT_VARIANT_VALUE;
+import static com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants.FREETEXT_VARIANT_VALUE;
+import static com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants.OUTCOMETEXT_VARIANT_VALUE;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketMappingCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketOutcomeCi;
-import com.sportradar.unifiedodds.sdk.entities.markets.*;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketMappingCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketOutcomeCi;
+import com.testinzone.unifiedodds.sdk.entities.markets.*;
+import com.testinzone.utils.SdkHelper;
 import java.util.*;
 
 /**

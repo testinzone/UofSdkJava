@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -12,11 +12,11 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.inject.*;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.replay.ReplayManager;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.replay.ReplayManager;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
 import java.util.Arrays;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

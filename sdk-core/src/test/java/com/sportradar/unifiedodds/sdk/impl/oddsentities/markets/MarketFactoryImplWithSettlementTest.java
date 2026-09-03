@@ -1,32 +1,32 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.namesOf;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.noMarketDescribingProvider;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.providing;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.UfMarkets.WithSettlementOutcomes.oddEvenMarketWhereWonOdd;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_CATCH_EXCEPTIONS;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketAssert.assertThat;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.MethodsBackedByMarketDescriptionInScope.ALL_METHODS;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.MethodsBackedByMarketDescriptionInScope.METHODS_EXCLUDING_VALID_MAPPINGS;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.assertThat;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketFactories.BuilderStubbingOutSportEventAndCaches.stubbingOutSportEventAndCaches;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.OutcomeAssert.assertThat;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.domain.names.TranslationHolder.of;
-import static com.sportradar.utils.domain.producers.ProducerIds.PREMIUM_CRICKET_PRODUCER_ID;
-import static com.sportradar.utils.domain.producers.ProducerIds.anyProducerId;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.namesOf;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.noMarketDescribingProvider;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.providing;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.UfMarkets.WithSettlementOutcomes.oddEvenMarketWhereWonOdd;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_CATCH_EXCEPTIONS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketAssert.assertThat;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.MethodsBackedByMarketDescriptionInScope.ALL_METHODS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.MethodsBackedByMarketDescriptionInScope.METHODS_EXCLUDING_VALID_MAPPINGS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketDefinitionAssert.assertThat;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketFactories.BuilderStubbingOutSportEventAndCaches.stubbingOutSportEventAndCaches;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.OutcomeAssert.assertThat;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.domain.names.TranslationHolder.of;
+import static com.testinzone.utils.domain.producers.ProducerIds.PREMIUM_CRICKET_PRODUCER_ID;
+import static com.testinzone.utils.domain.producers.ProducerIds.anyProducerId;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.entities.SportEvents;
-import com.sportradar.utils.domain.UniqueObjects;
-import com.sportradar.utils.domain.names.Languages;
-import com.sportradar.utils.domain.producers.ProducerIds;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.entities.SportEvents;
+import com.testinzone.utils.domain.UniqueObjects;
+import com.testinzone.utils.domain.names.Languages;
+import com.testinzone.utils.domain.producers.ProducerIds;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.stream.Stream;

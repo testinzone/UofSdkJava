@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.oddsentities;
+package com.testinzone.unifiedodds.sdk.oddsentities;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import com.sportradar.unifiedodds.sdk.ProducerScope;
+import com.testinzone.unifiedodds.sdk.ProducerScope;
 import org.junit.Test;
 
 public class ProducerStubsTest {

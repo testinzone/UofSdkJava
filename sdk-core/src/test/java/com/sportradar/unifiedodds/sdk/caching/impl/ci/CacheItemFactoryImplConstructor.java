@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
 import com.google.common.cache.Cache;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 
 public class CacheItemFactoryImplConstructor {

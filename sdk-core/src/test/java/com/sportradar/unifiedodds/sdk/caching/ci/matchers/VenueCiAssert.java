@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.ci.matchers;
+package com.testinzone.unifiedodds.sdk.caching.ci.matchers;
 
 import static java.util.Collections.singletonList;
 import static java.util.Optional.ofNullable;
 
-import com.sportradar.unifiedodds.sdk.caching.ci.CourseCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.VenueCi;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.domain.names.LanguageHolder;
-import com.sportradar.utils.domain.names.TranslationHolder;
+import com.testinzone.unifiedodds.sdk.caching.ci.CourseCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.VenueCi;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.domain.names.LanguageHolder;
+import com.testinzone.utils.domain.names.TranslationHolder;
 import java.util.Arrays;
 import lombok.val;
 import org.assertj.core.api.AbstractAssert;

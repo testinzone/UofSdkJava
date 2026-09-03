@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
-import static com.sportradar.utils.generic.testing.Urls.anyHttpUrl;
+import static com.testinzone.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
+import static com.testinzone.utils.generic.testing.Urls.anyHttpUrl;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchSummaryEndpoint;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchSummaryEndpoint;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.utils.domain.names.LanguageHolder;
 import lombok.SneakyThrows;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;

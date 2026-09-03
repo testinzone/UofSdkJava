@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.uf.sportsapi.datamodel.MarketDescriptions;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.uf.sportsapi.datamodel.MarketDescriptions;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
 
 /**
  * Created on 07/11/2018.

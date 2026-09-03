@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
@@ -10,17 +10,17 @@ import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.name.Named;
 import com.google.inject.util.Modules;
-import com.sportradar.uf.sportsapi.datamodel.SapiDrawFixtures;
-import com.sportradar.uf.sportsapi.datamodel.SapiDrawSummary;
-import com.sportradar.uf.sportsapi.datamodel.SapiFixturesEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiLotteries;
-import com.sportradar.uf.sportsapi.datamodel.SapiLotterySchedule;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofApiConfigurationImpl;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.uf.sportsapi.datamodel.SapiDrawFixtures;
+import com.testinzone.uf.sportsapi.datamodel.SapiDrawSummary;
+import com.testinzone.uf.sportsapi.datamodel.SapiFixturesEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiLotteries;
+import com.testinzone.uf.sportsapi.datamodel.SapiLotterySchedule;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofApiConfigurationImpl;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
 import java.util.Locale;
 import org.junit.Test;
 

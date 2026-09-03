@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.apireaders;
+package com.testinzone.unifiedodds.sdk.impl.apireaders;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.base.Charsets;
-import com.sportradar.uf.custombet.datamodel.CapiResponse;
-import com.sportradar.uf.sportsapi.datamodel.Response;
+import com.testinzone.uf.custombet.datamodel.CapiResponse;
+import com.testinzone.uf.sportsapi.datamodel.Response;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

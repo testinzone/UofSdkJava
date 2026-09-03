@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import static org.mockito.Mockito.mock;
 
@@ -9,13 +9,13 @@ import com.google.common.cache.Cache;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Provides;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
-import com.sportradar.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
-import com.sportradar.unifiedodds.sdk.impl.MappingTypeProvider;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
+import com.testinzone.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
+import com.testinzone.unifiedodds.sdk.impl.MappingTypeProvider;
+import com.testinzone.utils.Urn;
 
 public class SportEvenCacheToProxyDataRouterManagerOnly {
 

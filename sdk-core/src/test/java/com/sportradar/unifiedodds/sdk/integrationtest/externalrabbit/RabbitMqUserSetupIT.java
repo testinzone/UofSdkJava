@@ -1,19 +1,19 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.integrationtest.externalrabbit;
+package com.testinzone.unifiedodds.sdk.integrationtest.externalrabbit;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.RABBIT_BASE_URL;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.RABBIT_BASE_URL;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertNotNull;
 
 import com.rabbitmq.client.*;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation;
 import java.io.IOException;
 import java.util.concurrent.*;
 import lombok.val;

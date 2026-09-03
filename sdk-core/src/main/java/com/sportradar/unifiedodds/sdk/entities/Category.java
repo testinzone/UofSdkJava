@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.entities;
+package com.testinzone.unifiedodds.sdk.entities;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import java.util.List;
 public interface Category extends CategorySummary {
     /**
      * Returns an unmodifiable {@link List} of tournaments which belong to the category represented by the current instance
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @return - an unmodifiable {@link List} of tournaments which belong to the category represented by the current instance
      */

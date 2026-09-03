@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.integration;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.integration;
 
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup.create;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation.at;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup.create;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation.at;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.codehaus.groovy.runtime.InvokerHelper.asList;

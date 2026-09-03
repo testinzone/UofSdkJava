@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.uf.sportsapi.datamodel.DescVariant;
-import com.sportradar.uf.sportsapi.datamodel.VariantDescriptions;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.uf.sportsapi.datamodel.DescVariant;
+import com.testinzone.uf.sportsapi.datamodel.VariantDescriptions;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.utils.domain.names.LanguageHolder;
 import lombok.val;
 
 public final class VariantDescriptionDataProviders {

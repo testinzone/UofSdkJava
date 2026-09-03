@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.jacoco;
+package com.testinzone.utils.jacoco;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

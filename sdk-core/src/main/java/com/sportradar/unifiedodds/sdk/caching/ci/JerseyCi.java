@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.sportsapi.datamodel.SapiJersey;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableJerseyCi;
+import com.testinzone.uf.sportsapi.datamodel.SapiJersey;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableJerseyCi;
 
 /**
  * A cache representation of a jersey

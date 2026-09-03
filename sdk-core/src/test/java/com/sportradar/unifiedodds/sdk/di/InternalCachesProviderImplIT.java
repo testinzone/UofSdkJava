@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
-import static com.sportradar.unifiedodds.sdk.di.InternalCachesProviderImplIT.MultipleCasesPerTestDueToUsingSleepToReduceImpactOnBuildTime.CacheGroup.Presence.GONE;
-import static com.sportradar.unifiedodds.sdk.di.InternalCachesProviderImplIT.MultipleCasesPerTestDueToUsingSleepToReduceImpactOnBuildTime.CacheGroup.Presence.PRESENT;
+import static com.testinzone.unifiedodds.sdk.di.InternalCachesProviderImplIT.MultipleCasesPerTestDueToUsingSleepToReduceImpactOnBuildTime.CacheGroup.Presence.GONE;
+import static com.testinzone.unifiedodds.sdk.di.InternalCachesProviderImplIT.MultipleCasesPerTestDueToUsingSleepToReduceImpactOnBuildTime.CacheGroup.Presence.PRESENT;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.cache.Cache;
-import com.sportradar.unifiedodds.sdk.caching.SdkCacheRemovalListener;
-import com.sportradar.unifiedodds.sdk.cfg.UofCacheConfigurationStub;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
+import com.testinzone.unifiedodds.sdk.caching.SdkCacheRemovalListener;
+import com.testinzone.unifiedodds.sdk.cfg.UofCacheConfigurationStub;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
 import java.time.Duration;
 import java.util.List;
 import java.util.function.Consumer;

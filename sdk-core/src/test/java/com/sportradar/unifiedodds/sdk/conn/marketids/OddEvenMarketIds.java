@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn.marketids;
+package com.testinzone.unifiedodds.sdk.conn.marketids;
 
-import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithProbabilities;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeProbabilities;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithProbabilities;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeProbabilities;
 
 public final class OddEvenMarketIds {
 

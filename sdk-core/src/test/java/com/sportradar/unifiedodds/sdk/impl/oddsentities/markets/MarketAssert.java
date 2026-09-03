@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.sportradar.unifiedodds.sdk.exceptions.NameGenerationException;
-import com.sportradar.unifiedodds.sdk.oddsentities.Market;
-import com.sportradar.utils.domain.names.TranslationHolder;
+import com.testinzone.unifiedodds.sdk.exceptions.NameGenerationException;
+import com.testinzone.unifiedodds.sdk.oddsentities.Market;
+import com.testinzone.utils.domain.names.TranslationHolder;
 import java.util.Locale;
 import org.assertj.core.api.AbstractAssert;
 import org.assertj.core.api.Assertions;

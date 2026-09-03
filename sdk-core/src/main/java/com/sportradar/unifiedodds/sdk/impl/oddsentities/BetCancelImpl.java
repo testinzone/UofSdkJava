@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.datamodel.UfBetCancel;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketFactory;
-import com.sportradar.unifiedodds.sdk.oddsentities.BetCancel;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketCancel;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.uf.datamodel.UfBetCancel;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketFactory;
+import com.testinzone.unifiedodds.sdk.oddsentities.BetCancel;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketCancel;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;

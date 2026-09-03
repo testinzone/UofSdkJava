@@ -50,11 +50,11 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/sportradar/unifiedodds/sdk/ProducerScope.html" title="enum in com.sportradar.unifiedodds.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/sportradar/unifiedodds/sdk/RuntimeConfiguration.html" title="class in com.sportradar.unifiedodds.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/testinzone/unifiedodds/sdk/ProducerScope.html" title="enum in com.testinzone.unifiedodds.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/testinzone/unifiedodds/sdk/RuntimeConfiguration.html" title="class in com.testinzone.unifiedodds.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?com/sportradar/unifiedodds/sdk/RecoveryManager.html" target="_top">Frames</a></li>
+<li><a href="../../../../index.html?com/testinzone/unifiedodds/sdk/RecoveryManager.html" target="_top">Frames</a></li>
 <li><a href="RecoveryManager.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">com.sportradar.unifiedodds.sdk</div>
+<div class="subTitle">com.testinzone.unifiedodds.sdk</div>
 <h2 title="Interface RecoveryManager" class="title">Interface RecoveryManager</h2>
 </div>
 <div class="contentContainer">
@@ -124,7 +124,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/sportradar/unifiedodds/sdk/RecoveryManager.html#onAliveReceived-int-long-long-boolean-boolean-">onAliveReceived</a></span>(int&nbsp;producerId,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/testinzone/unifiedodds/sdk/RecoveryManager.html#onAliveReceived-int-long-long-boolean-boolean-">onAliveReceived</a></span>(int&nbsp;producerId,
                long&nbsp;aliveGenTimestamp,
                long&nbsp;receivedTimestamp,
                boolean&nbsp;subscribed,
@@ -134,7 +134,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/sportradar/unifiedodds/sdk/RecoveryManager.html#onMessageProcessingEnded-int-int-java.lang.Long-java.lang.String-">onMessageProcessingEnded</a></span>(int&nbsp;uniqueMessageProcessorIdentifier,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/testinzone/unifiedodds/sdk/RecoveryManager.html#onMessageProcessingEnded-int-int-java.lang.Long-java.lang.String-">onMessageProcessingEnded</a></span>(int&nbsp;uniqueMessageProcessorIdentifier,
                         int&nbsp;producerId,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;processedMessageGenTimestamp,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;eventId)</code>
@@ -143,7 +143,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/sportradar/unifiedodds/sdk/RecoveryManager.html#onMessageProcessingStarted-int-int-java.lang.Long-long-">onMessageProcessingStarted</a></span>(int&nbsp;uniqueMessageProcessorIdentifier,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/testinzone/unifiedodds/sdk/RecoveryManager.html#onMessageProcessingStarted-int-int-java.lang.Long-long-">onMessageProcessingStarted</a></span>(int&nbsp;uniqueMessageProcessorIdentifier,
                           int&nbsp;producerId,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;requestId,
                           long&nbsp;now)</code>
@@ -152,10 +152,10 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/sportradar/unifiedodds/sdk/RecoveryManager.html#onSnapshotCompleteReceived-int-long-long-com.sportradar.unifiedodds.sdk.MessageInterest-">onSnapshotCompleteReceived</a></span>(int&nbsp;producerId,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/testinzone/unifiedodds/sdk/RecoveryManager.html#onSnapshotCompleteReceived-int-long-long-com.testinzone.unifiedodds.sdk.MessageInterest-">onSnapshotCompleteReceived</a></span>(int&nbsp;producerId,
                           long&nbsp;now,
                           long&nbsp;requestId,
-                          <a href="../../../../com/sportradar/unifiedodds/sdk/MessageInterest.html" title="enum in com.sportradar.unifiedodds.sdk">MessageInterest</a>&nbsp;sessionMessageInterest)</code>
+                          <a href="../../../../com/testinzone/unifiedodds/sdk/MessageInterest.html" title="enum in com.testinzone.unifiedodds.sdk">MessageInterest</a>&nbsp;sessionMessageInterest)</code>
 <div class="block">Method invoked when the message of type "SnapshotComplete" is received</div>
 </td>
 </tr>
@@ -236,7 +236,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="onSnapshotCompleteReceived-int-long-long-com.sportradar.unifiedodds.sdk.MessageInterest-">
+<a name="onSnapshotCompleteReceived-int-long-long-com.testinzone.unifiedodds.sdk.MessageInterest-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -245,7 +245,7 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;onSnapshotCompleteReceived(int&nbsp;producerId,
                                 long&nbsp;now,
                                 long&nbsp;requestId,
-                                <a href="../../../../com/sportradar/unifiedodds/sdk/MessageInterest.html" title="enum in com.sportradar.unifiedodds.sdk">MessageInterest</a>&nbsp;sessionMessageInterest)</pre>
+                                <a href="../../../../com/testinzone/unifiedodds/sdk/MessageInterest.html" title="enum in com.testinzone.unifiedodds.sdk">MessageInterest</a>&nbsp;sessionMessageInterest)</pre>
 <div class="block">Method invoked when the message of type "SnapshotComplete" is received</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -284,11 +284,11 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/sportradar/unifiedodds/sdk/ProducerScope.html" title="enum in com.sportradar.unifiedodds.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/sportradar/unifiedodds/sdk/RuntimeConfiguration.html" title="class in com.sportradar.unifiedodds.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/testinzone/unifiedodds/sdk/ProducerScope.html" title="enum in com.testinzone.unifiedodds.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/testinzone/unifiedodds/sdk/RuntimeConfiguration.html" title="class in com.testinzone.unifiedodds.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?com/sportradar/unifiedodds/sdk/RecoveryManager.html" target="_top">Frames</a></li>
+<li><a href="../../../../index.html?com/testinzone/unifiedodds/sdk/RecoveryManager.html" target="_top">Frames</a></li>
 <li><a href="RecoveryManager.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">

@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.domain.names;
+package com.testinzone.utils.domain.names;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.entities.SoccerEvent;
-import com.sportradar.unifiedodds.sdk.entities.Tournament;
-import com.sportradar.unifiedodds.sdk.entities.status.CompetitionStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatus;
-import com.sportradar.unifiedodds.sdk.impl.SportEventStatusFactory;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.entities.SoccerEvent;
+import com.testinzone.unifiedodds.sdk.entities.Tournament;
+import com.testinzone.unifiedodds.sdk.entities.status.CompetitionStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatus;
+import com.testinzone.unifiedodds.sdk.impl.SportEventStatusFactory;
+import com.testinzone.utils.Urn;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;

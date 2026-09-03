@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.integrationtest.preconditions;
+package com.testinzone.unifiedodds.sdk.integrationtest.preconditions;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.RABBIT_MANAGEMENT_BASE_URL;
-import static com.sportradar.unifiedodds.sdk.integrationtest.preconditions.SystemProperties.isBooleanSystemPropertySet;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.RABBIT_MANAGEMENT_BASE_URL;
+import static com.testinzone.unifiedodds.sdk.integrationtest.preconditions.SystemProperties.isBooleanSystemPropertySet;
 
 public class PreconditionsForIntegrationTests {
 

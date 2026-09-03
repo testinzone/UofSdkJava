@@ -1,8 +1,8 @@
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.caching.ci.HoleCi;
-import com.sportradar.unifiedodds.sdk.entities.Hole;
+import com.testinzone.unifiedodds.sdk.caching.ci.HoleCi;
+import com.testinzone.unifiedodds.sdk.entities.Hole;
 
 public class HoleImpl implements Hole {
 

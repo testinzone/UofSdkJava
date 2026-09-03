@@ -1,27 +1,27 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
-import static com.sportradar.unifiedodds.sdk.caching.ci.matchers.IndexHolder.atIndex;
-import static com.sportradar.unifiedodds.sdk.caching.ci.matchers.VenueCiAssert.assertThat;
-import static com.sportradar.utils.Urns.Venues.urnForAnyVenue;
-import static com.sportradar.utils.Urns.unique;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.domain.names.LanguageHolder.withNoTranslationTo;
-import static com.sportradar.utils.domain.names.TranslationHolder.with;
+import static com.testinzone.unifiedodds.sdk.caching.ci.matchers.IndexHolder.atIndex;
+import static com.testinzone.unifiedodds.sdk.caching.ci.matchers.VenueCiAssert.assertThat;
+import static com.testinzone.utils.Urns.Venues.urnForAnyVenue;
+import static com.testinzone.utils.Urns.unique;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.domain.names.LanguageHolder.withNoTranslationTo;
+import static com.testinzone.utils.domain.names.TranslationHolder.with;
 import static java.util.Arrays.asList;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCourse;
-import com.sportradar.uf.sportsapi.datamodel.SapiVenue;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.Urns;
-import com.sportradar.utils.domain.UniqueObjects;
-import com.sportradar.utils.domain.names.Languages;
-import com.sportradar.utils.domain.names.Names;
+import com.testinzone.uf.sportsapi.datamodel.SapiCourse;
+import com.testinzone.uf.sportsapi.datamodel.SapiVenue;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.Urns;
+import com.testinzone.utils.domain.UniqueObjects;
+import com.testinzone.utils.domain.names.Languages;
+import com.testinzone.utils.domain.names.Names;
 import java.util.Locale;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

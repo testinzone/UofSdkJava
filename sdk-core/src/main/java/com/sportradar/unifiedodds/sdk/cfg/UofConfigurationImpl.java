@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableList;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
-import com.sportradar.unifiedodds.sdk.impl.ProducerData;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.ProducerImpl;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.sdk.impl.ProducerData;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.ProducerImpl;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.utils.SdkHelper;
 import io.opentelemetry.api.internal.StringUtils;
 import java.security.InvalidParameterException;
 import java.util.*;
@@ -23,7 +23,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * This class is used to specify various configuration parameters for a session to the Sportradar
+ * This class is used to specify various configuration parameters for a session to the Testinzone
  * system(s)
  */
 @SuppressWarnings(

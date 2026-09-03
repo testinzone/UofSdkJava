@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.TournamentCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.TournamentCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -187,7 +187,7 @@ public class BasicTournamentImpl extends SportEventImpl implements BasicTourname
 
         try {
             return sportEntityFactory.buildCategory(tournamentCi.getCategoryId(), locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getCategory", e);
         }
 
@@ -262,7 +262,7 @@ public class BasicTournamentImpl extends SportEventImpl implements BasicTourname
 
         try {
             return sportEntityFactory.buildSportForCategory(tournamentCi.getCategoryId(), locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getSport", e);
             return null;
         }
@@ -331,7 +331,7 @@ public class BasicTournamentImpl extends SportEventImpl implements BasicTourname
 
         try {
             return sportEntityFactory.buildSportEvents(eventIds, locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException(e.getMessage(), e);
             return null;
         }

@@ -1,13 +1,13 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.UserAgentProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.UserAgentProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
 import java.util.*;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.core5.http.HttpStatus;

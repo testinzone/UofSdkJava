@@ -1,29 +1,29 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.inject.Inject;
-import com.sportradar.uf.datamodel.UfBetSettlementMarket;
-import com.sportradar.uf.datamodel.UfMarket;
-import com.sportradar.uf.datamodel.UfOddsChangeMarket;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.entities.Match;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProvider;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProviderFactory;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfBetSettlementMarket;
+import com.testinzone.uf.datamodel.UfMarket;
+import com.testinzone.uf.datamodel.UfOddsChangeMarket;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.entities.Match;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProvider;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProviderFactory;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;

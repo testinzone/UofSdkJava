@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Custom;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalIntegration;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalProduction;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Integration;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Production;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.ProxySingapore;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.ProxyTokyo;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Custom;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalIntegration;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalProduction;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Integration;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Production;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.ProxySingapore;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.ProxyTokyo;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.HashSet;

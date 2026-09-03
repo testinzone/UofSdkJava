@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static java.util.stream.Collectors.toList;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiSport;
-import com.sportradar.uf.sportsapi.datamodel.SapiSportsEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiSport;
+import com.testinzone.uf.sportsapi.datamodel.SapiSportsEndpoint;
 import java.util.Arrays;
 import lombok.val;
 

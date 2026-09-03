@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
 import com.google.common.base.Preconditions;
 import com.rabbitmq.client.Recoverable;
 import com.rabbitmq.client.ShutdownSignalException;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.RecoveryInfoImpl;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.RecoveryInfoImpl;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.utils.Urn;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Map;

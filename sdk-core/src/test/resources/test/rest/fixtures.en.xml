@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <fixtures_fixture xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T11:40:48+00:00"
-                  xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+                  xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <fixture id="sr:match:9210275" scheduled="2016-08-10T00:00:00+00:00" start_time="2016-08-10T00:00:00+00:00" start_time_confirmed="true" liveodds="not_available">
     <tournament_round type="group" number="1"/>
     <season id="sr:season:12823" name="Mexican League 2016"/>

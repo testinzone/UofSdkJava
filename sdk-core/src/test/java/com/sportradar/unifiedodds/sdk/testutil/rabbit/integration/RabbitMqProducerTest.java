@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.integration;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.integration;
 
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation.at;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ConnectionFactoryStubs.stubSingleChannelFactory;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation.at;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ConnectionFactoryStubs.stubSingleChannelFactory;
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.time.Instant.ofEpochMilli;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -16,8 +16,8 @@ import com.rabbitmq.client.AMQP.BasicProperties;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.io.IOException;
 import java.time.Instant;
 import java.util.concurrent.TimeoutException;

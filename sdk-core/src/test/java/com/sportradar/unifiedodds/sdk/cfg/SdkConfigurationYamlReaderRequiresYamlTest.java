@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
-import static com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReaderStubs.anyResourceReader;
-import static com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolverStubs.notFindingClass;
+import static com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReaderStubs.anyResourceReader;
+import static com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolverStubs.notFindingClass;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;

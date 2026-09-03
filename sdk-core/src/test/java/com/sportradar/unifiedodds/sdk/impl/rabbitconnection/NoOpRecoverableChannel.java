@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import com.rabbitmq.client.*;
 import java.io.IOException;

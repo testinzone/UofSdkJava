@@ -1,20 +1,20 @@
-package com.sportradar.unifiedodds.sdk.caching;
+package com.testinzone.unifiedodds.sdk.caching;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.inject.Injector;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterImpl;
-import com.sportradar.unifiedodds.sdk.di.TestInjectorFactory;
-import com.sportradar.unifiedodds.sdk.entities.BookingStatus;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterImpl;
+import com.testinzone.unifiedodds.sdk.di.TestInjectorFactory;
+import com.testinzone.unifiedodds.sdk.entities.BookingStatus;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import lombok.val;
 import org.hamcrest.Matchers;

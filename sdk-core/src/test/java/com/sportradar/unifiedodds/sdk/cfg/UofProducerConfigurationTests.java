@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStubs;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStubs;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

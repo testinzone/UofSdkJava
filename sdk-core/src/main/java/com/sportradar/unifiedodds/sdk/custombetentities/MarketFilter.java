@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.custombetentities;
+package com.testinzone.unifiedodds.sdk.custombetentities;
 
 import java.util.List;
 

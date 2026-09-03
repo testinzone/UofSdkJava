@@ -1,35 +1,35 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.caching.impl.SportEventStatusCaches.BuilderStubbingOutSportEventCache.stubbingOutSportEventCache;
-import static com.sportradar.unifiedodds.sdk.caching.impl.SportEventStatusFactories.BuilderStubbingOutStatusValueCache.stubbingOutStatusValueCacheWith;
-import static com.sportradar.unifiedodds.sdk.caching.impl.StatusCachePopulator.populate;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.*;
-import static com.sportradar.unifiedodds.sdk.conn.StatisticsAssert.assertThat;
-import static com.sportradar.unifiedodds.sdk.conn.UfSportEventStatuses.*;
-import static com.sportradar.unifiedodds.sdk.conn.UfSportEventStatuses.kabaddiMatchFeedStatus;
-import static com.sportradar.unifiedodds.sdk.impl.SummaryDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.via;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.with;
-import static com.sportradar.utils.Urn.parse;
-import static com.sportradar.utils.Urns.SportEvents.getForAnyMatch;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.caching.impl.SportEventStatusCaches.BuilderStubbingOutSportEventCache.stubbingOutSportEventCache;
+import static com.testinzone.unifiedodds.sdk.caching.impl.SportEventStatusFactories.BuilderStubbingOutStatusValueCache.stubbingOutStatusValueCacheWith;
+import static com.testinzone.unifiedodds.sdk.caching.impl.StatusCachePopulator.populate;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.*;
+import static com.testinzone.unifiedodds.sdk.conn.StatisticsAssert.assertThat;
+import static com.testinzone.unifiedodds.sdk.conn.UfSportEventStatuses.*;
+import static com.testinzone.unifiedodds.sdk.conn.UfSportEventStatuses.kabaddiMatchFeedStatus;
+import static com.testinzone.unifiedodds.sdk.impl.SummaryDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.via;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.with;
+import static com.testinzone.utils.Urn.parse;
+import static com.testinzone.utils.Urns.SportEvents.getForAnyMatch;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static java.util.Collections.singletonList;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sportradar.uf.datamodel.UfSportEventStatus;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCaches;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterImpl;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterManagerBuilder;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportEventStatusCacheImpl;
-import com.sportradar.unifiedodds.sdk.conn.StatisticsAssert;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
-import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfSportEventStatus;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCaches;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterImpl;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterManagerBuilder;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportEventStatusCacheImpl;
+import com.testinzone.unifiedodds.sdk.conn.StatisticsAssert;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
+import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.testinzone.utils.Urn;
 import java.util.stream.Stream;
 import lombok.val;
 import lombok.var;
@@ -115,7 +115,7 @@ public class SportEventStatusCacheStatisticsTest {
     public class PopulatedFromSummary {
 
         private static final String STATISTICS_WITHOUT_2_TEAMS =
-            "com.sportradar.unifiedodds.sdk.impl.StatisticsSources#statisticsWithout2Teams";
+            "com.testinzone.unifiedodds.sdk.impl.StatisticsSources#statisticsWithout2Teams";
 
         private final boolean allowApiCalls = true;
 

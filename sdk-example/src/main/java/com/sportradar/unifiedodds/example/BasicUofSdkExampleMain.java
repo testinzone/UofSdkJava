@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example;
+package com.testinzone.unifiedodds.example;
 
-import com.sportradar.unifiedodds.example.common.GlobalEventsListener;
-import com.sportradar.unifiedodds.example.common.MessageListener;
-import com.sportradar.unifiedodds.example.common.SdkConstants;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.example.common.GlobalEventsListener;
+import com.testinzone.unifiedodds.example.common.MessageListener;
+import com.testinzone.unifiedodds.example.common.SdkConstants;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
 import java.io.IOException;
 import java.util.Locale;
 
@@ -24,7 +24,7 @@ public class BasicUofSdkExampleMain {
 
     public static void main(String[] args) throws InitException, IOException, InterruptedException {
         // first you need to prepare a configuration suitable to your use. The most important thing is the access
-        // token provided by Sportradar. You can set the token trough the builder via two ways:
+        // token provided by Testinzone. You can set the token trough the builder via two ways:
         //      - as a system property(JVM argument -Duf.accesstoken=<your-access-token>)
         //        and than invoking setAccessTokenFromSystemVar on the builder
         //      - directly setting the access token in the builder using the setAccessToken(String accessToken) method

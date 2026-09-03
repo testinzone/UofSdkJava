@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.RABBIT_BASE_URL;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.RABBIT_BASE_URL;
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.github.tomakehurst.wiremock.junit5.WireMockRuntimeInfo;
 import com.github.tomakehurst.wiremock.junit5.WireMockTest;
-import com.sportradar.unifiedodds.sdk.conn.ApiSimulator;
-import com.sportradar.unifiedodds.sdk.conn.SdkSetup;
-import com.sportradar.unifiedodds.sdk.custombetentities.Selection;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.SelectionImpl;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.Urns;
+import com.testinzone.unifiedodds.sdk.conn.ApiSimulator;
+import com.testinzone.unifiedodds.sdk.conn.SdkSetup;
+import com.testinzone.unifiedodds.sdk.custombetentities.Selection;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.SelectionImpl;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.Urns;
 import java.util.List;
 import java.util.concurrent.Callable;
 import lombok.SneakyThrows;

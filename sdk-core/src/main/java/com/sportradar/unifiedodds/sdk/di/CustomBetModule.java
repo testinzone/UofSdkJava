@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Binder;
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
-import com.sportradar.uf.custombet.datamodel.CapiAvailableSelections;
-import com.sportradar.uf.custombet.datamodel.CapiCalculationResponse;
-import com.sportradar.uf.custombet.datamodel.CapiFilteredCalculationResponse;
-import com.sportradar.unifiedodds.sdk.CustomBetSelectionBuilder;
-import com.sportradar.unifiedodds.sdk.CustomBetSelectionBuilderImpl;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.LogHttpDataFetcher;
+import com.testinzone.uf.custombet.datamodel.CapiAvailableSelections;
+import com.testinzone.uf.custombet.datamodel.CapiCalculationResponse;
+import com.testinzone.uf.custombet.datamodel.CapiFilteredCalculationResponse;
+import com.testinzone.unifiedodds.sdk.CustomBetSelectionBuilder;
+import com.testinzone.unifiedodds.sdk.CustomBetSelectionBuilderImpl;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.LogHttpDataFetcher;
 
 /**
  * The DI module in charge of custom bet API readers

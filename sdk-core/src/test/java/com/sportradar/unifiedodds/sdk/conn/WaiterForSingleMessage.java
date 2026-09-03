@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.OddsChange;
+import com.testinzone.unifiedodds.sdk.oddsentities.OddsChange;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -19,10 +19,10 @@ public class WaiterForSingleMessage {
         this.messagesStorage = messagesStorage;
     }
 
-    public OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent> theOnlyOddsChange() {
+    public OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent> theOnlyOddsChange() {
         final int tenForSlowMachines = 10;
         Awaitility.await().atMost(tenForSlowMachines, SECONDS).until(anyOddsChangeMessageReceived());
-        List<OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent>> allOddsChange = new ArrayList<>(
+        List<OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent>> allOddsChange = new ArrayList<>(
             messagesStorage.findAllOddsChange()
         );
         if (allOddsChange.size() != 1) {
@@ -33,10 +33,10 @@ public class WaiterForSingleMessage {
         return allOddsChange.get(0);
     }
 
-    public OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent> secondOddsChange() {
+    public OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent> secondOddsChange() {
         final int tenForSlowMachines = 10;
         Awaitility.await().atMost(tenForSlowMachines, SECONDS).until(multipleOddsChangeMessageReceived());
-        List<OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent>> allOddsChange = new ArrayList<>(
+        List<OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent>> allOddsChange = new ArrayList<>(
             messagesStorage.findAllOddsChange()
         );
         if (allOddsChange.size() <= 1) {

@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
-import com.sportradar.unifiedodds.sdk.entities.PitcherHand;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.unifiedodds.sdk.entities.PitcherHand;
 import java.io.Serializable;
 
 @SuppressWarnings({ "HiddenField" })

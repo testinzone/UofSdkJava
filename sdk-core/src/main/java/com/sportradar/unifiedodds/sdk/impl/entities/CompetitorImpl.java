@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.ci.ReferenceIdCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.*;
-import com.sportradar.unifiedodds.sdk.impl.ManagerImpl;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.ci.ReferenceIdCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.*;
+import com.testinzone.unifiedodds.sdk.impl.ManagerImpl;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
@@ -448,11 +448,11 @@ public class CompetitorImpl implements Competitor {
     private void handleException(String request, Exception e) {
         if (exceptionHandlingStrategy == ExceptionHandlingStrategy.Throw) {
             if (e == null) {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(
                     "CompetitorImpl[" + competitorId + "], request(" + request + ")"
                 );
             } else {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(request, e);
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(request, e);
             }
         } else {
             if (e == null) {

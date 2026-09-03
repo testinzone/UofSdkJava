@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.caching.LocalizedNamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.ci.NamedValueCi;
-import com.sportradar.unifiedodds.sdk.entities.LocalizedNamedValue;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.SdkTaskScheduler;
-import com.sportradar.unifiedodds.sdk.impl.entities.LocalizedNamedValueImpl;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.unifiedodds.sdk.caching.LocalizedNamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.ci.NamedValueCi;
+import com.testinzone.unifiedodds.sdk.entities.LocalizedNamedValue;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.SdkTaskScheduler;
+import com.testinzone.unifiedodds.sdk.impl.entities.LocalizedNamedValueImpl;
+import com.testinzone.utils.SdkHelper;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

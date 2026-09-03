@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import com.rabbitmq.client.ConnectionFactory;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.shared.FeedMessageBuilder;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.shared.FeedMessageBuilder;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Function;

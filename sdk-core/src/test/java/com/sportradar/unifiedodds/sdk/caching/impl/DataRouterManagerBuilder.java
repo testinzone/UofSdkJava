@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiLotterySchedule;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.DataRouter;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.SdkTaskScheduler;
+import com.testinzone.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiLotterySchedule;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.DataRouter;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.SdkTaskScheduler;
 
 @SuppressWarnings("HiddenField")
 public class DataRouterManagerBuilder {

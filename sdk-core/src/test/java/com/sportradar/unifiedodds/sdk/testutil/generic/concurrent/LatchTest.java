@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
+package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
 
-import static com.sportradar.utils.time.TimeInterval.seconds;
+import static com.testinzone.utils.time.TimeInterval.seconds;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.time.Instant;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;

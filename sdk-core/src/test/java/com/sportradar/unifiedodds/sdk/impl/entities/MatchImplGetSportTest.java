@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertEquals;
@@ -12,18 +12,18 @@ import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.MatchCi;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.entities.Match;
-import com.sportradar.unifiedodds.sdk.entities.Sport;
-import com.sportradar.unifiedodds.sdk.entities.SportSummary;
-import com.sportradar.unifiedodds.sdk.entities.Tournament;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.SportEventStatusFactory;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.Urns;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.MatchCi;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.entities.Match;
+import com.testinzone.unifiedodds.sdk.entities.Sport;
+import com.testinzone.unifiedodds.sdk.entities.SportSummary;
+import com.testinzone.unifiedodds.sdk.entities.Tournament;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.SportEventStatusFactory;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.Urns;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -64,7 +64,7 @@ public class MatchImplGetSportTest {
     public void throwsWhenSportNotFoundAndExceptionHandlingIsThrow() throws Exception {
         when(entityFactory.buildSport(ANY_SPORT_URN, Collections.singletonList(ENGLISH)))
             .thenThrow(
-                new com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException(
+                new com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException(
                     "Error message",
                     new Exception()
                 )
@@ -89,7 +89,7 @@ public class MatchImplGetSportTest {
     public void doesNotThrowWhenExceptionHandlingIsCatchAndReturnsNull() throws Exception {
         when(entityFactory.buildSport(ANY_SPORT_URN, Collections.singletonList(ENGLISH)))
             .thenThrow(
-                new com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException(
+                new com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException(
                     "Error message",
                     new Exception()
                 )
@@ -190,7 +190,7 @@ public class MatchImplGetSportTest {
     }
 
     private Tournament createWithSportSummary(Sport sportSummary)
-        throws com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException {
+        throws com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException {
         Tournament tournament = mock(Tournament.class);
         when(tournament.getSport()).thenReturn(sportSummary);
         when(entityFactory.buildSport(ANY_SPORT_URN, SINGLE_LOCALE_LIST)).thenReturn(sportSummary);

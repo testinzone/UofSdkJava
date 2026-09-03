@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.util.Optional;
 import java.util.function.Function;
 
@@ -95,7 +95,7 @@ public class TokenSetterImpl implements TokenSetter {
 
         String token = ifPresent.orElseThrow(() ->
             new IllegalArgumentException(
-                "Could not read the access token from the SDK YAML file(sportradar.sdk.uf.accessToken)"
+                "Could not read the access token from the SDK YAML file(testinzone.sdk.uf.accessToken)"
             )
         );
 

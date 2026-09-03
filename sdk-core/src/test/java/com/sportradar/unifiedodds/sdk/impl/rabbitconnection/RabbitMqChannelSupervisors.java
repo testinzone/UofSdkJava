@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.unifiedodds.sdk.impl.ChannelMessageConsumer;
-import com.sportradar.unifiedodds.sdk.impl.RabbitMqSystemListener;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.utils.thread.sleep.Sleep;
+import com.testinzone.unifiedodds.sdk.impl.ChannelMessageConsumer;
+import com.testinzone.unifiedodds.sdk.impl.RabbitMqSystemListener;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.utils.thread.sleep.Sleep;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Optional;

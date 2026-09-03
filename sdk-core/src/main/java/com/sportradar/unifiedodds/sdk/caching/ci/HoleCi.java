@@ -1,8 +1,8 @@
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.sportsapi.datamodel.SapiHole;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableHoleCi;
+import com.testinzone.uf.sportsapi.datamodel.SapiHole;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableHoleCi;
 
 public class HoleCi {
 

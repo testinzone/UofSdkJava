@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
-import com.sportradar.uf.sportsapi.datamodel.BetstopReasonsDescriptions;
-import com.sportradar.uf.sportsapi.datamodel.BettingStatusDescriptions;
-import com.sportradar.uf.sportsapi.datamodel.MatchStatusDescriptions;
-import com.sportradar.uf.sportsapi.datamodel.VoidReasonsDescriptions;
+import com.testinzone.uf.sportsapi.datamodel.BetstopReasonsDescriptions;
+import com.testinzone.uf.sportsapi.datamodel.BettingStatusDescriptions;
+import com.testinzone.uf.sportsapi.datamodel.MatchStatusDescriptions;
+import com.testinzone.uf.sportsapi.datamodel.VoidReasonsDescriptions;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;

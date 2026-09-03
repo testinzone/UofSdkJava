@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.utils.domain.config.Tokens;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.utils.domain.config.Tokens;
+import com.testinzone.utils.domain.names.Languages;
 import java.util.Optional;
 import lombok.val;
 

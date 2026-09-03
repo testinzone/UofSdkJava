@@ -1,10 +1,10 @@
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 import com.rabbitmq.client.*;
-import com.sportradar.utils.time.EpochMillis;
+import com.testinzone.utils.time.EpochMillis;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
-import com.sportradar.unifiedodds.sdk.di.MetricsModule;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedOddsStatistics;
+import com.testinzone.unifiedodds.sdk.di.MetricsModule;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedOddsStatistics;
 import javax.management.InstanceAlreadyExistsException;
 import javax.management.MBeanRegistrationException;
 import javax.management.MBeanServer;
@@ -27,7 +27,7 @@ public class MetricsRegisterer {
     public UnifiedOddsStatistics createUnifiedOddsStatistics() {
         UnifiedOddsStatistics statsBean = null;
         try {
-            ObjectName name = new ObjectName("com.sportradar.unifiedodds.sdk.impl:type=UnifiedOdds");
+            ObjectName name = new ObjectName("com.testinzone.unifiedodds.sdk.impl:type=UnifiedOdds");
             statsBean = new UnifiedOddsStatistics();
             if (!mbeanServer.isRegistered(name)) {
                 mbeanServer.registerMBean(statsBean, name);

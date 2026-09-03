@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import static org.mockito.Mockito.mock;
 
@@ -7,21 +7,21 @@ import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
 import com.google.inject.name.Names;
-import com.sportradar.uf.datamodel.UfCashout;
-import com.sportradar.uf.sportsapi.datamodel.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.RecoveryManager;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.FeedMessageFactory;
-import com.sportradar.unifiedodds.sdk.impl.UofSessionImpl;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.ProcessedFixtureChangesTracker;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.uf.datamodel.UfCashout;
+import com.testinzone.uf.sportsapi.datamodel.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.RecoveryManager;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.FeedMessageFactory;
+import com.testinzone.unifiedodds.sdk.impl.UofSessionImpl;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.ProcessedFixtureChangesTracker;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
 import org.junit.Assert;
 import org.junit.Test;
 

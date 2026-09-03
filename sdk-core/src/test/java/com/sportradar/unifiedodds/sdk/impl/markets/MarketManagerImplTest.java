@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.markets.InvariantMarketDescriptionCache;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionCache;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.caching.markets.VariantDescriptionCache;
-import com.sportradar.unifiedodds.sdk.oddsentities.Market;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.markets.InvariantMarketDescriptionCache;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionCache;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.caching.markets.VariantDescriptionCache;
+import com.testinzone.unifiedodds.sdk.oddsentities.Market;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

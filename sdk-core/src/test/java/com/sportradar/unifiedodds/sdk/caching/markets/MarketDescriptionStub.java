@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.uf.sportsapi.datamodel.DescOutcomes;
-import com.sportradar.unifiedodds.sdk.domain.language.Translations;
-import com.sportradar.unifiedodds.sdk.entities.markets.*;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.uf.sportsapi.datamodel.DescOutcomes;
+import com.testinzone.unifiedodds.sdk.domain.language.Translations;
+import com.testinzone.unifiedodds.sdk.entities.markets.*;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

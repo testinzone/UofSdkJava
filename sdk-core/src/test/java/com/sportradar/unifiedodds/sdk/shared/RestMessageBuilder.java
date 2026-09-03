@@ -1,10 +1,10 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.uf.custombet.datamodel.*;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.*;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;

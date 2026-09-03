@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.replay;
+package com.testinzone.unifiedodds.sdk.replay;
 
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportDataProvider;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.LogHttpDataFetcher;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportDataProvider;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.LogHttpDataFetcher;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
 import org.junit.Test;
 
 public class ReplayManagerTest {

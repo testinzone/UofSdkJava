@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.ProfileCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportsDataCache;
-import com.sportradar.unifiedodds.sdk.impl.MappingTypeProviderImpl;
-import com.sportradar.unifiedodds.sdk.impl.SportEntityFactoryImpl;
-import com.sportradar.unifiedodds.sdk.impl.SportEventStatusFactory;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.ProfileCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportsDataCache;
+import com.testinzone.unifiedodds.sdk.impl.MappingTypeProviderImpl;
+import com.testinzone.unifiedodds.sdk.impl.SportEntityFactoryImpl;
+import com.testinzone.unifiedodds.sdk.impl.SportEventStatusFactory;
+import com.testinzone.utils.domain.names.Languages;
 import java.util.Locale;
 import java.util.Optional;
 import lombok.AccessLevel;

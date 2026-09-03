@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.ProducerScope;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerDownReason;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStatusReason;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.ProducerScope;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerDownReason;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStatusReason;
+import com.testinzone.utils.Urn;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;

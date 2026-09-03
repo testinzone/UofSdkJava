@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 
 /**
- * A class used to validate {@link com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage} objects
+ * A class used to validate {@link com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage} objects
  */
 public interface FeedMessageValidator {
     /**

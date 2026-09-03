@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import com.sportradar.uf.sportsapi.datamodel.DescSpecifiers;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.uf.sportsapi.datamodel.DescSpecifiers;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
 
 public class SpecifierDescriptions {
 

@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example;
+package com.testinzone.unifiedodds.example;
 
-import com.sportradar.unifiedodds.example.common.GlobalEventsListener;
-import com.sportradar.unifiedodds.example.common.MessageListener;
-import com.sportradar.unifiedodds.example.common.SdkConstants;
-import com.sportradar.unifiedodds.example.examples.replay.ExampleReplayEvents;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.UofSdkForReplay;
-import com.sportradar.unifiedodds.sdk.UofSessionBuilder;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.replay.ReplayManager;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.example.common.GlobalEventsListener;
+import com.testinzone.unifiedodds.example.common.MessageListener;
+import com.testinzone.unifiedodds.example.common.SdkConstants;
+import com.testinzone.unifiedodds.example.examples.replay.ExampleReplayEvents;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.UofSdkForReplay;
+import com.testinzone.unifiedodds.sdk.UofSessionBuilder;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.replay.ReplayManager;
+import com.testinzone.utils.Urn;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Scanner;

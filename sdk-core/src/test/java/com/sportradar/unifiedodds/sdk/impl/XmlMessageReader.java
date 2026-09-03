@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DeserializationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DeserializationException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class XmlMessageReader {
     static {
         try {
             JAXBContext context = JAXBContext.newInstance(
-                "com.sportradar.uf.datamodel:com.sportradar.uf.sportsapi.datamodel:com.sportradar.uf.custombet.datamodel"
+                "com.testinzone.uf.datamodel:com.testinzone.uf.sportsapi.datamodel:com.testinzone.uf.custombet.datamodel"
             );
             deserializer = new DeserializerImpl(context);
         } catch (JAXBException e) {

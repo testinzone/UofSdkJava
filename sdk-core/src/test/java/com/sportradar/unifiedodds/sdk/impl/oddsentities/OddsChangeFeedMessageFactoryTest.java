@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertEquals;
@@ -10,17 +10,17 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.uf.datamodel.UfOddsChange;
-import com.sportradar.uf.datamodel.UfOddsChange.UfOdds;
-import com.sportradar.uf.datamodel.UfOddsChangeMarket;
-import com.sportradar.uf.datamodel.UfOddsGenerationProperties;
-import com.sportradar.unifiedodds.sdk.caching.fixtures.NamedValueStub;
-import com.sportradar.unifiedodds.sdk.caching.fixtures.NamedValuesProviderFixture;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.MarketFactory;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.uf.datamodel.UfOddsChange;
+import com.testinzone.uf.datamodel.UfOddsChange.UfOdds;
+import com.testinzone.uf.datamodel.UfOddsChangeMarket;
+import com.testinzone.uf.datamodel.UfOddsGenerationProperties;
+import com.testinzone.unifiedodds.sdk.caching.fixtures.NamedValueStub;
+import com.testinzone.unifiedodds.sdk.caching.fixtures.NamedValuesProviderFixture;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.MarketFactory;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Optional;

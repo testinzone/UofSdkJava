@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.common.collect.Lists;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCache;
-import com.sportradar.unifiedodds.sdk.impl.FeedMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.CacheMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.NoOpProcessedFixtureChangesTracker;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.ProcessedFixtureChangesTracker;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCache;
+import com.testinzone.unifiedodds.sdk.impl.FeedMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.CacheMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.NoOpProcessedFixtureChangesTracker;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.ProcessedFixtureChangesTracker;
 
 /**
  * A derived injection module managing SDK message processing pipeline

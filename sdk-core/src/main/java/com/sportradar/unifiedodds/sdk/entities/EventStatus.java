@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.entities;
+package com.testinzone.unifiedodds.sdk.entities;
 
-import com.sportradar.uf.datamodel.UfEventStatusStatus;
+import com.testinzone.uf.datamodel.UfEventStatusStatus;
 
 /**
  * Possible competition statuses. This is a fixed set of states that are the same for any sport
- * Sportradar covers
+ * Testinzone covers
  */
 // Constant names should comply with a naming convention
 @SuppressWarnings({ "java:S115", "NeedBraces", "ReturnCount" })
@@ -46,9 +46,9 @@ public enum EventStatus {
     Cancelled("cancelled", 5),
 
     /**
-     * Abandoned - when Sportradar aborts scouting the match - this means there will be no live
+     * Abandoned - when Testinzone aborts scouting the match - this means there will be no live
      * reporting the match will likely take place anyhow, and after the match has been played
-     * Sportradar will likely enter the results and the match will be moved to closed/finished
+     * Testinzone will likely enter the results and the match will be moved to closed/finished
      */
     Abandoned("abandoned", 9),
 

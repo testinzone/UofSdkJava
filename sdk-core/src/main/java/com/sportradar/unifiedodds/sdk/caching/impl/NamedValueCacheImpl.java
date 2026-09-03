@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.caching.NamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.ci.NamedValueCi;
-import com.sportradar.unifiedodds.sdk.entities.NamedValue;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.SdkTaskScheduler;
-import com.sportradar.unifiedodds.sdk.impl.entities.NamedValueImpl;
+import com.testinzone.unifiedodds.sdk.caching.NamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.ci.NamedValueCi;
+import com.testinzone.unifiedodds.sdk.entities.NamedValue;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.SdkTaskScheduler;
+import com.testinzone.unifiedodds.sdk.impl.entities.NamedValueImpl;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;

@@ -1,9 +1,9 @@
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
-import static com.sportradar.unifiedodds.sdk.impl.recovery.ProducerDataBuilder.producerData;
+import static com.testinzone.unifiedodds.sdk.impl.recovery.ProducerDataBuilder.producerData;
 import static org.junit.Assert.*;
 
-import com.sportradar.unifiedodds.sdk.impl.ProducerData;
+import com.testinzone.unifiedodds.sdk.impl.ProducerData;
 import org.junit.Test;
 
 @SuppressWarnings({ "MagicNumber" })

@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
-import com.sportradar.unifiedodds.sdk.impl.ProducerData;
+import com.testinzone.unifiedodds.sdk.impl.ProducerData;
 
 public class ProducerDataBuilder {
 

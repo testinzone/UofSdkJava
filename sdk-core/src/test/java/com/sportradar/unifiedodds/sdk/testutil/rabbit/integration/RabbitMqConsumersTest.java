@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.integration;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.integration;
 
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation.at;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqConsumers.connectToExchange;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ConnectionFactoryStubs.stubSingleChannelFactory;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.ExchangeLocation.at;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqConsumers.connectToExchange;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ConnectionFactoryStubs.stubSingleChannelFactory;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertSame;
 import static org.mockito.ArgumentMatchers.any;
@@ -13,8 +13,8 @@ import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.verify;
 
 import com.rabbitmq.client.*;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ChannelMocks;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures.NoOpConsumer;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures.ChannelMocks;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures.NoOpConsumer;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 import lombok.val;

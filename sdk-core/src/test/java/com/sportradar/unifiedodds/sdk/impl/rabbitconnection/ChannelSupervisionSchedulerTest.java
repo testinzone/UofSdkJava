@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.NEWLY_CLOSED;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.NEWLY_OPENED;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.NEWLY_CLOSED;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.NEWLY_OPENED;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.impl.ChannelMessageConsumer;
+import com.testinzone.unifiedodds.sdk.impl.ChannelMessageConsumer;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.*;

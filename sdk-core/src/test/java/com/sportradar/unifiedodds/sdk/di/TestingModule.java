@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Binder;
@@ -6,12 +6,12 @@ import com.google.inject.Module;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.SportDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.TestingDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.TestingSummaryDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.SportDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.TestingDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.TestingSummaryDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.util.Optional;
 import org.mockito.Mockito;
 

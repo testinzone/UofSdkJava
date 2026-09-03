@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example.examples;
+package com.testinzone.unifiedodds.example.examples;
 
-import com.sportradar.unifiedodds.example.common.DataMessageListener;
-import com.sportradar.unifiedodds.example.common.GlobalEventsListener;
-import com.sportradar.unifiedodds.example.common.SdkConstants;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.ProducerManager;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.example.common.DataMessageListener;
+import com.testinzone.unifiedodds.example.common.GlobalEventsListener;
+import com.testinzone.unifiedodds.example.common.SdkConstants;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.ProducerManager;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;

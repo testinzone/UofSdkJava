@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example.common;
+package com.testinzone.unifiedodds.example.common;
 
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.entities.status.CompetitionStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatistics;
-import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatus;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.entities.status.CompetitionStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatistics;
+import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatus;
 import java.util.List;
 import java.util.Locale;
 import java.util.StringJoiner;

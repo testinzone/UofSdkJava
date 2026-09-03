@@ -1,27 +1,27 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import static com.sportradar.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.DoesHaveExplicitPortInTheUrl.EXPLICIT_PORT_IN_THE_URL;
-import static com.sportradar.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.DoesHaveExplicitPortInTheUrl.IMPLICIT_DEFAULT_HTTP_PORT_80_IN_THE_URL;
-import static com.sportradar.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.assertThat;
-import static com.sportradar.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.UofConfigurationAssertions.DoesIncludeReplayHost.AND_DEFAULT_REPLAY_HOST_URI_WITH_REPLAY_PATH_PREFIX;
-import static com.sportradar.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.UofConfigurationAssertions.assertThat;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Integration;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Production;
-import static com.sportradar.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
-import static com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
+import static com.testinzone.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.DoesHaveExplicitPortInTheUrl.EXPLICIT_PORT_IN_THE_URL;
+import static com.testinzone.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.DoesHaveExplicitPortInTheUrl.IMPLICIT_DEFAULT_HTTP_PORT_80_IN_THE_URL;
+import static com.testinzone.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.SdkInternalConfigurationAssertions.assertThat;
+import static com.testinzone.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.UofConfigurationAssertions.DoesIncludeReplayHost.AND_DEFAULT_REPLAY_HOST_URI_WITH_REPLAY_PATH_PREFIX;
+import static com.testinzone.unifiedodds.sdk.ConfigureApiHostAndPortTest.ConfigurationItself.UofConfigurationAssertions.assertThat;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Integration;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Production;
+import static com.testinzone.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
+import static com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Provides;
-import com.sportradar.unifiedodds.sdk.cfg.*;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.cfg.*;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -275,7 +275,7 @@ public class ConfigureApiHostAndPortTest {
                 .setDefaultLanguage(anyLanguage)
                 .setApiHost("urlWhichShouldBeReplaced")
                 .build();
-            com.sportradar.unifiedodds.sdk.cfg.ApiHostUpdater updater = createUpdaterFrom(config);
+            com.testinzone.unifiedodds.sdk.cfg.ApiHostUpdater updater = createUpdaterFrom(config);
             updater.updateToIntegration();
             val internalConfig = new SdkInternalConfiguration(config, anyProps(), anyYaml());
             val internalConfigForNonReplayExplicitly = new SdkInternalConfiguration(
@@ -300,7 +300,7 @@ public class ConfigureApiHostAndPortTest {
                 .setDefaultLanguage(anyLanguage)
                 .setApiHost("urlWhichShouldBeReplaced")
                 .build();
-            com.sportradar.unifiedodds.sdk.cfg.ApiHostUpdater updater = createUpdaterFrom(config);
+            com.testinzone.unifiedodds.sdk.cfg.ApiHostUpdater updater = createUpdaterFrom(config);
             updater.updateToProduction();
             val internalConfig = new SdkInternalConfiguration(config, anyProps(), anyYaml());
             val internalConfigForNonReplayExplicitly = new SdkInternalConfiguration(
@@ -317,12 +317,12 @@ public class ConfigureApiHostAndPortTest {
                 .isEqualTo(PRODUCTION_API_HOST);
         }
 
-        private com.sportradar.unifiedodds.sdk.cfg.ApiHostUpdater createUpdaterFrom(
+        private com.testinzone.unifiedodds.sdk.cfg.ApiHostUpdater createUpdaterFrom(
             final UofConfiguration configuration
         ) {
             return Guice
                 .createInjector(new ConfigurationProvidingModule(configuration))
-                .getInstance(com.sportradar.unifiedodds.sdk.cfg.ApiHostUpdater.class);
+                .getInstance(com.testinzone.unifiedodds.sdk.cfg.ApiHostUpdater.class);
         }
 
         public static class ConfigurationProvidingModule extends AbstractModule {

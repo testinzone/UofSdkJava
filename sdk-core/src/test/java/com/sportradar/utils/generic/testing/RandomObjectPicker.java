@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.generic.testing;
+package com.testinzone.utils.generic.testing;
 
-import static com.sportradar.utils.generic.testing.RandomInteger.fromRange;
-import static com.sportradar.utils.generic.testing.RandomInteger.fromRangeInclusive;
+import static com.testinzone.utils.generic.testing.RandomInteger.fromRange;
+import static com.testinzone.utils.generic.testing.RandomInteger.fromRangeInclusive;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.Maps;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchRound;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCompleteRoundCi;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchRound;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCompleteRoundCi;
+import com.testinzone.utils.Urn;
 import java.util.*;
 
 /**

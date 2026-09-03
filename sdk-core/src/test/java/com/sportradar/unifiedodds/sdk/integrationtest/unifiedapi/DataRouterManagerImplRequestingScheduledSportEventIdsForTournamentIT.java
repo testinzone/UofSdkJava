@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.integrationtest.unifiedapi;
+package com.testinzone.unifiedodds.sdk.integrationtest.unifiedapi;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
-import static com.sportradar.utils.Urns.SportEvents.urnForAnyTournament;
+import static com.testinzone.utils.Urns.SportEvents.urnForAnyTournament;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -15,17 +15,17 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
-import com.sportradar.uf.custombet.datamodel.CapiAvailableSelections;
-import com.sportradar.uf.custombet.datamodel.CapiCalculationResponse;
-import com.sportradar.uf.custombet.datamodel.CapiFilteredCalculationResponse;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.DataRouter;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterManagerImpl;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.CapiAvailableSelections;
+import com.testinzone.uf.custombet.datamodel.CapiCalculationResponse;
+import com.testinzone.uf.custombet.datamodel.CapiFilteredCalculationResponse;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.DataRouter;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterManagerImpl;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -84,7 +84,7 @@ public class DataRouterManagerImplRequestingScheduledSportEventIdsForTournamentI
 
         private final String apiHost;
         private final DeserializerImpl deserializer = new DeserializerImpl(
-            JAXBContext.newInstance("com.sportradar.uf.sportsapi.datamodel")
+            JAXBContext.newInstance("com.testinzone.uf.sportsapi.datamodel")
         );
 
         private TournamentScheduleDaoModule(final String apiHost) throws JAXBException {

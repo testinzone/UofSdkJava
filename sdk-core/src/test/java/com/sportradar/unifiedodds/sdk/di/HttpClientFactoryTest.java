@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import static org.junit.Assert.assertNotNull;
 

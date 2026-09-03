@@ -1,9 +1,9 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
-import com.sportradar.unifiedodds.sdk.caching.StageCi;
+import com.testinzone.unifiedodds.sdk.caching.StageCi;
 
 class RaceStageCiToMergeTo {
 

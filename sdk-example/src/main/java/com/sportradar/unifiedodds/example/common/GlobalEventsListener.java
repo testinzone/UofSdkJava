@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example.common;
+package com.testinzone.unifiedodds.example.common;
 
-import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStatus;
-import com.sportradar.unifiedodds.sdk.oddsentities.RecoveryInitiated;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStatus;
+import com.testinzone.unifiedodds.sdk.oddsentities.RecoveryInitiated;
+import com.testinzone.utils.Urn;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

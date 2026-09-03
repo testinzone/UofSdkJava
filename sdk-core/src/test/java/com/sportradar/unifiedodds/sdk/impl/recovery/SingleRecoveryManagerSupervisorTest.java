@@ -1,9 +1,9 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
-import static com.sportradar.unifiedodds.sdk.impl.recovery.ProducerDataBuilder.producerData;
+import static com.testinzone.unifiedodds.sdk.impl.recovery.ProducerDataBuilder.producerData;
 import static org.codehaus.groovy.runtime.InvokerHelper.asList;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
@@ -12,13 +12,13 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.time.Instant;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

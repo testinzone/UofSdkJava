@@ -1,31 +1,31 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.soccerMatchGermanyScotlandEuro2024;
-import static com.sportradar.unifiedodds.sdk.conn.SapiTournaments.tournamentEuro2024;
-import static com.sportradar.unifiedodds.sdk.conn.UfSportEventStatuses.soccerMatchFeedStatus;
-import static com.sportradar.unifiedodds.sdk.conn.UfSportEventStatuses.withEveryStatistic;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.UF_VIRTUALHOST;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.soccerMatchGermanyScotlandEuro2024;
+import static com.testinzone.unifiedodds.sdk.conn.SapiTournaments.tournamentEuro2024;
+import static com.testinzone.unifiedodds.sdk.conn.UfSportEventStatuses.soccerMatchFeedStatus;
+import static com.testinzone.unifiedodds.sdk.conn.UfSportEventStatuses.withEveryStatistic;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.UF_VIRTUALHOST;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
 
 import com.github.tomakehurst.wiremock.junit5.WireMockExtension;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.uf.datamodel.UfSportEventStatus;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchStatistics;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.entities.SoccerEvent;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.shared.FeedMessageBuilder;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfSportEventStatus;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchStatistics;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.entities.SoccerEvent;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.shared.FeedMessageBuilder;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.*;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 import lombok.val;
 import org.junit.jupiter.api.AfterEach;

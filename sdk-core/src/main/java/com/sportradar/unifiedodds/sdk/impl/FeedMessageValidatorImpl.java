@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.inject.Inject;
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.entities.markets.Specifier;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.entities.markets.Specifier;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;

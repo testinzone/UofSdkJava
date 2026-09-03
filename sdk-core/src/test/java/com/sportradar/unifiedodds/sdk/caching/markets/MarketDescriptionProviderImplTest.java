@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProviders.subbingOutCaches;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.FreeTextMarketDescription.freeTextMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiVariantDescriptions.ExactGoals.fivePlusVariantDescription;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
-import static com.sportradar.unifiedodds.sdk.impl.VariantDescriptionDataProviders.providingList;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProviders.subbingOutCaches;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.FreeTextMarketDescription.freeTextMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiVariantDescriptions.ExactGoals.fivePlusVariantDescription;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
+import static com.testinzone.unifiedodds.sdk.impl.VariantDescriptionDataProviders.providingList;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyMap;
 import static java.util.Collections.singletonList;
@@ -27,11 +27,11 @@ import static java.util.stream.Collectors.toSet;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.sportsapi.datamodel.DescOutcomes;
-import com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
-import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeDescription;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.utils.domain.specifiers.MarketSpecifiers;
+import com.testinzone.uf.sportsapi.datamodel.DescOutcomes;
+import com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
+import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeDescription;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.utils.domain.specifiers.MarketSpecifiers;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;

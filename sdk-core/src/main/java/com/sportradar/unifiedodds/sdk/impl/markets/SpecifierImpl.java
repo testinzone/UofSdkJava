@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketSpecifierCi;
-import com.sportradar.unifiedodds.sdk.entities.markets.Specifier;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketSpecifierCi;
+import com.testinzone.unifiedodds.sdk.entities.markets.Specifier;
 
 /**
  * Created on 14/06/2017.

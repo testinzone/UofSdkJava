@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiTeamExtended;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.CompetitorCi;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.ci.DivisionCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCompetitorCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCompetitorCiTest;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiTeamExtended;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.CompetitorCi;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.ci.DivisionCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCompetitorCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCompetitorCiTest;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 import org.junit.Test;
 import org.mockito.internal.matchers.Any;

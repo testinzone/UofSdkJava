@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.sportsapi.datamodel.SapiTournamentGroup;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableGroupCi;
-import com.sportradar.unifiedodds.sdk.entities.Competitor;
-import com.sportradar.unifiedodds.sdk.entities.Reference;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiTournamentGroup;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableGroupCi;
+import com.testinzone.unifiedodds.sdk.entities.Competitor;
+import com.testinzone.unifiedodds.sdk.entities.Reference;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.stream.Collectors;
 

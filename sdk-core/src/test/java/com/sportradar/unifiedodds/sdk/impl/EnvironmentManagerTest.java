@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.*;
-import static com.sportradar.unifiedodds.sdk.impl.EnvironmentManager.getEnvironmentSettings;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.*;
+import static com.testinzone.unifiedodds.sdk.impl.EnvironmentManager.getEnvironmentSettings;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
 
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
 import java.util.List;
 import lombok.val;
 import org.junit.Test;

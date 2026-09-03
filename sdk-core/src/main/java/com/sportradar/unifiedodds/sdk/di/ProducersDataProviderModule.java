@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import com.sportradar.uf.sportsapi.datamodel.Producers;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.LogHttpDataFetcher;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProviderImpl;
+import com.testinzone.uf.sportsapi.datamodel.Producers;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.LogHttpDataFetcher;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProviderImpl;
 
 public class ProducersDataProviderModule implements Module {
 

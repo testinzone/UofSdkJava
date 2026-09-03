@@ -1,28 +1,28 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Equivalence;
 import com.google.common.base.Preconditions;
 import com.google.common.cache.Cache;
 import com.google.inject.Inject;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.BookingManager;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableSportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.impl.MappingTypeProvider;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.BookingManager;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableSportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.impl.MappingTypeProvider;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;

@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import static com.google.common.collect.ImmutableMap.of;
-import static com.sportradar.unifiedodds.sdk.impl.entities.ManagerAssertions.assertThat;
+import static com.testinzone.unifiedodds.sdk.impl.entities.ManagerAssertions.assertThat;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.caching.ci.ManagerCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.ManagerCi;
 import java.util.Locale;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

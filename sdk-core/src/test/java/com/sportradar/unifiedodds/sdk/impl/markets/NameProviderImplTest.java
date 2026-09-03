@@ -1,32 +1,32 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.namesOf;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProviders.subbingOutCaches;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.noMarketDescribingProvider;
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.providing;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
-import static com.sportradar.unifiedodds.sdk.impl.markets.NameProviders.usingFactory;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.domain.names.Languages.anyLanguages;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.namesOf;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProviders.subbingOutCaches;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.noMarketDescribingProvider;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptorProviders.providing;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
+import static com.testinzone.unifiedodds.sdk.impl.markets.NameProviders.usingFactory;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.domain.names.Languages.anyLanguages;
 import static java.util.Collections.singletonList;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.ProfileCache;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.exceptions.NameGenerationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.ProfileCache;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.exceptions.NameGenerationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.utils.domain.names.Languages;
 import lombok.val;
 import org.junit.Test;
 

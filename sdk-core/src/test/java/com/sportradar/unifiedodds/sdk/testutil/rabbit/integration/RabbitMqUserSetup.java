@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.integration;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.integration;
 
 import com.rabbitmq.http.client.Client;
 import com.rabbitmq.http.client.ClientParameters;
 import com.rabbitmq.http.client.domain.UserPermissions;
-import com.sportradar.unifiedodds.sdk.testutil.generic.functional.ThrowingFunction;
+import com.testinzone.unifiedodds.sdk.testutil.generic.functional.ThrowingFunction;
 import java.util.*;
 import lombok.NonNull;
 import lombok.val;

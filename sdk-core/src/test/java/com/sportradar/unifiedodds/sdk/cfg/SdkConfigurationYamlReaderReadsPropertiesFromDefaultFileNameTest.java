@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.Test;
@@ -36,7 +36,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromDefaultFileNameTest {
     public void readsPropertyPrefixedWithUfSdk() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk:                                                   \n" +
             "    uf:                                                  \n" +
             "      accessToken: someToken                               "

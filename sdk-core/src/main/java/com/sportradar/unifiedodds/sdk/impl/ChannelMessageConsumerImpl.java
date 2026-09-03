@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import com.rabbitmq.client.AMQP;
-import com.sportradar.unifiedodds.sdk.LoggerDefinitions;
-import com.sportradar.unifiedodds.sdk.ProducerManager;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
-import com.sportradar.unifiedodds.sdk.impl.util.FeedMessageHelper;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.LoggerDefinitions;
+import com.testinzone.unifiedodds.sdk.ProducerManager;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
+import com.testinzone.unifiedodds.sdk.impl.util.FeedMessageHelper;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.utils.Urn;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import javax.xml.bind.JAXBContext;

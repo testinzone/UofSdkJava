@@ -1,9 +1,9 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCategory;
+import com.testinzone.uf.sportsapi.datamodel.SapiCategory;
 
 public class SapiCategories {
 

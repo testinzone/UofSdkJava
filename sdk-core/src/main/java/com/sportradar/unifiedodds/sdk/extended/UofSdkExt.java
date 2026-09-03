@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.extended;
+package com.testinzone.unifiedodds.sdk.extended;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterManagerImpl;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterManagerImpl;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import java.time.Duration;
 
 public interface UofRabbitConfiguration {
     /**
-     * @return Host / IP for connection as provided by Sportradar
+     * @return Host / IP for connection as provided by Testinzone
      */
     String getHost();
 
@@ -28,7 +28,7 @@ public interface UofRabbitConfiguration {
 
     /**
      * Returns the username of the broker to which you are currently connecting - this field should be null/blank if
-     * you are connecting to the Sportradar AMQP servers
+     * you are connecting to the Testinzone AMQP servers
      *
      * @return the username of the broker to which you are connecting
      */
@@ -36,7 +36,7 @@ public interface UofRabbitConfiguration {
 
     /**
      * Returns the password of the broker to which you are connecting - this field should be null/blank if
-     * you are connecting to the Sportradar AMQP servers
+     * you are connecting to the Testinzone AMQP servers
      *
      * @return the password of the broker to which you are connecting
      */

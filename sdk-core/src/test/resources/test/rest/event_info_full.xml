@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <match_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-10-30T10:48:53+00:00"
-               xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+               xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <sport_event id="sr:match:8629792" scheduled="2016-04-02T11:00:00+00:00">
     <tournament_round type="group" number="1"/>
     <season id="sr:season:12250" name="Allsvenskan 2016"/>

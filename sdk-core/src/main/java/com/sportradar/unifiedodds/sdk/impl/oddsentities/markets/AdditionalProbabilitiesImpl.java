@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
+import com.testinzone.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
 
 @SuppressWarnings({ "MemberName", "ParameterName" })
 public class AdditionalProbabilitiesImpl implements AdditionalProbabilities {

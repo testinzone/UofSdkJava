@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
-import static com.sportradar.unifiedodds.sdk.conn.PeriodicAliveSender.periodicAliveSender;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests.shouldMavenRunToxiproxyIntegrationTests;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.unifiedodds.sdk.conn.PeriodicAliveSender.periodicAliveSender;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests.shouldMavenRunToxiproxyIntegrationTests;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assume.assumeThat;
@@ -19,13 +19,13 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.*;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.*;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.concurrent.TimeoutException;

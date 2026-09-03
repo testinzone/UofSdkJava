@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportData;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
-import com.sportradar.unifiedodds.sdk.impl.entities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportData;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
+import com.testinzone.unifiedodds.sdk.impl.entities.*;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;
@@ -280,7 +280,7 @@ public class SportEntityFactoryImpl implements SportEntityFactory {
                     try {
                         return this.buildSportEvent(eId, locales, true);
                     } catch (ObjectNotFoundException e) {
-                        throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(
+                        throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(
                             "Error building scheduled event[" + eId + "]",
                             e
                         ); // streams cant handle checked exceptions
@@ -299,7 +299,7 @@ public class SportEntityFactoryImpl implements SportEntityFactory {
                 })
                 .map(se -> (Competition) se)
                 .collect(Collectors.toList());
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException e) {
             throw new ObjectNotFoundException("There was an error building the schedule list", e);
         }
     }
@@ -355,7 +355,7 @@ public class SportEntityFactoryImpl implements SportEntityFactory {
 
     /**
      * Builds a {@link List} of {@link Competitor} instances
-     * <i>Notice: a {@link com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException} is thrown if any problems are encountered</i>
+     * <i>Notice: a {@link com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException} is thrown if any problems are encountered</i>
      *
      * @param competitorIds the ids representing the instances that should be built
      * @param parentSportEventCi the parent {@link SportEventCi} this {@link Competitor} belongs to
@@ -376,7 +376,7 @@ public class SportEntityFactoryImpl implements SportEntityFactory {
             .map(c -> {
                 try {
                     return this.buildCompetitor(c, null, null, null, parentSportEventCi, locales);
-                } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+                } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
                     throw new StreamWrapperException(e.getMessage(), e);
                 }
             })

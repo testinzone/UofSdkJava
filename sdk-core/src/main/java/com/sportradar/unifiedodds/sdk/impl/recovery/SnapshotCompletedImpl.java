@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.recovery;
+package com.testinzone.unifiedodds.sdk.impl.recovery;
 
-import com.sportradar.unifiedodds.sdk.SnapshotCompleted;
+import com.testinzone.unifiedodds.sdk.SnapshotCompleted;
 
 /**
  * Created on 17/09/2018.

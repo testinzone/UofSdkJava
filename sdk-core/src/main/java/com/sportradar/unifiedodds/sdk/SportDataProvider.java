@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import com.sportradar.unifiedodds.sdk.caching.exportable.CacheType;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.exportable.CacheType;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 import java.util.EnumSet;
 import java.util.List;
@@ -39,7 +39,7 @@ public interface SportDataProvider {
     /**
      * Returns all the active tournaments
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @return - all the active tournaments
      */
@@ -48,7 +48,7 @@ public interface SportDataProvider {
     /**
      * Returns all the active tournaments
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param locale - the {@link Locale} in which to provide the data
      * @return - all the active tournaments translated in the specified locale
@@ -58,7 +58,7 @@ public interface SportDataProvider {
     /**
      * Returns all the active tournaments of a specific sport
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportName - the specific sport name
      * @return - all the active tournaments of a specific sport
@@ -68,7 +68,7 @@ public interface SportDataProvider {
     /**
      * Returns all the active tournaments of a specific sport
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportName - the specific sport name
      * @param locale    - the {@link Locale} in which to provide the data
@@ -326,7 +326,7 @@ public interface SportDataProvider {
     /**
      * Returns all the available tournaments for a specific sport
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportId - the specific sport id
      * @return - all available tournaments for a sport we provide coverage for in default locale
@@ -336,7 +336,7 @@ public interface SportDataProvider {
     /**
      * Returns all the available tournaments for a specific sport
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportId - the specific sport id
      * @param locale  - the {@link Locale} in which to provide the data

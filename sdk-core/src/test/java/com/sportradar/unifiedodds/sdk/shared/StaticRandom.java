@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.util.concurrent.ThreadLocalRandom;
 
 @SuppressWarnings(

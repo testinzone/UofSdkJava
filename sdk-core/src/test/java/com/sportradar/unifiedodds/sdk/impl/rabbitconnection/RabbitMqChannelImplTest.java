@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactoryFake.initiallyProvides;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ChannelsToBeCreated.creating;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.HEALTHY;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.UNHEALTHY_AUTO_RECOVERING;
-import static com.sportradar.utils.thread.sleep.SleepMock.onSleepDo;
-import static com.sportradar.utils.time.TimeInterval.minutes;
-import static com.sportradar.utils.time.TimeInterval.seconds;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactoryFake.initiallyProvides;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ChannelsToBeCreated.creating;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.HEALTHY;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.UNHEALTHY_AUTO_RECOVERING;
+import static com.testinzone.utils.thread.sleep.SleepMock.onSleepDo;
+import static com.testinzone.utils.time.TimeInterval.minutes;
+import static com.testinzone.utils.time.TimeInterval.seconds;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatNoException;
 import static org.junit.Assert.fail;
@@ -18,17 +18,17 @@ import static org.mockito.Mockito.*;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import com.rabbitmq.client.*;
-import com.sportradar.unifiedodds.sdk.impl.ChannelMessageConsumer;
-import com.sportradar.unifiedodds.sdk.impl.MessageConsumer;
-import com.sportradar.unifiedodds.sdk.impl.RabbitMqSystemListener;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.RabbitMqChannelSupervisors.Builder;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.utils.thread.sleep.Sleep;
-import com.sportradar.utils.time.EpochMillis;
-import com.sportradar.utils.time.TimeInterval;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.impl.ChannelMessageConsumer;
+import com.testinzone.unifiedodds.sdk.impl.MessageConsumer;
+import com.testinzone.unifiedodds.sdk.impl.RabbitMqSystemListener;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.RabbitMqChannelSupervisors.Builder;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.utils.thread.sleep.Sleep;
+import com.testinzone.utils.time.EpochMillis;
+import com.testinzone.utils.time.TimeInterval;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;

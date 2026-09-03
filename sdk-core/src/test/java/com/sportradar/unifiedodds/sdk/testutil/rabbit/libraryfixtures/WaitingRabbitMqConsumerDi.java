@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
 
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
 import java.util.ArrayList;
 import java.util.concurrent.ConcurrentLinkedQueue;
 

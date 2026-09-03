@@ -1,12 +1,12 @@
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.RoutingKeyInfo;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.unifiedodds.sdk.shared.Helper;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.RoutingKeyInfo;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.unifiedodds.sdk.shared.Helper;
+import com.testinzone.utils.Urn;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Collections;

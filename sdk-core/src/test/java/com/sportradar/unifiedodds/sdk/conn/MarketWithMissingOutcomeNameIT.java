@@ -1,53 +1,53 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 import static com.google.common.collect.Iterables.getOnlyElement;
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.CorrectScoreFlex.correctScoreFlexMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.FreeTextMarketDescription.freeTextMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OneXtwo.oneXtwoMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiVariantDescriptions.ExactGoals.fivePlusVariantDescription;
-import static com.sportradar.unifiedodds.sdk.conn.UfMarkets.WithOdds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_CATCH_EXCEPTIONS;
-import static com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.*;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.CorrectScoreFlex.correctScoreFlexMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.FreeTextMarketDescription.freeTextMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OneXtwo.oneXtwoMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiVariantDescriptions.ExactGoals.fivePlusVariantDescription;
+import static com.testinzone.unifiedodds.sdk.conn.UfMarkets.WithOdds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_CATCH_EXCEPTIONS;
+import static com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy.WILL_THROW_EXCEPTIONS;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.*;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
 import static java.util.stream.Collectors.toList;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.uf.sportsapi.datamodel.DescVariant;
-import com.sportradar.uf.sportsapi.datamodel.Mappings;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
-import com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketMappingData;
-import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeDescription;
-import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeMappingData;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.markets.OutcomeAssert;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.OddsChange;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeDefinition;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeOdds;
-import com.sportradar.unifiedodds.sdk.shared.FeedMessageBuilder;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.*;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.uf.sportsapi.datamodel.DescVariant;
+import com.testinzone.uf.sportsapi.datamodel.Mappings;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.conn.marketids.FlexScoreMarketIds;
+import com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketMappingData;
+import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeDescription;
+import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeMappingData;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.ExpectationTowardsSdkErrorHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.markets.OutcomeAssert;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.OddsChange;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeDefinition;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeOdds;
+import com.testinzone.unifiedodds.sdk.shared.FeedMessageBuilder;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.*;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
@@ -443,7 +443,7 @@ public class MarketWithMissingOutcomeNameIT {
     }
 
     private MarketWithOdds theOnlyMarketIn(
-        OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent> oddsChange
+        OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent> oddsChange
     ) {
         Assertions.assertThat(oddsChange.getMarkets()).hasSize(1);
         return oddsChange.getMarkets().get(0);

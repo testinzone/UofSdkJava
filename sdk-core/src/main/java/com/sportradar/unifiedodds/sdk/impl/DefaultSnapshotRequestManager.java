@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import com.sportradar.unifiedodds.sdk.SnapshotCompleted;
-import com.sportradar.unifiedodds.sdk.SnapshotFailed;
-import com.sportradar.unifiedodds.sdk.SnapshotRequest;
-import com.sportradar.unifiedodds.sdk.SnapshotRequestManager;
+import com.testinzone.unifiedodds.sdk.SnapshotCompleted;
+import com.testinzone.unifiedodds.sdk.SnapshotFailed;
+import com.testinzone.unifiedodds.sdk.SnapshotRequest;
+import com.testinzone.unifiedodds.sdk.SnapshotRequestManager;
 
 /**
  * Default pass-trough snapshot scheduler

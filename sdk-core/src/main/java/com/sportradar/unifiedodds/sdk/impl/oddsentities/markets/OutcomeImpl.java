@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProvider;
-import com.sportradar.unifiedodds.sdk.oddsentities.Outcome;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeDefinition;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProvider;
+import com.testinzone.unifiedodds.sdk.oddsentities.Outcome;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeDefinition;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;

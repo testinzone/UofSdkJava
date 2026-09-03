@@ -1,8 +1,8 @@
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiPeriodStatus;
-import com.sportradar.uf.sportsapi.datamodel.SapiStageResult;
-import com.sportradar.unifiedodds.sdk.entities.CompetitorResult;
+import com.testinzone.uf.sportsapi.datamodel.SapiPeriodStatus;
+import com.testinzone.uf.sportsapi.datamodel.SapiStageResult;
+import com.testinzone.unifiedodds.sdk.entities.CompetitorResult;
 
 @SuppressWarnings({ "UnnecessaryParentheses" })
 public class CompetitorResultImpl implements CompetitorResult {

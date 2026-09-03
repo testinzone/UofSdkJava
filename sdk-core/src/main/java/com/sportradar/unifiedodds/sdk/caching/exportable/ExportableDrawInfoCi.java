@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
-import com.sportradar.unifiedodds.sdk.entities.DrawType;
-import com.sportradar.unifiedodds.sdk.entities.TimeType;
+import com.testinzone.unifiedodds.sdk.entities.DrawType;
+import com.testinzone.unifiedodds.sdk.entities.TimeType;
 import java.io.Serializable;
 
 @SuppressWarnings({ "HiddenField" })

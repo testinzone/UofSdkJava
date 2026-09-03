@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.domain.language;
+package com.testinzone.unifiedodds.sdk.domain.language;
 
-import static com.sportradar.unifiedodds.sdk.caching.ci.matchers.TranslationsAssert.assertThat;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.domain.names.TranslationHolder.of;
-import static com.sportradar.utils.domain.names.TranslationHolder.with;
+import static com.testinzone.unifiedodds.sdk.caching.ci.matchers.TranslationsAssert.assertThat;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.domain.names.TranslationHolder.of;
+import static com.testinzone.utils.domain.names.TranslationHolder.with;
 import static java.util.Locale.CANADA;
 import static java.util.Locale.CHINA;
 import static java.util.Locale.ENGLISH;
@@ -14,9 +14,9 @@ import static java.util.Locale.FRENCH;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import com.sportradar.unifiedodds.sdk.testutil.generic.collections.Maps;
-import com.sportradar.utils.domain.names.Languages;
-import com.sportradar.utils.domain.names.Names;
+import com.testinzone.unifiedodds.sdk.testutil.generic.collections.Maps;
+import com.testinzone.utils.domain.names.Languages;
+import com.testinzone.utils.domain.names.Names;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;

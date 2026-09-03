@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.NEWLY_CLOSED;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.WAS_CLOSED_ALREADY;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.NEWLY_OPENED;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.WAS_OPENED_ALREADY;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.NEWLY_CLOSED;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ClosingResult.WAS_CLOSED_ALREADY;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.NEWLY_OPENED;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.OpeningResult.WAS_OPENED_ALREADY;
 
 import com.google.inject.Inject;
-import com.sportradar.unifiedodds.sdk.impl.ChannelMessageConsumer;
+import com.testinzone.unifiedodds.sdk.impl.ChannelMessageConsumer;
 import java.io.IOException;
 import java.util.List;
 import org.slf4j.Logger;

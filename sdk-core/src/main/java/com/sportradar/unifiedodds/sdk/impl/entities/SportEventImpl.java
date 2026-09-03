@@ -1,12 +1,12 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.utils.Urn;
 
 /**
  * Represents all sport events(races, matches, tournaments, ....)

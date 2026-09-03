@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.integrationtest.preconditions;
+package com.testinzone.unifiedodds.sdk.integrationtest.preconditions;
 
 import java.util.Optional;
 import java.util.function.Function;

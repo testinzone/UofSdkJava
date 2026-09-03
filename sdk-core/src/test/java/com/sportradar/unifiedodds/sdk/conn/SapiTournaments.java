@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.unifiedodds.sdk.SapiCategories.international;
-import static com.sportradar.unifiedodds.sdk.SapiCategories.nascar;
-import static com.sportradar.unifiedodds.sdk.conn.SapiSports.stockCarRacing;
-import static com.sportradar.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars.forDate;
+import static com.testinzone.unifiedodds.sdk.SapiCategories.international;
+import static com.testinzone.unifiedodds.sdk.SapiCategories.nascar;
+import static com.testinzone.unifiedodds.sdk.conn.SapiSports.stockCarRacing;
+import static com.testinzone.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars.forDate;
 
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
 import java.time.LocalDate;
 import lombok.val;
 

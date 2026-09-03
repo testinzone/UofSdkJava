@@ -1,24 +1,24 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.MessageInterest.AllMessages;
-import static com.sportradar.unifiedodds.sdk.MessageInterest.PrematchMessagesOnly;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
-import static com.sportradar.unifiedodds.sdk.oddsentities.ProducerStubs.stubLiveProducer;
+import static com.testinzone.unifiedodds.sdk.MessageInterest.AllMessages;
+import static com.testinzone.unifiedodds.sdk.MessageInterest.PrematchMessagesOnly;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.testinzone.unifiedodds.sdk.oddsentities.ProducerStubs.stubLiveProducer;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 import com.google.common.cache.Cache;
-import com.sportradar.uf.datamodel.UfOddsChange;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.uf.datamodel.UfOddsChange;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;

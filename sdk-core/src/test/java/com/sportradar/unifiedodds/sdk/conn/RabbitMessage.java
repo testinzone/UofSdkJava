@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 import java.util.Date;
 
 /**

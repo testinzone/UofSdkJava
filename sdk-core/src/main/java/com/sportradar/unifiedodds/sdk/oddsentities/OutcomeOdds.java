@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.oddsentities;
+package com.testinzone.unifiedodds.sdk.oddsentities;
 
 /**
  * Describes the odds for a particular outcome (e.g. what the current odds for Above - Total Goals

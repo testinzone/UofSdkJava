@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example.examples;
+package com.testinzone.unifiedodds.example.examples;
 
-import com.sportradar.unifiedodds.example.common.GlobalEventsListener;
-import com.sportradar.unifiedodds.example.common.SdkConstants;
-import com.sportradar.unifiedodds.example.common.SportEntityWriter;
-import com.sportradar.unifiedodds.sdk.SportDataProvider;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.example.common.GlobalEventsListener;
+import com.testinzone.unifiedodds.example.common.SdkConstants;
+import com.testinzone.unifiedodds.example.common.SportEntityWriter;
+import com.testinzone.unifiedodds.sdk.SportDataProvider;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 
 /**

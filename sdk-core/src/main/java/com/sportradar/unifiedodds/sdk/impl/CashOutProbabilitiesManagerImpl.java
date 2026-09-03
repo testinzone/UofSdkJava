@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.inject.Inject;
-import com.sportradar.uf.datamodel.UfCashout;
-import com.sportradar.unifiedodds.sdk.CashOutProbabilitiesManager;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
-import com.sportradar.unifiedodds.sdk.oddsentities.CashOutProbabilities;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfCashout;
+import com.testinzone.unifiedodds.sdk.CashOutProbabilitiesManager;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
+import com.testinzone.unifiedodds.sdk.oddsentities.CashOutProbabilities;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -207,7 +207,7 @@ public class CashOutProbabilitiesManagerImpl implements CashOutProbabilitiesMana
                     eventId,
                     locale != null ? Collections.singletonList(locale) : defaultLocales
                 );
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             return handleException("Sport event data could not be found - " + eventId, e);
         }
 
@@ -220,7 +220,7 @@ public class CashOutProbabilitiesManagerImpl implements CashOutProbabilitiesMana
 
     @SuppressWarnings("unchecked")
     private <T extends SportEvent> T provideSportEvent(Urn eventId, List<Locale> dataLocales)
-        throws com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException {
+        throws com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException {
         Preconditions.checkNotNull(eventId);
 
         return (T) sportEntityFactory.buildSportEvent(eventId, dataLocales, true);

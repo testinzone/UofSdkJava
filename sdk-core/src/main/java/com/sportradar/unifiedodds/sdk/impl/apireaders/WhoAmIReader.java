@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.apireaders;
+package com.testinzone.unifiedodds.sdk.impl.apireaders;
 
 import static java.util.Arrays.asList;
 
@@ -11,15 +11,15 @@ import com.google.common.collect.ImmutableMap;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import com.ibm.icu.util.Calendar;
-import com.sportradar.uf.sportsapi.datamodel.BookmakerDetails;
-import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
-import com.sportradar.unifiedodds.sdk.cfg.ApiHostUpdater;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.DataWrapper;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.uf.sportsapi.datamodel.BookmakerDetails;
+import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
+import com.testinzone.unifiedodds.sdk.cfg.ApiHostUpdater;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.DataWrapper;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.ZonedDateTime;
@@ -43,7 +43,7 @@ public class WhoAmIReader {
     private boolean dataFetched;
     private boolean whoAmIValidated;
     private Map<String, String> associatedSdkMdcContextMap;
-    private com.sportradar.unifiedodds.sdk.entities.BookmakerDetails bookmakerDetails;
+    private com.testinzone.unifiedodds.sdk.entities.BookmakerDetails bookmakerDetails;
     private Duration serverTimeDifference;
     private final ApiHostUpdater apiHostUpdater;
 
@@ -92,7 +92,7 @@ public class WhoAmIReader {
         return bookmakerDetails.getMessage();
     }
 
-    public com.sportradar.unifiedodds.sdk.entities.BookmakerDetails getBookmakerDetails() {
+    public com.testinzone.unifiedodds.sdk.entities.BookmakerDetails getBookmakerDetails() {
         retrieveInfo();
         return bookmakerDetails;
     }
@@ -192,7 +192,7 @@ public class WhoAmIReader {
         }
 
         this.bookmakerDetails =
-            new com.sportradar.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl(
+            new com.testinzone.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl(
                 bookmakerDetails,
                 serverTimeDifference
             );

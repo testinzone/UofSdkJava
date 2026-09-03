@@ -1,25 +1,25 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Function;
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.MatchCi;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.*;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.entities.status.CompetitionStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
-import com.sportradar.unifiedodds.sdk.impl.SportEventStatusFactory;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.MatchCi;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.*;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.entities.status.CompetitionStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
+import com.testinzone.unifiedodds.sdk.impl.SportEventStatusFactory;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;
@@ -733,11 +733,11 @@ public class MatchImpl extends SportEventImpl implements Match {
     private void handleException(String request, Exception e) {
         if (exceptionHandlingStrategy == ExceptionHandlingStrategy.Throw) {
             if (e == null) {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(
                     "MatchImpl[" + id + "], request(" + request + ")"
                 );
             } else {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(request, e);
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(request, e);
             }
         } else {
             if (e == null) {

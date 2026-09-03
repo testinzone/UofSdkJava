@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.DrawCi;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.DrawResultCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.SportEntityFactoryImpl;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.DrawCi;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.DrawResultCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.SportEntityFactoryImpl;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -126,7 +126,7 @@ public class DrawImpl extends SportEventImpl implements Draw {
                 "getLottery - invalid type[" + sportEvent.getId() + "]: " + sportEvent.getClass(),
                 null
             );
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getLottery - not found", e);
         }
 

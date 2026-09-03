@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T11:59:23+00:00"
-          xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+          xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <sport_event id="sr:match:10217963" scheduled="2016-09-23T04:55:00+00:00" liveodds="not_available">
     <tournament_round type="cup" name="semifinal" cup_round_match_number="1" cup_round_matches="1"/>
     <season id="sr:season:12679" name="NRL Holden Cup 2016"/>

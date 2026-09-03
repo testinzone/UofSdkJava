@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
@@ -30,20 +30,20 @@ public class DeserializerModuleTest {
 
         @Test
         public void whenCreatingFeedMessagesJaxbContext() {
-            assertThatJaxbExceptionIsNotSwalloedWhenCreatingContextFor("com.sportradar.uf.datamodel");
+            assertThatJaxbExceptionIsNotSwalloedWhenCreatingContextFor("com.testinzone.uf.datamodel");
         }
 
         @Test
         public void whenCreatingSportsApiJaxbContext() {
             assertThatJaxbExceptionIsNotSwalloedWhenCreatingContextFor(
-                "com.sportradar.uf.sportsapi.datamodel"
+                "com.testinzone.uf.sportsapi.datamodel"
             );
         }
 
         @Test
         public void whenCreatingCustomBetApiJaxbContext() {
             assertThatJaxbExceptionIsNotSwalloedWhenCreatingContextFor(
-                "com.sportradar.uf.custombet.datamodel"
+                "com.testinzone.uf.custombet.datamodel"
             );
         }
 

@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.ci;
+package com.testinzone.unifiedodds.sdk.caching.ci;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiHole;
+import com.testinzone.uf.sportsapi.datamodel.SapiHole;
 import lombok.val;
 import org.junit.Test;
 import org.junit.experimental.runners.Enclosed;

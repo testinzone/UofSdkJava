@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.collect.Lists;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
 import java.util.List;
 
 public class EnvironmentSetting {

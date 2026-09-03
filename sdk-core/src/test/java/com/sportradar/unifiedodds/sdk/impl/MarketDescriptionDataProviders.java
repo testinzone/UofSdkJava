@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
+import static com.testinzone.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.uf.sportsapi.datamodel.MarketDescriptions;
-import com.sportradar.unifiedodds.sdk.conn.Identifiable;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.uf.sportsapi.datamodel.MarketDescriptions;
+import com.testinzone.unifiedodds.sdk.conn.Identifiable;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.utils.domain.names.LanguageHolder;
 
 public final class MarketDescriptionDataProviders {
 
@@ -20,7 +20,7 @@ public final class MarketDescriptionDataProviders {
         LanguageHolder language,
         DescMarket marketDescription
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class,
             withGetDataThrowingByDefault()
         );
@@ -34,7 +34,7 @@ public final class MarketDescriptionDataProviders {
         LanguageHolder languageB,
         DescMarket descriptionB
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class,
             withGetDataThrowingByDefault()
         );
@@ -48,7 +48,7 @@ public final class MarketDescriptionDataProviders {
         Identifiable variant,
         DescMarket market
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class,
             withGetDataThrowingByDefault()
         );
@@ -64,7 +64,7 @@ public final class MarketDescriptionDataProviders {
         Identifiable variant,
         MarketDescriptions descriptions
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class,
             withGetDataThrowingByDefault()
         );
@@ -80,7 +80,7 @@ public final class MarketDescriptionDataProviders {
         Identifiable variantB,
         DescMarket marketB
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class
         );
         when(dataProvider.getData(languageA.get(), marketA.getId() + "", variantA.id()))
@@ -99,7 +99,7 @@ public final class MarketDescriptionDataProviders {
         String variantIdB,
         DescMarket marketB
     ) throws DataProviderException {
-        DataProvider<com.sportradar.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
+        DataProvider<com.testinzone.uf.sportsapi.datamodel.MarketDescriptions> dataProvider = mock(
             DataProvider.class
         );
         when(dataProvider.getData(languageA.get(), marketA.getId() + "", variantIdA))

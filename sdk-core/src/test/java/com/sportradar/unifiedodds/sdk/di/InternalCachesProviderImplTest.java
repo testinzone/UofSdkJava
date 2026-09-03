@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
-import static com.sportradar.utils.Urns.CompetitorProfiles.urnForAnyCompetitor;
-import static com.sportradar.utils.Urns.PlayerProfiles.urnForAnyPlayerProfile;
-import static com.sportradar.utils.Urns.SportEvents.getForAnyMatch;
+import static com.testinzone.utils.Urns.CompetitorProfiles.urnForAnyCompetitor;
+import static com.testinzone.utils.Urns.PlayerProfiles.urnForAnyPlayerProfile;
+import static com.testinzone.utils.Urns.SportEvents.getForAnyMatch;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.cfg.UofCacheConfigurationStub;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.Urns;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.cfg.UofCacheConfigurationStub;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.Urns;
 import java.time.Duration;
 import java.util.function.Consumer;
 import lombok.val;

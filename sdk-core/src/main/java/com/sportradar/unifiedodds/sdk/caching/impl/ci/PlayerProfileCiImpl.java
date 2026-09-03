@@ -1,25 +1,25 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import com.sportradar.uf.sportsapi.datamodel.SapiPlayerCompetitor;
-import com.sportradar.uf.sportsapi.datamodel.SapiPlayerExtended;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.PlayerProfileCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportablePlayerProfileCi;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiPlayerCompetitor;
+import com.testinzone.uf.sportsapi.datamodel.SapiPlayerExtended;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.PlayerProfileCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportablePlayerProfileCi;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeParseException;

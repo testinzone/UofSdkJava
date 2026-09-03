@@ -1,30 +1,30 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.CompetitorCi;
-import com.sportradar.unifiedodds.sdk.caching.PlayerProfileCi;
-import com.sportradar.unifiedodds.sdk.caching.ProfileCache;
-import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.sportradar.unifiedodds.sdk.entities.Competition;
-import com.sportradar.unifiedodds.sdk.entities.Competitor;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeDescription;
-import com.sportradar.unifiedodds.sdk.exceptions.NameGenerationException;
-import com.sportradar.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.CompetitorCi;
+import com.testinzone.unifiedodds.sdk.caching.PlayerProfileCi;
+import com.testinzone.unifiedodds.sdk.caching.ProfileCache;
+import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.testinzone.unifiedodds.sdk.entities.Competition;
+import com.testinzone.unifiedodds.sdk.entities.Competitor;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeDescription;
+import com.testinzone.unifiedodds.sdk.exceptions.NameGenerationException;
+import com.testinzone.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;

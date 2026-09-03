@@ -1,24 +1,24 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
-import static com.sportradar.unifiedodds.sdk.caching.impl.ci.RaceStageCiToMergeTo.into;
-import static com.sportradar.unifiedodds.sdk.caching.impl.ci.RaceStageCis.exportSerializeAndUseConstructorToReimport;
-import static com.sportradar.unifiedodds.sdk.caching.impl.ci.RaceStageCis.usingConstructor;
-import static com.sportradar.unifiedodds.sdk.entities.StageType.Practice;
-import static com.sportradar.unifiedodds.sdk.entities.StageType.SprintRace;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Catch;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.testinzone.unifiedodds.sdk.caching.impl.ci.RaceStageCiToMergeTo.into;
+import static com.testinzone.unifiedodds.sdk.caching.impl.ci.RaceStageCis.exportSerializeAndUseConstructorToReimport;
+import static com.testinzone.unifiedodds.sdk.caching.impl.ci.RaceStageCis.usingConstructor;
+import static com.testinzone.unifiedodds.sdk.entities.StageType.Practice;
+import static com.testinzone.unifiedodds.sdk.entities.StageType.SprintRace;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.utils.domain.names.Languages;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import lombok.val;

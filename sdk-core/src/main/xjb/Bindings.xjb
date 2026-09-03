@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+  ~ Copyright (C) Testinzone AG. See LICENSE for full license governing this code
   -->
 
 <jaxb:bindings xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -9,7 +9,7 @@
                jaxb:extensionBindingPrefixes="xjc" version="2.1">
   <jaxb:bindings schemaLocation="../../../target/uf-schema/xsd/messages/UnifiedFeed.xsd">
     <jaxb:globalBindings>
-        <xjc:superInterface name="com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage"/>
+        <xjc:superInterface name="com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage"/>
     </jaxb:globalBindings>
 
     <jaxb:schemaBindings>

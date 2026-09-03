@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.sportsapi.datamodel.SapiCoverage;
-import com.sportradar.uf.sportsapi.datamodel.SapiFixture;
-import com.sportradar.uf.sportsapi.datamodel.SapiInfo;
-import com.sportradar.uf.sportsapi.datamodel.SapiReferenceIds;
-import com.sportradar.unifiedodds.sdk.caching.ci.ReferenceIdCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableFixtureCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiCoverage;
+import com.testinzone.uf.sportsapi.datamodel.SapiFixture;
+import com.testinzone.uf.sportsapi.datamodel.SapiInfo;
+import com.testinzone.uf.sportsapi.datamodel.SapiReferenceIds;
+import com.testinzone.unifiedodds.sdk.caching.ci.ReferenceIdCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableFixtureCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.HashMap;
@@ -82,7 +82,7 @@ public class FixtureImpl implements Fixture {
     private final CoverageInfo coverageInfo;
 
     /**
-     * A {@link ProducerInfo} instance providing sportradar related information about the sport event associated
+     * A {@link ProducerInfo} instance providing testinzone related information about the sport event associated
      * with the current instance.
      */
     private final ProducerInfo producerInfo;
@@ -357,9 +357,9 @@ public class FixtureImpl implements Fixture {
     }
 
     /**
-     * Returns the {@link ProducerInfo} instance providing sportradar related information about the sport event associated
+     * Returns the {@link ProducerInfo} instance providing testinzone related information about the sport event associated
      *
-     * @return - the {@link ProducerInfo} instance providing sportradar related information about the sport event associated
+     * @return - the {@link ProducerInfo} instance providing testinzone related information about the sport event associated
      */
     @Override
     public ProducerInfo getProducerInfo() {

@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
@@ -6,10 +6,10 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.rabbitmq.client.*;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.utils.time.EpochMillis;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.utils.time.EpochMillis;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.io.IOException;
 import java.time.Instant;
 import java.util.concurrent.TimeoutException;

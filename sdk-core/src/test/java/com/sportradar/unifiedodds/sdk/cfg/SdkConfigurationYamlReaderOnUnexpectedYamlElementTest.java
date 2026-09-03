@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,8 +9,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -33,7 +33,7 @@ public class SdkConfigurationYamlReaderOnUnexpectedYamlElementTest {
         whenYamlFileContains(ANY_CONTENT);
         when(yaml.loadAll(any(InputStream.class)))
             .thenReturn(
-                createPropertyMap("sportradar", "sdk", "uf", "accessToken", UNRECOGNISED_YAML_ELEMENT)
+                createPropertyMap("testinzone", "sdk", "uf", "accessToken", UNRECOGNISED_YAML_ELEMENT)
             );
         val reader = new SdkConfigurationYamlReader(new ClassResolver(), yaml, resourceReader, ANY_FILENAME);
 
@@ -45,7 +45,7 @@ public class SdkConfigurationYamlReaderOnUnexpectedYamlElementTest {
         whenYamlFileContains(ANY_CONTENT);
         when(yaml.loadAll(any(InputStream.class)))
             .thenReturn(
-                createPropertyMap("sportradar", "sdk", "uf", "accessToken", UNRECOGNISED_YAML_ELEMENT)
+                createPropertyMap("testinzone", "sdk", "uf", "accessToken", UNRECOGNISED_YAML_ELEMENT)
             );
         val reader = new SdkConfigurationYamlReader(new ClassResolver(), yaml, resourceReader);
 

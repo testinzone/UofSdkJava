@@ -1,30 +1,30 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
-import static com.sportradar.unifiedodds.sdk.cfg.UofConfigurations.BuilderViaFileStubbingOutDataProvidersAndReaders.viaFileStubbingOutDataProvidersAndReaders;
-import static com.sportradar.unifiedodds.sdk.cfg.UofConfigurations.BuilderViaJavaStubbingOutDataProvidersAndReaders.viaJavaStubbingOutDataProvidersAndReaders;
-import static com.sportradar.unifiedodds.sdk.impl.BookmakerDetailsDataProvider.providing;
-import static com.sportradar.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
-import static com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
-import static com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.readerProvidingBookmaker;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.testinzone.unifiedodds.sdk.cfg.UofConfigurations.BuilderViaFileStubbingOutDataProvidersAndReaders.viaFileStubbingOutDataProvidersAndReaders;
+import static com.testinzone.unifiedodds.sdk.cfg.UofConfigurations.BuilderViaJavaStubbingOutDataProvidersAndReaders.viaJavaStubbingOutDataProvidersAndReaders;
+import static com.testinzone.unifiedodds.sdk.impl.BookmakerDetailsDataProvider.providing;
+import static com.testinzone.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
+import static com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
+import static com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.readerProvidingBookmaker;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.conn.SapiBookmakerDetails;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.conn.SapiBookmakerDetails;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
 import java.security.InvalidParameterException;
 import java.time.Duration;
 import java.util.*;

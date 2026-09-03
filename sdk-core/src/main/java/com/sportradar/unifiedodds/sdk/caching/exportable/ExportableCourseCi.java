@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
-import static com.sportradar.utils.stream.optional.NonNullMapper.ifNotNull;
+import static com.testinzone.utils.stream.optional.NonNullMapper.ifNotNull;
 import static java.util.Collections.EMPTY_LIST;
 import static java.util.Collections.EMPTY_MAP;
 import static java.util.Optional.ofNullable;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.utils.Urn;
+import com.testinzone.utils.Urn;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Locale;

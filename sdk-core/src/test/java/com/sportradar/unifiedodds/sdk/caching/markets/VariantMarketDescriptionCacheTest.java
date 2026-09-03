@@ -1,28 +1,28 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
-import static com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCaches.stubbingOutDataProvidersAndTime;
-import static com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources.nullifyMarketName;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.*;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NflAfcConferenceOutrights.nflAfcConferenceOutrightsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NflAfcConferenceOutrights.openMarket;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.notFoundWithEmptyMarket;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ChampionshipFreeTextMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.*;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Conjunctions.and;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Determiners.every;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.time.TimeInterval.seconds;
+import static com.testinzone.unifiedodds.sdk.caching.markets.DataProviderAnswers.withGetDataThrowingByDefault;
+import static com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCaches.stubbingOutDataProvidersAndTime;
+import static com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources.nullifyMarketName;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.*;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NflAfcConferenceOutrights.nflAfcConferenceOutrightsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NflAfcConferenceOutrights.openMarket;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.notFoundWithEmptyMarket;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ChampionshipFreeTextMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.EXACT_GOALS_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.ExactGoalsMarketIds.fivePlusVariant;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.*;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Conjunctions.and;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Determiners.every;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.time.TimeInterval.seconds;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
 import static org.assertj.core.api.Assertions.*;
@@ -32,23 +32,23 @@ import static org.mockito.Mockito.*;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.ImmutableSet;
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.uf.sportsapi.datamodel.DescOutcomes;
-import com.sportradar.uf.sportsapi.datamodel.MarketDescriptions;
-import com.sportradar.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
-import com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCache.Config;
-import com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources.AttributeRemover;
-import com.sportradar.unifiedodds.sdk.conn.MarketVariant;
-import com.sportradar.unifiedodds.sdk.domain.language.Languages;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
-import com.sportradar.utils.time.TimeInterval;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.uf.sportsapi.datamodel.DescOutcomes;
+import com.testinzone.uf.sportsapi.datamodel.MarketDescriptions;
+import com.testinzone.unifiedodds.sdk.caching.ci.markets.MarketDescriptionCi;
+import com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCache.Config;
+import com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources.AttributeRemover;
+import com.testinzone.unifiedodds.sdk.conn.MarketVariant;
+import com.testinzone.unifiedodds.sdk.domain.language.Languages;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.testinzone.utils.time.TimeInterval;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.time.Instant;
 import java.util.Locale;
 import java.util.Set;
@@ -70,21 +70,21 @@ class VariantMarketDescriptionCacheTest {
     private static final int SECONDS_IN_HOUR = 60 * 60;
 
     private static final String NULLIFY_OR_EMPTY_MARKET_NAME =
-        "com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources#nullifyOrEmptyMarketName";
+        "com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources#nullifyOrEmptyMarketName";
 
     private static final String NULLIFY_OR_EMPTY_OUTCOMES =
-        "com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources#nullifyOrEmptyOutcomes";
+        "com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources#nullifyOrEmptyOutcomes";
 
     private static final String WITH_MEMORY_CLEANUP_AND_WITHOUT =
-        "com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources#withMemoryCleanupAndWithout";
+        "com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources#withMemoryCleanupAndWithout";
 
     @SuppressWarnings("ConstantName")
     private static final String NULLIFY_OR_EMPTY_MARKET_NAME__WITH_MEMORY_CLEANUP_AND_WITHOUT =
-        "com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketSources" +
+        "com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketSources" +
         "#nullifyOrEmptyMarketNameAndWithMemoryCleanupAndWithout";
 
     private static final String LANGUAGES =
-        "com.sportradar.unifiedodds.sdk.caching.markets.LanguageSources#languages";
+        "com.testinzone.unifiedodds.sdk.caching.markets.LanguageSources#languages";
 
     private static final TimeInterval FAULTY_MARKET_TTL = seconds(30);
 

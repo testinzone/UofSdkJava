@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
 import java.io.Serializable;
 import java.util.List;

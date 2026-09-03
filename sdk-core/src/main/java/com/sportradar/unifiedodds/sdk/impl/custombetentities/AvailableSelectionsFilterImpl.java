@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.custombetentities;
+package com.testinzone.unifiedodds.sdk.impl.custombetentities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.sportradar.uf.custombet.datamodel.CapiFilteredEventType;
-import com.sportradar.unifiedodds.sdk.custombetentities.AvailableSelectionsFilter;
-import com.sportradar.unifiedodds.sdk.custombetentities.MarketFilter;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.CapiFilteredEventType;
+import com.testinzone.unifiedodds.sdk.custombetentities.AvailableSelectionsFilter;
+import com.testinzone.unifiedodds.sdk.custombetentities.MarketFilter;
+import com.testinzone.utils.Urn;
 import java.util.List;
 
 /**

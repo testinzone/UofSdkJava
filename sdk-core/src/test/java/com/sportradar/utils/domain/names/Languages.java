@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.domain.names;
+package com.testinzone.utils.domain.names;
 
-import static com.sportradar.utils.generic.testing.Cardinality.anyFromZeroToTwo;
+import static com.testinzone.utils.generic.testing.Cardinality.anyFromZeroToTwo;
 
-import com.sportradar.utils.domain.UniqueObjects;
+import com.testinzone.utils.domain.UniqueObjects;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;

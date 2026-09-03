@@ -1,25 +1,25 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.caching.StageCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.SportEventConditionsCi;
-import com.sportradar.unifiedodds.sdk.caching.ci.VenueCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.entities.status.CompetitionStatus;
-import com.sportradar.unifiedodds.sdk.entities.status.StageStatus;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
-import com.sportradar.unifiedodds.sdk.impl.SportEventStatusFactory;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.caching.StageCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.SportEventConditionsCi;
+import com.testinzone.unifiedodds.sdk.caching.ci.VenueCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.entities.status.CompetitionStatus;
+import com.testinzone.unifiedodds.sdk.entities.status.StageStatus;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
+import com.testinzone.unifiedodds.sdk.impl.SportEventStatusFactory;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -121,7 +121,7 @@ public class StageImpl extends SportEventImpl implements Stage {
 
         try {
             return sportEntityFactory.buildSportForCategory(cacheItem.getCategoryId(), locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getSport", e);
             return null;
         }
@@ -143,7 +143,7 @@ public class StageImpl extends SportEventImpl implements Stage {
 
         try {
             return sportEntityFactory.buildCategory(cacheItem.getCategoryId(), locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getCategory", e);
         }
 
@@ -177,7 +177,7 @@ public class StageImpl extends SportEventImpl implements Stage {
                 return (Stage) sportEvent;
             }
             handleException("getParentStage - built type is not a stage: " + sportEvent.getClass(), null);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getParentStage", e);
         }
 
@@ -221,7 +221,7 @@ public class StageImpl extends SportEventImpl implements Stage {
                 }
             }
             return result;
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             handleException("getStages", e);
         }
 

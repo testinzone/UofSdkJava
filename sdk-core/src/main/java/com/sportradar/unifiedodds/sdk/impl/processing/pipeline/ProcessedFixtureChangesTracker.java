@@ -1,6 +1,6 @@
-package com.sportradar.unifiedodds.sdk.impl.processing.pipeline;
+package com.testinzone.unifiedodds.sdk.impl.processing.pipeline;
 
-import com.sportradar.uf.datamodel.UfFixtureChange;
+import com.testinzone.uf.datamodel.UfFixtureChange;
 
 /**
  * Created on 2019-03-29

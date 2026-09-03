@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -9,11 +9,11 @@ import com.google.common.base.Strings;
 import com.google.inject.name.Named;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.sportradar.unifiedodds.sdk.RuntimeConfiguration;
-import com.sportradar.unifiedodds.sdk.SdkConnectionStatusListener;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.RuntimeConfiguration;
+import com.testinzone.unifiedodds.sdk.SdkConnectionStatusListener;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
@@ -106,7 +106,7 @@ public class ConfiguredConnectionFactory {
     @SuppressWarnings("MethodLength")
     Connection createConfiguredConnection(WhoAmIReader whoAmIReader, String sslVersion)
         throws KeyManagementException, NoSuchAlgorithmException, IOException, TimeoutException {
-        LOGGER.info("Creating new connection (Sportradar Unified Odds SDK " + version + ")");
+        LOGGER.info("Creating new connection (Testinzone Unified Odds SDK " + version + ")");
         if (config.getAccessToken() == null) { // this is just a failsafe, the configuration gets validated on creation
             LOGGER.warn("Access token needs to be set in UofConfiguration");
             throw new IllegalArgumentException("No access token set in UofConfiguration.");

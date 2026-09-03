@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import static com.google.common.collect.ImmutableMap.of;
-import static com.sportradar.unifiedodds.sdk.impl.entities.TournamentInfoAssertions.assertThat;
+import static com.testinzone.unifiedodds.sdk.impl.entities.TournamentInfoAssertions.assertThat;
 import static java.util.Arrays.asList;
 import static java.util.Locale.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
@@ -12,10 +12,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.TournamentCi;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.TournamentCi;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;

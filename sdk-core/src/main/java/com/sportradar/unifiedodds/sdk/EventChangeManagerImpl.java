@@ -1,13 +1,13 @@
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.entities.FixtureChange;
-import com.sportradar.unifiedodds.sdk.entities.ResultChange;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.SportDataProviderImpl;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.entities.FixtureChange;
+import com.testinzone.unifiedodds.sdk.entities.ResultChange;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.SportDataProviderImpl;
+import com.testinzone.utils.Urn;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.*;

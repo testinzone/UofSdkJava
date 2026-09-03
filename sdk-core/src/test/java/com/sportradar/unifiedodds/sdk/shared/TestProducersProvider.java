@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.unifiedodds.sdk.impl.ProducerData;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.ProducerData;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;

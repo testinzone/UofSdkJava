@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.oddsentities;
+package com.testinzone.unifiedodds.sdk.oddsentities;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;

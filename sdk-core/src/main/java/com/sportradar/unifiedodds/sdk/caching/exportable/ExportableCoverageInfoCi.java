@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.caching.exportable;
+package com.testinzone.unifiedodds.sdk.caching.exportable;
 
-import com.sportradar.unifiedodds.sdk.entities.CoverageInfo;
-import com.sportradar.unifiedodds.sdk.entities.CoveredFrom;
+import com.testinzone.unifiedodds.sdk.entities.CoverageInfo;
+import com.testinzone.unifiedodds.sdk.entities.CoveredFrom;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

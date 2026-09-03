@@ -1,24 +1,24 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.dto;
+package com.testinzone.unifiedodds.sdk.impl.dto;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.datamodel.UfPeriodScoreType;
-import com.sportradar.uf.datamodel.UfSportEventStatus;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchStatistics;
-import com.sportradar.uf.sportsapi.datamodel.SapiPeriodScore;
-import com.sportradar.uf.sportsapi.datamodel.SapiSportEventStatus;
-import com.sportradar.uf.sportsapi.datamodel.SapiStageSportEventStatus;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.impl.entities.EventClockImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.EventResultImpl;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfPeriodScoreType;
+import com.testinzone.uf.datamodel.UfSportEventStatus;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchStatistics;
+import com.testinzone.uf.sportsapi.datamodel.SapiPeriodScore;
+import com.testinzone.uf.sportsapi.datamodel.SapiSportEventStatus;
+import com.testinzone.uf.sportsapi.datamodel.SapiStageSportEventStatus;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.impl.entities.EventClockImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.EventResultImpl;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;

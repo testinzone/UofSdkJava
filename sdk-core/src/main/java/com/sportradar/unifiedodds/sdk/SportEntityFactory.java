@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import com.sportradar.unifiedodds.sdk.caching.SportEventCi;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCi;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.utils.Urn;
 import java.util.List;
 import java.util.Locale;
 
@@ -113,7 +113,7 @@ public interface SportEntityFactory {
 
     /**
      * Builds a {@link List} of {@link Competitor} instances
-     * <i>Notice: a {@link com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException} is thrown if any problems are encountered</i>
+     * <i>Notice: a {@link com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException} is thrown if any problems are encountered</i>
      *
      * @param competitorIds the ids representing the instances that should be built
      * @param parentSportEventCi the parent {@link SportEventCi} this {@link Competitor} belongs to

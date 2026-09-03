@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
-import static com.sportradar.utils.Urns.SportEvents.urnForAnyTournament;
-import static com.sportradar.utils.Urns.Sports.urnForAnySport;
+import static com.testinzone.utils.Urns.SportEvents.urnForAnyTournament;
+import static com.testinzone.utils.Urns.Sports.urnForAnySport;
 import static java.util.Arrays.asList;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
@@ -14,20 +14,20 @@ import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.*;
 
 import com.google.common.collect.ImmutableList;
-import com.sportradar.unifiedodds.sdk.ConfigureCacheTimeouts;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.StageCi;
-import com.sportradar.unifiedodds.sdk.caching.TournamentCi;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
-import com.sportradar.unifiedodds.sdk.entities.Competition;
-import com.sportradar.unifiedodds.sdk.entities.Tournament;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.Urns;
+import com.testinzone.unifiedodds.sdk.ConfigureCacheTimeouts;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.StageCi;
+import com.testinzone.unifiedodds.sdk.caching.TournamentCi;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
+import com.testinzone.unifiedodds.sdk.entities.Competition;
+import com.testinzone.unifiedodds.sdk.entities.Tournament;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.Urns;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;

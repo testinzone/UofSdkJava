@@ -1,24 +1,24 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.InvariantMarketDescriptionCaches.stubbingOutDataProvidersAndScheduler;
-import static com.sportradar.unifiedodds.sdk.caching.markets.Sources.*;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.ODD_EVEN_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.caching.markets.InvariantMarketDescriptionCaches.stubbingOutDataProvidersAndScheduler;
+import static com.testinzone.unifiedodds.sdk.caching.markets.Sources.*;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.OddEven.oddEvenMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.ODD_EVEN_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providingList;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static java.util.Locale.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.unifiedodds.sdk.domain.language.Languages;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.unifiedodds.sdk.domain.language.Languages;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
 import java.util.Locale;
 import java.util.stream.Stream;
 import lombok.val;
@@ -34,7 +34,7 @@ public class InvariantMarketDescriptionCacheTest {
 
     private static final String IRRELEVANT = null;
     private static final String NULLIFY_OR_EMPTY_MARKET_NAME =
-        "com.sportradar.unifiedodds.sdk.caching.markets.Sources#nullifyOrEmptyMarketName";
+        "com.testinzone.unifiedodds.sdk.caching.markets.Sources#nullifyOrEmptyMarketName";
 
     @Nested
     class GetMarketDescriptor {

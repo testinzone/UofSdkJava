@@ -1,41 +1,41 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Stopwatch;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.uf.custombet.datamodel.*;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.CacheItem;
-import com.sportradar.unifiedodds.sdk.caching.DataRouter;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.custombetentities.AvailableSelections;
-import com.sportradar.unifiedodds.sdk.custombetentities.Calculation;
-import com.sportradar.unifiedodds.sdk.custombetentities.CalculationFilter;
-import com.sportradar.unifiedodds.sdk.custombetentities.Selection;
-import com.sportradar.unifiedodds.sdk.entities.FixtureChange;
-import com.sportradar.unifiedodds.sdk.entities.PeriodStatus;
-import com.sportradar.unifiedodds.sdk.entities.ResultChange;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.SdkTaskScheduler;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.AvailableSelectionsImpl;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.CalculationFilterImpl;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.CalculationImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.FixtureChangeImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.PeriodStatusImpl;
-import com.sportradar.unifiedodds.sdk.impl.entities.ResultChangeImpl;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.*;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.CacheItem;
+import com.testinzone.unifiedodds.sdk.caching.DataRouter;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.custombetentities.AvailableSelections;
+import com.testinzone.unifiedodds.sdk.custombetentities.Calculation;
+import com.testinzone.unifiedodds.sdk.custombetentities.CalculationFilter;
+import com.testinzone.unifiedodds.sdk.custombetentities.Selection;
+import com.testinzone.unifiedodds.sdk.entities.FixtureChange;
+import com.testinzone.unifiedodds.sdk.entities.PeriodStatus;
+import com.testinzone.unifiedodds.sdk.entities.ResultChange;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.SdkTaskScheduler;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.AvailableSelectionsImpl;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.CalculationFilterImpl;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.CalculationImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.FixtureChangeImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.PeriodStatusImpl;
+import com.testinzone.unifiedodds.sdk.impl.entities.ResultChangeImpl;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;

@@ -1,20 +1,20 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static com.sportradar.unifiedodds.sdk.conn.ProducerId.LIVE_ODDS;
-import static com.sportradar.unifiedodds.sdk.conn.SapiProducers.buildActiveProducer;
-import static com.sportradar.unifiedodds.sdk.conn.SapiSports.allSports;
+import static com.testinzone.unifiedodds.sdk.conn.ProducerId.LIVE_ODDS;
+import static com.testinzone.unifiedodds.sdk.conn.SapiProducers.buildActiveProducer;
+import static com.testinzone.unifiedodds.sdk.conn.SapiSports.allSports;
 import static java.lang.String.format;
 
 import com.github.tomakehurst.wiremock.client.MappingBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.google.common.base.Charsets;
-import com.sportradar.uf.custombet.datamodel.CapiResponse;
-import com.sportradar.uf.sportsapi.datamodel.*;
+import com.testinzone.uf.custombet.datamodel.CapiResponse;
+import com.testinzone.uf.sportsapi.datamodel.*;
 import java.io.ByteArrayOutputStream;
 import java.util.Locale;
 import java.util.function.Consumer;
@@ -30,7 +30,7 @@ public class ApiSimulator {
 
     public static final String XML_DECLARATION =
         "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n";
-    public static final String UNIFIED_XML_NAMESPACE = "http://schemas.sportradar.com/sportsapi/v1/unified";
+    public static final String UNIFIED_XML_NAMESPACE = "http://schemas.testinzone.com/sportsapi/v1/unified";
     private final Consumer<MappingBuilder> stubRegistrar;
 
     public ApiSimulator(WireMockRule wireMockRule) {

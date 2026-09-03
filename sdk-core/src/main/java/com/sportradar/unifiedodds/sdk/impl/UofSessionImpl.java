@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -10,19 +10,19 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import com.google.common.base.Stopwatch;
 import com.google.common.cache.Cache;
 import com.google.inject.name.Named;
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.entities.ResourceTypeGroup;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
-import com.sportradar.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.util.FeedMessageHelper;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.entities.ResourceTypeGroup;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.MessageTimestampImpl;
+import com.testinzone.unifiedodds.sdk.impl.processing.pipeline.CompositeMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.util.FeedMessageHelper;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.utils.Urn;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
@@ -573,7 +573,7 @@ public class UofSessionImpl implements UofSession, MessageConsumer, FeedMessageP
         try {
             return sportEntityFactory.buildSportEvent(eventId, sportId, config.getDesiredLocales(), true);
         } catch (ObjectNotFoundException e) {
-            throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(
+            throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(
                 "Error providing the associated event object[" + eventId + "]",
                 e
             );

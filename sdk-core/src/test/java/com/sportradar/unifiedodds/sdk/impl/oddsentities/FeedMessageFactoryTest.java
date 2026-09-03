@@ -1,21 +1,21 @@
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.inject.Injector;
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.di.TestInjectorFactory;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.FeedMessageFactory;
-import com.sportradar.unifiedodds.sdk.impl.XmlMessageReader;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.di.TestInjectorFactory;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.FeedMessageFactory;
+import com.testinzone.unifiedodds.sdk.impl.XmlMessageReader;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.utils.Urn;
 import java.util.Arrays;
 import java.util.Locale;
 import lombok.val;

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.exceptions.internal;
+package com.testinzone.unifiedodds.sdk.exceptions.internal;
 
 /**
  * A general util exception used to wrap checked exception within streams

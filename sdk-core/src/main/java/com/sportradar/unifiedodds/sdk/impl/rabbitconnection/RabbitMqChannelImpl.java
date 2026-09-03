@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import com.rabbitmq.client.*;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ChannelStatus.UnderlyingConnectionStatus;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.thread.sleep.Sleep;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ChannelStatus.UnderlyingConnectionStatus;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.thread.sleep.Sleep;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.*;
@@ -54,7 +54,7 @@ public class RabbitMqChannelImpl implements OnDemandChannelSupervisor {
      * The broken exchange name
      */
     private static final String UF_EXCHANGE = System.getProperty(
-        "sportradar.receiving.exchange",
+        "testinzone.receiving.exchange",
         "unifiedfeed"
     );
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lottery_schedule generated_at="2018-03-30T11:32:04.049Z" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/wns/v1/endpoints/unified/lottery_schedule.xsd" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<lottery_schedule generated_at="2018-03-30T11:32:04.049Z" xsi:schemaLocation="http://schemas.testinzone.com/sportsapi/v1/unified http://schemas.testinzone.com/wns/v1/endpoints/unified/lottery_schedule.xsd" xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <lottery id="wns:lottery:47125" name="Lotto 6/41">
         <sport id="sr:sport:108" name="World Lottery"/>
         <category id="sr:category:1062" name="Chile"/>

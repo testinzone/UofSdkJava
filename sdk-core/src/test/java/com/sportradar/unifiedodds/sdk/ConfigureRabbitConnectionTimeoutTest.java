@@ -1,23 +1,23 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import static com.sportradar.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
-import static com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
+import static com.testinzone.unifiedodds.sdk.impl.ProducerDataProviderStubs.providerOfSingleEmptyProducer;
+import static com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.emptyBookmakerDetailsReader;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.StubSdkConfigurationPropertiesReader;
-import com.sportradar.unifiedodds.sdk.cfg.StubSdkConfigurationYamlReader;
-import com.sportradar.unifiedodds.sdk.cfg.TokenSetter;
-import com.sportradar.unifiedodds.sdk.cfg.TokenSetterImpl;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.StubSdkConfigurationPropertiesReader;
+import com.testinzone.unifiedodds.sdk.cfg.StubSdkConfigurationYamlReader;
+import com.testinzone.unifiedodds.sdk.cfg.TokenSetter;
+import com.testinzone.unifiedodds.sdk.cfg.TokenSetterImpl;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.utils.domain.names.Languages;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Map;

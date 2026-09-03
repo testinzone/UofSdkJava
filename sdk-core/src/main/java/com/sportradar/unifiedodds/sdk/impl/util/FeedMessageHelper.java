@@ -1,8 +1,8 @@
-package com.sportradar.unifiedodds.sdk.impl.util;
+package com.testinzone.unifiedodds.sdk.impl.util;
 
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 
 @SuppressWarnings({ "HideUtilityClassConstructor", "UnnecessaryParentheses" })
 public class FeedMessageHelper {

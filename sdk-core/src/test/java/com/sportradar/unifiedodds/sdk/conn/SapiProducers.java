@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.utils.generic.testing.Urls.anyHttpUrl;
+import static com.testinzone.utils.generic.testing.Urls.anyHttpUrl;
 
-import com.sportradar.uf.sportsapi.datamodel.Producer;
-import com.sportradar.utils.generic.testing.Booleans;
-import com.sportradar.utils.generic.testing.RandomInteger;
+import com.testinzone.uf.sportsapi.datamodel.Producer;
+import com.testinzone.utils.generic.testing.Booleans;
+import com.testinzone.utils.generic.testing.RandomInteger;
 import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;

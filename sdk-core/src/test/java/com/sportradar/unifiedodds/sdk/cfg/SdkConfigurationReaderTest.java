@@ -1,10 +1,10 @@
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.util.Optional;
 import org.junit.Test;
 import org.yaml.snakeyaml.Yaml;

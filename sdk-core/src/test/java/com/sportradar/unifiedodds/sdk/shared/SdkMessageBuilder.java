@@ -1,15 +1,15 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.uf.custombet.datamodel.CapiAvailableSelections;
-import com.sportradar.uf.custombet.datamodel.CapiCalculationResponse;
-import com.sportradar.uf.custombet.datamodel.CapiFilteredCalculationResponse;
-import com.sportradar.unifiedodds.sdk.custombetentities.AvailableSelections;
-import com.sportradar.unifiedodds.sdk.custombetentities.Calculation;
-import com.sportradar.unifiedodds.sdk.custombetentities.CalculationFilter;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.AvailableSelectionsImpl;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.CalculationFilterImpl;
-import com.sportradar.unifiedodds.sdk.impl.custombetentities.CalculationImpl;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.CapiAvailableSelections;
+import com.testinzone.uf.custombet.datamodel.CapiCalculationResponse;
+import com.testinzone.uf.custombet.datamodel.CapiFilteredCalculationResponse;
+import com.testinzone.unifiedodds.sdk.custombetentities.AvailableSelections;
+import com.testinzone.unifiedodds.sdk.custombetentities.Calculation;
+import com.testinzone.unifiedodds.sdk.custombetentities.CalculationFilter;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.AvailableSelectionsImpl;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.CalculationFilterImpl;
+import com.testinzone.unifiedodds.sdk.impl.custombetentities.CalculationImpl;
+import com.testinzone.utils.Urn;
 
 @SuppressWarnings(
     {

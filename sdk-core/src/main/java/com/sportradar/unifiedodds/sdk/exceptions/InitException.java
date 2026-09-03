@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.exceptions;
+package com.testinzone.unifiedodds.sdk.exceptions;
 
 /**
  * An exception indicating there was an error during SDK initialization

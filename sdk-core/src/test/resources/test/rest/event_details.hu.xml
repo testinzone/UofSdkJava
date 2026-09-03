@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <match_summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T11:52:25+00:00"
-               xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+               xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <sport_event id="sr:match:9210275" scheduled="2016-08-10T00:00:00+00:00">
     <tournament_round type="group" number="1"/>
     <season id="sr:season:12823" name="Mexik&#xF3;i Bajnoks&#xE1;g 2016"/>

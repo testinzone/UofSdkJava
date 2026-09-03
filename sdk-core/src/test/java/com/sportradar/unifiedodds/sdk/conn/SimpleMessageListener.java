@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import com.sportradar.unifiedodds.sdk.UofListener;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.UofSession;
-import com.sportradar.unifiedodds.sdk.entities.LongTermEvent;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
-import com.sportradar.unifiedodds.sdk.shared.Helper;
+import com.testinzone.unifiedodds.sdk.UofListener;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.UofSession;
+import com.testinzone.unifiedodds.sdk.entities.LongTermEvent;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.unifiedodds.sdk.shared.Helper;
 import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -76,7 +76,7 @@ public class SimpleMessageListener implements UofListener {
      * If there are important fixture updates you will receive fixturechange message. The thinking
      * is that most fixture updates are queried by you yourself using the SportDataProvider. However,
      * if there are important/urgent changes you will also receive a fixture change message (e.g. if
-     * a match gets delayed, or if Sportradar for some reason needs to stop live coverage of a match
+     * a match gets delayed, or if Testinzone for some reason needs to stop live coverage of a match
      * etc.). This message allows you to promptly respond to such changes
      *
      * @param sender        the session
@@ -251,7 +251,7 @@ public class SimpleMessageListener implements UofListener {
      */
     @Override
     public void onUnparsableMessage(UofSession sender, UnparsableMessage unparsableMessage) {
-        com.sportradar.unifiedodds.sdk.oddsentities.Producer possibleProducer = unparsableMessage.getProducer(); // the SDK will try to provide the origin of the message
+        com.testinzone.unifiedodds.sdk.oddsentities.Producer possibleProducer = unparsableMessage.getProducer(); // the SDK will try to provide the origin of the message
         String message = String.format(
             "[%s]: event=%s, data=%s",
             listenerVersion,
@@ -286,7 +286,7 @@ public class SimpleMessageListener implements UofListener {
     private void logBaseMessageData(
         Message message,
         SportEvent event,
-        com.sportradar.unifiedodds.sdk.oddsentities.Producer producer
+        com.testinzone.unifiedodds.sdk.oddsentities.Producer producer
     ) {
         logger.info(
             "Received " +

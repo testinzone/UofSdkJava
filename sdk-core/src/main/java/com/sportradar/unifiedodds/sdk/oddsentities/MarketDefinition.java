@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.oddsentities;
+package com.testinzone.unifiedodds.sdk.oddsentities;
 
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketMappingData;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketMappingData;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -23,7 +23,7 @@ public interface MarketDefinition {
 
     /**
      * Returns the market name template translated in the default locale.
-     * Market name templates are obtained with {@link com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription#getName(Locale)}
+     * Market name templates are obtained with {@link com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription#getName(Locale)}
      *
      * @return the market name template translated in the default locale.
      */
@@ -31,7 +31,7 @@ public interface MarketDefinition {
 
     /**
      * Returns the market name template translated in the provided locale.
-     * Market name templates are obtained with {@link com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription#getName(Locale)}
+     * Market name templates are obtained with {@link com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription#getName(Locale)}
      *
      * @param locale the locale in which the name should be returned
      * @return the market name template translated in the provided locale.

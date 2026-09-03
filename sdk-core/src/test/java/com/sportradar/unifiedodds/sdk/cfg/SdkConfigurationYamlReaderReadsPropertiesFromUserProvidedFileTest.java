@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.Test;
@@ -50,7 +50,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     public void readsPropertyPrefixedWithUfSdk() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk:                                                   \n" +
             "    uf:                                                  \n" +
             "      accessToken: someToken                               "
@@ -60,7 +60,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     }
 
     @Test
-    public void ignoresYamlWhichDoesNotHaveSportradarAsTopLevelElement() {
+    public void ignoresYamlWhichDoesNotHaveTestinzoneAsTopLevelElement() {
         whenYamlFileContains("" + "unexpectedPropertyName: propertyValue                    \n");
 
         assertThat(reader.readConfiguration()).hasSize(0);
@@ -71,7 +71,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
         whenYamlFileContains(
             "" +
             "unexpectedPropertyName: propertyValue                    \n" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk:                                                   \n" +
             "    uf:                                                  \n" +
             "      accessToken: someToken                               "
@@ -82,7 +82,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
 
     @Test
     public void theOnlyExpectedPropertyAtRootLevelNeedsToBeParentProperty() {
-        whenYamlFileContains("sportradar: propertyValue");
+        whenYamlFileContains("testinzone: propertyValue");
 
         assertThat(reader.readConfiguration()).isEmpty();
     }
@@ -91,7 +91,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     public void skipsUnexpectedPropertiesAtLevelTwo() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  unexpectedPropertyName: propertyValue                  \n" +
             "  sdk:                                                   \n" +
             "    uf:                                                  \n" +
@@ -105,7 +105,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     public void theOnlyExpectedPropertyAtLevelTwoIsSdkButItNeedsToBeParentProperty() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk: someValue                                         \n"
         );
 
@@ -116,7 +116,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     public void skipsUnexpectedPropertiesAtLevelThree() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk:                                                   \n" +
             "    unexpectedPropertyName: propertyValue                \n" +
             "    uf:                                                  \n" +
@@ -130,7 +130,7 @@ public class SdkConfigurationYamlReaderReadsPropertiesFromUserProvidedFileTest {
     public void theOnlyExpectedPropertyAtLevelThreeIsUfButItNeedsToBeParentProperty() {
         whenYamlFileContains(
             "" +
-            "sportradar:                                              \n" +
+            "testinzone:                                              \n" +
             "  sdk:                                                   \n" +
             "    uf: someValue                                        \n"
         );

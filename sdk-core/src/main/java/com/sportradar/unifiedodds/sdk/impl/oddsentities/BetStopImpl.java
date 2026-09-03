@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
-import com.sportradar.uf.datamodel.UfBetStop;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.unifiedodds.sdk.oddsentities.BetStop;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketStatus;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.uf.datamodel.UfBetStop;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.unifiedodds.sdk.oddsentities.BetStop;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketStatus;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

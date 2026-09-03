@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.replay;
+package com.testinzone.unifiedodds.sdk.replay;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.sportsapi.datamodel.ReplayScenarioType;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.ReplayScenarioType;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.StreamWrapperException;
+import com.testinzone.utils.Urn;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -146,7 +146,7 @@ public class ReplayScenario {
         } catch (StreamWrapperException e) {
             logger.warn("Error building the replay scenario associated event list", e);
             if (exceptionHandlingStrategy == ExceptionHandlingStrategy.Throw) {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(
                     "Error building the replay scenario associated event list",
                     e
                 );

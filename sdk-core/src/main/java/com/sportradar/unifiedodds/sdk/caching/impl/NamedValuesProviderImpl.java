@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.caching.LocalizedNamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.NamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.testinzone.unifiedodds.sdk.caching.LocalizedNamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.NamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
 
 /**
  * The default implementation of the {@link NamedValuesProvider}

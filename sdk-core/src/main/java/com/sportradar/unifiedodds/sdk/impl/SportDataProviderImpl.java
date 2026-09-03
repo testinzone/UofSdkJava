@@ -1,28 +1,28 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Stopwatch;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchTimelineEndpoint;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.ci.EventTimelineCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.CacheType;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
-import com.sportradar.unifiedodds.sdk.entities.*;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.entities.EventTimelineImpl;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchTimelineEndpoint;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.ci.EventTimelineCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.CacheType;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableSdkCache;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.testinzone.unifiedodds.sdk.entities.*;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.entities.EventTimelineImpl;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import javax.inject.Inject;
 import org.slf4j.Logger;
@@ -202,7 +202,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the active tournaments
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @return - all the active tournaments
      */
@@ -228,7 +228,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the active tournaments
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param locale - the {@link Locale} in which to provide the data
      * @return - all the active tournaments translated in the specified locale
@@ -258,7 +258,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the active tournaments of a specific sport
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportName - the specific sport name
      * @return - all the active tournaments of a specific sport
@@ -288,7 +288,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the active tournaments of a specific sport
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportName - the specific sport name
      * @param locale - the {@link Locale} in which to provide the data
@@ -997,7 +997,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the available tournaments of a specific sport
      * (the returned data is translated in the default locale configured with the {@link UofConfigurationImpl})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportId - the specific sport id
      * @return - all the available tournaments of a specific sport
@@ -1010,7 +1010,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     /**
      * Returns all the available tournaments for a specific sport
      * (the returned data is translated in the specified {@link Locale})
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @param sportId - the specific sport id
      * @param locale - the {@link Locale} in which to provide the data
@@ -1225,7 +1225,7 @@ public class SportDataProviderImpl implements SportDataProvider {
     private List<Sport> internalGetSports(List<Locale> locales) {
         try {
             return this.sportEntityFactory.buildSports(locales);
-        } catch (com.sportradar.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
+        } catch (com.testinzone.unifiedodds.sdk.exceptions.internal.ObjectNotFoundException e) {
             return handleException("getSports", e);
         }
     }
@@ -1349,9 +1349,9 @@ public class SportDataProviderImpl implements SportDataProvider {
     private <T> T handleException(String method, Exception e) {
         if (exceptionHandlingStrategy == ExceptionHandlingStrategy.Throw) {
             if (e == null) {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(method);
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(method);
             } else {
-                throw new com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException(method, e);
+                throw new com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException(method, e);
             }
         } else {
             if (e == null) {

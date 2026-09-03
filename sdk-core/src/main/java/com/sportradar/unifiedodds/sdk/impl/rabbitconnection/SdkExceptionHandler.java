@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -11,8 +11,8 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.TopologyRecoveryException;
 import com.rabbitmq.client.impl.DefaultExceptionHandler;
-import com.sportradar.unifiedodds.sdk.SdkConnectionStatusListener;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.unifiedodds.sdk.SdkConnectionStatusListener;
+import com.testinzone.utils.SdkHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

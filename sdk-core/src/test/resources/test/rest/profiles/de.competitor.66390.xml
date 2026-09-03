@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<competitor_profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2019-06-06T11:43:49+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/bsa/unified/v1/xml/endpoints/unified/competitor_profile.xsd">
+<competitor_profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2019-06-06T11:43:49+00:00" xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.testinzone.com/sportsapi/v1/unified http://schemas.testinzone.com/bsa/unified/v1/xml/endpoints/unified/competitor_profile.xsd">
   <competitor id="sr:competitor:66390" name="Pericos de Puebla" country="Mexiko" country_code="MEX" abbreviation="PDP" gender="male">
     <sport id="sr:sport:3" name="Baseball"/>
     <category id="sr:category:426" name="Mexiko" country_code="MEX"/>

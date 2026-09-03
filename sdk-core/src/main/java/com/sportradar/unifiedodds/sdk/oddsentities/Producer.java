@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.oddsentities;
+package com.testinzone.unifiedodds.sdk.oddsentities;
 
-import com.sportradar.unifiedodds.sdk.ProducerScope;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.testinzone.unifiedodds.sdk.ProducerScope;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
 import java.util.Set;
 
 /**
- * Represents a Sportradar message producer(Live Odds, Betradar Ctrl, Premium Cricket,...)
+ * Represents a Testinzone message producer(Live Odds, Betradar Ctrl, Premium Cricket,...)
  */
 @SuppressWarnings({ "LineLength" })
 public interface Producer {
@@ -52,7 +52,7 @@ public interface Producer {
      * An indication if the producer is enabled.
      *
      * The producer gets by default enabled based on the {@link #isAvailable()},
-     * but it can be disabled trough the {@link com.sportradar.unifiedodds.sdk.ProducerManager}
+     * but it can be disabled trough the {@link com.testinzone.unifiedodds.sdk.ProducerManager}
      *
      * @return <code>true</code> if the producer is enabled, otherwise <code>false</code>
      */
@@ -101,7 +101,7 @@ public interface Producer {
     /**
      * Returns a timestamp which indicates the last known verified time in which the SDK was in sync with the feed.
      * The returned timestamp should be used to initiate the initial SDK recovery after a restart, this can be done trough
-     * the {@link com.sportradar.unifiedodds.sdk.ProducerManager#setProducerRecoveryFromTimestamp(int, long)} method.
+     * the {@link com.testinzone.unifiedodds.sdk.ProducerManager#setProducerRecoveryFromTimestamp(int, long)} method.
      *
      * @return the last timestamp in which the SDK was in sync with the feed
      */

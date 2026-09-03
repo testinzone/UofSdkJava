@@ -1,10 +1,10 @@
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.sportsapi.datamodel.SapiPeriodStatus;
-import com.sportradar.unifiedodds.sdk.entities.CompetitorResult;
-import com.sportradar.unifiedodds.sdk.entities.PeriodCompetitorResult;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiPeriodStatus;
+import com.testinzone.unifiedodds.sdk.entities.CompetitorResult;
+import com.testinzone.unifiedodds.sdk.entities.PeriodCompetitorResult;
+import com.testinzone.utils.Urn;
 import java.util.ArrayList;
 import java.util.List;
 

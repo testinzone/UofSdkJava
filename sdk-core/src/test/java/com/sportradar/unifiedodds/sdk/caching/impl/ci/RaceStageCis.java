@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
-import static com.sportradar.unifiedodds.sdk.testutil.serialization.JavaSerializer.deserialize;
-import static com.sportradar.unifiedodds.sdk.testutil.serialization.JavaSerializer.serialize;
-import static com.sportradar.utils.Urns.SportEvents.urnForAnyStage;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
+import static com.testinzone.unifiedodds.sdk.testutil.serialization.JavaSerializer.deserialize;
+import static com.testinzone.unifiedodds.sdk.testutil.serialization.JavaSerializer.serialize;
+import static com.testinzone.utils.Urns.SportEvents.urnForAnyStage;
 import static java.util.Optional.empty;
 
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableRaceStageCi;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterManagers;
-import com.sportradar.unifiedodds.sdk.testutil.guava.libraryfixtures.Caches;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableRaceStageCi;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterManagers;
+import com.testinzone.unifiedodds.sdk.testutil.guava.libraryfixtures.Caches;
+import com.testinzone.utils.domain.names.Languages;
 import java.util.*;
 import lombok.val;
 

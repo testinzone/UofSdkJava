@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.unifiedodds.sdk.entities.HomeAway.Away;
-import static com.sportradar.unifiedodds.sdk.entities.HomeAway.Home;
+import static com.testinzone.unifiedodds.sdk.entities.HomeAway.Away;
+import static com.testinzone.unifiedodds.sdk.entities.HomeAway.Home;
 
-import com.sportradar.uf.datamodel.UfSportEventStatus;
-import com.sportradar.uf.datamodel.UfStatisticsScoreType;
-import com.sportradar.uf.datamodel.UfStatisticsType;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
-import com.sportradar.unifiedodds.sdk.entities.status.MatchStatistics;
-import com.sportradar.unifiedodds.sdk.entities.status.PeriodStatistics;
+import com.testinzone.uf.datamodel.UfSportEventStatus;
+import com.testinzone.uf.datamodel.UfStatisticsScoreType;
+import com.testinzone.uf.datamodel.UfStatisticsType;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.unifiedodds.sdk.entities.status.MatchStatistics;
+import com.testinzone.unifiedodds.sdk.entities.status.PeriodStatistics;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;

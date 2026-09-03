@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0"?>
 <tournament_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2016-09-23T12:08:23+00:00"
-                 xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="">
+                 xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="">
   <tournament id="sr:simple_tournament:11111" name="Allsvenskan">
     <sport id="sr:sport:999" name="Soccer"/>
     <category id="sr:category:999" name="Sweden"/>

@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.DeserializerImpl;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.DeserializerImpl;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -23,9 +23,9 @@ public class DeserializerModule implements Module {
 
     public DeserializerModule() {
         try {
-            messagesJaxbContext = JAXBContext.newInstance("com.sportradar.uf.datamodel");
-            sportsApiJaxbContext = JAXBContext.newInstance("com.sportradar.uf.sportsapi.datamodel");
-            customBetApiJaxbContext = JAXBContext.newInstance("com.sportradar.uf.custombet.datamodel");
+            messagesJaxbContext = JAXBContext.newInstance("com.testinzone.uf.datamodel");
+            sportsApiJaxbContext = JAXBContext.newInstance("com.testinzone.uf.sportsapi.datamodel");
+            customBetApiJaxbContext = JAXBContext.newInstance("com.testinzone.uf.custombet.datamodel");
         } catch (JAXBException e) {
             throw new IllegalStateException("JAXB contexts creation failed, ex: ", e);
         }

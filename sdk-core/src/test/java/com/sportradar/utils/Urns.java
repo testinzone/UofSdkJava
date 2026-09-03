@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils;
+package com.testinzone.utils;
 
 import static java.util.Arrays.asList;
 
-import com.sportradar.utils.domain.UniqueObjects;
+import com.testinzone.utils.domain.UniqueObjects;
 import java.util.Random;
 import java.util.function.Supplier;
 import java.util.stream.Stream;

@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import static com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.getOutcomeDescription;
-import static com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCaches.stubbingOutDataProvidersAndTime;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.outcomeDescriptionFor;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.getOutcomeDescription;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
-import static com.sportradar.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.from;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
-import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
-import static com.sportradar.utils.time.TimeInterval.seconds;
+import static com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionFactory.getOutcomeDescription;
+import static com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCaches.stubbingOutDataProvidersAndTime;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.ExactGoals.exactGoalsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.nascarOutrightsMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.NascarOutrights.outcomeDescriptionFor;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.getOutcomeDescription;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.FREE_TEXT_MARKET_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.FreeTextMarketIds.nascarOutrightsVariant;
+import static com.testinzone.unifiedodds.sdk.impl.MarketDescriptionDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.from;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.of;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.testinzone.utils.time.TimeInterval.seconds;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -24,12 +24,12 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.times;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCacheUsingOutcomesTest.TestParameterSources.OutcomeNameRemover;
-import com.sportradar.unifiedodds.sdk.domain.language.Languages;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
-import com.sportradar.utils.time.TimeInterval;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.unifiedodds.sdk.caching.markets.VariantMarketDescriptionCacheUsingOutcomesTest.TestParameterSources.OutcomeNameRemover;
+import com.testinzone.unifiedodds.sdk.domain.language.Languages;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.testinzone.utils.time.TimeInterval;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.time.Instant;
 import java.util.Locale;
 import java.util.stream.Stream;
@@ -44,16 +44,16 @@ import org.junit.jupiter.params.provider.ValueSource;
 public class VariantMarketDescriptionCacheUsingOutcomesTest {
 
     private static final String NULLIFY_OR_EMPTY_OUTCOME_NAME =
-        "com.sportradar.unifiedodds.sdk.caching.markets." +
+        "com.testinzone.unifiedodds.sdk.caching.markets." +
         "VariantMarketDescriptionCacheUsingOutcomesTest$TestParameterSources#nullifyOrEmptyOutcomeName";
 
     private static final String WITH_MEMORY_CLEANUP_AND_WITHOUT =
-        "com.sportradar.unifiedodds.sdk.caching.markets." +
+        "com.testinzone.unifiedodds.sdk.caching.markets." +
         "VariantMarketDescriptionCacheUsingOutcomesTest$TestParameterSources#withMemoryCleanupAndWithout";
 
     @SuppressWarnings("ConstantName")
     private static final String NULLIFY_OR_EMPTY_OUTCOME_NAME__WITH_MEMORY_CLEANUP_AND_WITHOUT =
-        "com.sportradar.unifiedodds.sdk.caching.markets." +
+        "com.testinzone.unifiedodds.sdk.caching.markets." +
         "VariantMarketDescriptionCacheUsingOutcomesTest$TestParameterSources" +
         "#nullifyOrEmptyOutcomeNameAndWithMemoryCleanupAndWithout";
 

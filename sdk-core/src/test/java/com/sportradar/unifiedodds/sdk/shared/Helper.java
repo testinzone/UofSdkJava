@@ -1,7 +1,7 @@
-package com.sportradar.unifiedodds.sdk.shared;
+package com.testinzone.unifiedodds.sdk.shared;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.utils.Urn;
 import java.io.StringWriter;
 import java.time.Instant;
 import java.util.Calendar;

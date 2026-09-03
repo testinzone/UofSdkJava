@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities.status;
+package com.testinzone.unifiedodds.sdk.impl.entities.status;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.sportradar.unifiedodds.sdk.caching.LocalizedNamedValueCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCi;
-import com.sportradar.unifiedodds.sdk.entities.LocalizedNamedValue;
-import com.sportradar.unifiedodds.sdk.entities.status.StageStatus;
+import com.testinzone.unifiedodds.sdk.caching.LocalizedNamedValueCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCi;
+import com.testinzone.unifiedodds.sdk.entities.LocalizedNamedValue;
+import com.testinzone.unifiedodds.sdk.entities.status.StageStatus;
 import java.util.Locale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

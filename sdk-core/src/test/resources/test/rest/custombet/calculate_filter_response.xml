@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<filtered_calculation_response xmlns="http://schemas.sportradar.com/custombet/v1/endpoints" generated_at="2022-09-15T08:35:35+00:00">
+<filtered_calculation_response xmlns="http://schemas.testinzone.com/custombet/v1/endpoints" generated_at="2022-09-15T08:35:35+00:00">
 	<calculation odds="3.8567583406625268" probability="0.21421042720764835"/>
 	<available_selections>
 		<event id="sr:match:31561675">

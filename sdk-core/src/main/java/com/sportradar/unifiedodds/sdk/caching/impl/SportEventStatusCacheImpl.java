@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.cache.Cache;
-import com.sportradar.unifiedodds.sdk.RuntimeConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.impl.ci.SportEventStatusCiImpl;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.RuntimeConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.impl.ci.SportEventStatusCiImpl;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

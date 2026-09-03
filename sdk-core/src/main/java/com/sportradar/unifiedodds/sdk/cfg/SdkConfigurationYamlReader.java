@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
-import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.io.InputStream;
 import java.util.*;
 import org.slf4j.Logger;
@@ -17,7 +17,7 @@ public class SdkConfigurationYamlReader extends SdkConfigurationReader {
 
     private static final Logger logger = LoggerFactory.getLogger(SdkConfigurationYamlReader.class);
     private static final String SDK_YAML_FILENAME = "/application.yml";
-    private static final String ROOT_SPORTRADAR_TAG = "sportradar";
+    private static final String ROOT_TESTINZONE_TAG = "testinzone";
     private static final String SECOND_LEVEL_TAG = "sdk";
     private static final String THIRD_LEVEL_TAG = "uf";
 
@@ -64,17 +64,17 @@ public class SdkConfigurationYamlReader extends SdkConfigurationReader {
             if (object instanceof Map) {
                 Map<String, Object> castedMap = (Map<String, Object>) object;
                 if (
-                    castedMap.containsKey(ROOT_SPORTRADAR_TAG) &&
-                    castedMap.get(ROOT_SPORTRADAR_TAG) instanceof Map
+                    castedMap.containsKey(ROOT_TESTINZONE_TAG) &&
+                    castedMap.get(ROOT_TESTINZONE_TAG) instanceof Map
                 ) {
-                    return provideParsedMap((Map<String, Object>) castedMap.get(ROOT_SPORTRADAR_TAG));
+                    return provideParsedMap((Map<String, Object>) castedMap.get(ROOT_TESTINZONE_TAG));
                 }
             }
         }
 
         logger.warn(
             "Could not find valid UF SDK YAML root property({}) in the provided '{}'",
-            ROOT_SPORTRADAR_TAG,
+            ROOT_TESTINZONE_TAG,
             filename
         );
 

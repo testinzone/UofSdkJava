@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -12,15 +12,15 @@ import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 import com.google.inject.util.Modules;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.di.MockedMasterModule;
-import com.sportradar.unifiedodds.sdk.di.TestingModule;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.impl.Deserializer;
-import com.sportradar.unifiedodds.sdk.impl.UserAgentProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
-import com.sportradar.unifiedodds.sdk.shared.TestHttpHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.di.MockedMasterModule;
+import com.testinzone.unifiedodds.sdk.di.TestingModule;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.impl.Deserializer;
+import com.testinzone.unifiedodds.sdk.impl.UserAgentProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
+import com.testinzone.unifiedodds.sdk.shared.TestHttpHelper;
+import com.testinzone.utils.Urn;
 import lombok.val;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.core5.http.HttpStatus;

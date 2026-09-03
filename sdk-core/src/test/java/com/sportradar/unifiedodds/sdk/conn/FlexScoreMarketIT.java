@@ -1,28 +1,28 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
-import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMarketDescriptions.CorrectScoreFlex.correctScoreFlexMarketDescription;
-import static com.sportradar.unifiedodds.sdk.conn.UfMarkets.WithOdds.correctScoreFlexMarket;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
+import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMarketDescriptions.CorrectScoreFlex.correctScoreFlexMarketDescription;
+import static com.testinzone.unifiedodds.sdk.conn.UfMarkets.WithOdds.correctScoreFlexMarket;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer.connectDeclaringExchange;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.http.client.Client;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.OddsChange;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeOdds;
-import com.sportradar.unifiedodds.sdk.shared.FeedMessageBuilder;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.*;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.OddsChange;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeOdds;
+import com.testinzone.unifiedodds.sdk.shared.FeedMessageBuilder;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.*;
 import java.util.Locale;
 import java.util.stream.Collectors;
 import junitparams.JUnitParamsRunner;
@@ -152,7 +152,7 @@ public class FlexScoreMarketIT {
     }
 
     private MarketWithOdds theOnlyMarketIn(
-        OddsChange<com.sportradar.unifiedodds.sdk.entities.SportEvent> oddsChange
+        OddsChange<com.testinzone.unifiedodds.sdk.entities.SportEvent> oddsChange
     ) {
         assertThat(oddsChange.getMarkets()).hasSize(1);
         return oddsChange.getMarkets().get(0);

@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
+package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
 
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactoryFake.initiallyProvides;
-import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ChannelsToBeCreated.creating;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactoryFake.initiallyProvides;
+import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ChannelsToBeCreated.creating;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.rabbitmq.client.Channel;
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.utils.time.EpochMillis;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.utils.time.EpochMillis;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;

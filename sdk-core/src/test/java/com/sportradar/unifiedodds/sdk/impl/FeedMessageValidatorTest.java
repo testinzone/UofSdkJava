@@ -1,22 +1,22 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.impl.ValidationResult.*;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.impl.ValidationResult.*;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.google.inject.Injector;
-import com.sportradar.uf.datamodel.*;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.di.TestInjectorFactory;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DeserializationException;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.uf.datamodel.*;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.di.TestInjectorFactory;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DeserializationException;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
 import java.util.Locale;
 import java.util.function.Consumer;
 import lombok.val;

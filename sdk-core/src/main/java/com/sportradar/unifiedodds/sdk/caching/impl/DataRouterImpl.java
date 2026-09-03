@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.custombet.datamodel.CapiAvailableSelections;
-import com.sportradar.uf.custombet.datamodel.CapiCalculationResponse;
-import com.sportradar.uf.custombet.datamodel.CapiFilteredCalculationResponse;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.caching.CacheItem;
-import com.sportradar.unifiedodds.sdk.caching.DataRouter;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterListener;
-import com.sportradar.unifiedodds.sdk.custombetentities.Selection;
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
-import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.custombet.datamodel.CapiAvailableSelections;
+import com.testinzone.uf.custombet.datamodel.CapiCalculationResponse;
+import com.testinzone.uf.custombet.datamodel.CapiFilteredCalculationResponse;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.caching.CacheItem;
+import com.testinzone.unifiedodds.sdk.caching.DataRouter;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterListener;
+import com.testinzone.unifiedodds.sdk.custombetentities.Selection;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

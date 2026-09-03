@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+  ~ Copyright (C) Testinzone AG. See LICENSE for full license governing this code
   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sportradar.unifiedodds.sdk</groupId>
+    <groupId>com.testinzone.unifiedodds.sdk</groupId>
     <artifactId>unified-feed-sdk</artifactId>
     <version>3.3.0</version>
 
@@ -14,22 +14,22 @@
 
     <description>UnifiedFeed SDK is a client library that enables easier integration with the Betradar XML feeds. SDK exposes XML feed service interface in a more user-friendly way and isolates the client from having to do XML feed parsing, proper connection handling, error recovery, event queuing, data caching and dispatching. It also makes a client solution more stable and robust when it comes to feed handling, especially with the release of new and updated XML feed versions.</description>
     <inceptionYear>2016</inceptionYear>
-    <url>http://sdk.sportradar.com/unifiedfeed/java2</url>
+    <url>http://sdk.testinzone.com/unifiedfeed/java2</url>
     <licenses>
         <license>
             <name>SDK licence</name>
-            <url>http://sdk.sportradar.com/unifiedfeed/java2</url>
+            <url>http://sdk.testinzone.com/unifiedfeed/java2</url>
             <comments>See end-user agreement on sdk website</comments>
         </license>
     </licenses>
     <developers>
         <developer>
-            <id>sportradar</id>
-            <name>Sportradar AG</name>
-            <email>sdk@sportradar.com</email>
-            <url>http://sdk.sportradar.com</url>
-            <organization>Sportradar AG</organization>
-            <organizationUrl>http://www.sportradar.com</organizationUrl>
+            <id>testinzone</id>
+            <name>Testinzone AG</name>
+            <email>sdk@testinzone.com</email>
+            <url>http://sdk.testinzone.com</url>
+            <organization>Testinzone AG</organization>
+            <organizationUrl>http://www.testinzone.com</organizationUrl>
             <roles>
                 <role>architect</role>
                 <role>developer</role>
@@ -37,7 +37,7 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/sportradar/UnifiedOddsSdkJava</url>
+        <url>https://github.com/testinzone/UofSdkJava</url>
     </scm>
 
     <!-- FIXME should be inherited from the parent pom.xml but we aren't linked with it, AND WE SHOULD NOT BE -->
@@ -440,15 +440,15 @@
                     <doctitle>Unified Odds SDK ${project.version} API</doctitle>
 
                     <excludePackageNames>
-                        com.sportradar.unifiedodds.sdk.impl
-                        :com.sportradar.unifiedodds.sdk.impl.*
-                        :com.sportradar.unifiedodds.sdk.di
-                        :com.sportradar.unifiedodds.sdk.di.*
-                        :com.sportradar.unifiedodds.sdk.caching
-                        :com.sportradar.unifiedodds.sdk.caching.*
-                        :com.sportradar.unifiedodds.sdk.exceptions.internal
-                        :com.sportradar.uf
-                        :com.sportradar.uf.*
+                        com.testinzone.unifiedodds.sdk.impl
+                        :com.testinzone.unifiedodds.sdk.impl.*
+                        :com.testinzone.unifiedodds.sdk.di
+                        :com.testinzone.unifiedodds.sdk.di.*
+                        :com.testinzone.unifiedodds.sdk.caching
+                        :com.testinzone.unifiedodds.sdk.caching.*
+                        :com.testinzone.unifiedodds.sdk.exceptions.internal
+                        :com.testinzone.uf
+                        :com.testinzone.uf.*
                     </excludePackageNames>
                     <failOnError>false</failOnError>
                     <doclint>all,-missing</doclint>
@@ -470,7 +470,7 @@
                             <sources>
                                 <source>${project.build.directory}/uf-schema/xsd/messages</source>
                             </sources>
-                            <packageName>com.sportradar.uf.datamodel</packageName>
+                            <packageName>com.testinzone.uf.datamodel</packageName>
                             <xjbSources>
                                 <xjbSource>${basedir}/src/main/xjb/Bindings.xjb
                                 </xjbSource>
@@ -518,7 +518,7 @@
                                 <source>${basedir}/src/main/resources/xsd/manual/UnifiedFeed_replay_list_scenarios.xsd</source>
                                 <source>${basedir}/src/main/resources/xsd/manual/UnifiedFeed_page_not_found.xsd</source>
                             </sources>
-                            <packageName>com.sportradar.uf.sportsapi.datamodel</packageName>
+                            <packageName>com.testinzone.uf.sportsapi.datamodel</packageName>
                             <xjbExcludeFilters>
                                 <filter implementation="org.codehaus.mojo.jaxb2.shared.filters.pattern.PatternFileFilter">
                                     <patterns>
@@ -542,7 +542,7 @@
                             <sources>
                                 <source>${project.build.directory}/schemas-custombet/v1/endpoints</source>
                             </sources>
-                            <packageName>com.sportradar.uf.custombet.datamodel</packageName>
+                            <packageName>com.testinzone.uf.custombet.datamodel</packageName>
                             <xjbSources>
                                 <xjbSource>
                                     ${basedir}/src/main/xjb/BindingsCustomBetAPI.xjb
@@ -628,7 +628,7 @@
                                     <excludes>
                                         <!-- SDK is used by public,
                                         hence it needs to be free from internal dependencies -->
-                                        <exclude>com.sportradar.*</exclude>
+                                        <exclude>com.testinzone.*</exclude>
                                     </excludes>
                                 </bannedDependencies>
                             </rules>
@@ -671,27 +671,27 @@
                             <relocations>
                                 <relocation>
                                     <pattern>com.ibm</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.ibm</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.ibm</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.rabbitmq</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.rabbitmq</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.rabbitmq</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.google</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.google</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.google</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>javax.inject</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.javax.inject</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.javax.inject</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.apache</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.apache</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.aopalliance</pattern>
-                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.aopalliance</shadedPattern>
+                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.aopalliance</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -804,7 +804,7 @@
                         </goals>
                         <configuration>
                             <skip>${skipITs}</skip>
-                            <mainClass>com.sportradar.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests</mainClass>
+                            <mainClass>com.testinzone.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests</mainClass>
                             <classpathScope>test</classpathScope>
                         </configuration>
                     </execution>
@@ -816,7 +816,7 @@
                         </goals>
                         <configuration>
                             <skip>${skipITs}</skip>
-                            <mainClass>com.sportradar.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForIntegrationTests</mainClass>
+                            <mainClass>com.testinzone.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForIntegrationTests</mainClass>
                             <classpathScope>test</classpathScope>
                         </configuration>
                     </execution>

@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
+package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
 
-import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_HAPPENED;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_NOT_HAPPENED;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.createWaiterForEvents;
-import static com.sportradar.utils.time.TimeInterval.seconds;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_HAPPENED;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_NOT_HAPPENED;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.createWaiterForEvents;
+import static com.testinzone.utils.time.TimeInterval.seconds;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
-import com.sportradar.utils.time.TimeUtilsStub;
+import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.testinzone.utils.time.TimeUtilsStub;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 import lombok.val;

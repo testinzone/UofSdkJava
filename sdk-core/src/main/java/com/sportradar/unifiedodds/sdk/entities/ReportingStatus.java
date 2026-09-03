@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.entities;
+package com.testinzone.unifiedodds.sdk.entities;
 
-import com.sportradar.uf.datamodel.UfReportingStatus;
+import com.testinzone.uf.datamodel.UfReportingStatus;
 import java.util.Arrays;
 import java.util.Optional;
 

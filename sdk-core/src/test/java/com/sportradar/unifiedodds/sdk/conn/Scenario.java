@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
-import static com.sportradar.unifiedodds.sdk.conn.SdkConnectionIT.checkListContainsString;
-import static com.sportradar.unifiedodds.sdk.conn.SdkConnectionIT.waitAndCheckTillTimeout;
+import static com.testinzone.unifiedodds.sdk.conn.SdkConnectionIT.checkListContainsString;
+import static com.testinzone.unifiedodds.sdk.conn.SdkConnectionIT.waitAndCheckTillTimeout;
 
 import java.util.function.Consumer;
 

@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.utils.Urn;
 
 /**
  * Defines utility methods used to handle specific event recovery requests
@@ -16,7 +16,7 @@ public interface EventRecoveryRequestIssuer {
      * Initiates a odds recovery procedure for the event associated with the provided {@link Urn} identifier on the requested {@link Producer}
      * (The odds recovery procedure re-sends all odds for all markets for a sport event)
      *
-     * Note: The event must be either {@link com.sportradar.unifiedodds.sdk.entities.EventStatus#NotStarted} or {@link com.sportradar.unifiedodds.sdk.entities.EventStatus#Live}
+     * Note: The event must be either {@link com.testinzone.unifiedodds.sdk.entities.EventStatus#NotStarted} or {@link com.testinzone.unifiedodds.sdk.entities.EventStatus#Live}
      *
      * @param producer the producer on which the recovery should be initialized
      * @param eventId the {@link Urn} identifier of the event for which the recovery is needed

@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.sportradar.unifiedodds.sdk.entities.Category;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.entities.Tournament;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.entities.Category;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.entities.Tournament;
+import com.testinzone.utils.Urn;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -42,7 +42,7 @@ public class CategoryImpl extends CategorySummaryImpl implements Category {
 
     /**
      * Returns an unmodifiable {@link List} of tournaments which belong to the category represented by the current instance
-     * (possible types: {@link com.sportradar.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.sportradar.unifiedodds.sdk.entities.Stage})
+     * (possible types: {@link com.testinzone.unifiedodds.sdk.entities.BasicTournament}, {@link Tournament}, {@link com.testinzone.unifiedodds.sdk.entities.Stage})
      *
      * @return - an unmodifiable {@link List} of tournaments which belong to the category represented by the current instance
      */

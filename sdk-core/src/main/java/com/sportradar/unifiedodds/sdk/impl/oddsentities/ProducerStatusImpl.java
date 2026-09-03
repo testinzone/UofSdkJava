@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStatus;
-import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStatusReason;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStatus;
+import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStatusReason;
 
 /**
  * A basic implementation of the {@link ProducerStatus}

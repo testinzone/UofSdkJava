@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example.common;
+package com.testinzone.unifiedodds.example.common;
 
-import com.sportradar.unifiedodds.sdk.UofListener;
-import com.sportradar.unifiedodds.sdk.UofSession;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.oddsentities.*;
+import com.testinzone.unifiedodds.sdk.UofListener;
+import com.testinzone.unifiedodds.sdk.UofSession;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.oddsentities.*;
 import java.util.List;
 import java.util.Locale;
 import org.slf4j.Logger;
@@ -132,7 +132,7 @@ public class DataMessageListener implements UofListener {
      * If there are important fixture updates you will receive fixturechange message. The thinking
      * is that most fixture updates are queried by you yourself using the SportDataProvider. However,
      * if there are important/urgent changes you will also receive a fixture change message (e.g. if
-     * a match gets delayed, or if Sportradar for some reason needs to stop live coverage of a match
+     * a match gets delayed, or if Testinzone for some reason needs to stop live coverage of a match
      * etc.). This message allows you to promptly respond to such changes
      *
      * @param sender the session

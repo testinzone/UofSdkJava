@@ -1,18 +1,18 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.datamodel.UfOutcomeActive;
-import com.sportradar.unifiedodds.sdk.entities.HomeAway;
-import com.sportradar.unifiedodds.sdk.entities.Match;
-import com.sportradar.unifiedodds.sdk.entities.TeamCompetitor;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProvider;
-import com.sportradar.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeDefinition;
-import com.sportradar.unifiedodds.sdk.oddsentities.PlayerOutcomeOdds;
+import com.testinzone.uf.datamodel.UfOutcomeActive;
+import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.testinzone.unifiedodds.sdk.entities.Match;
+import com.testinzone.unifiedodds.sdk.entities.TeamCompetitor;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProvider;
+import com.testinzone.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeDefinition;
+import com.testinzone.unifiedodds.sdk.oddsentities.PlayerOutcomeOdds;
 import java.util.Locale;
 
 /**

@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.example;
+package com.testinzone.unifiedodds.example;
 
-import com.sportradar.unifiedodds.example.examples.*;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.example.examples.*;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
 import java.io.IOException;
 import java.util.Scanner;
 

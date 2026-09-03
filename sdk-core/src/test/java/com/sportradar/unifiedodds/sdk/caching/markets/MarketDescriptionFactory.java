@@ -1,15 +1,15 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
-import com.sportradar.uf.sportsapi.datamodel.DescMarket;
-import com.sportradar.uf.sportsapi.datamodel.DescOutcomes;
-import com.sportradar.unifiedodds.sdk.domain.language.Translations;
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeDescription;
-import com.sportradar.unifiedodds.sdk.testutil.generic.collections.Maps;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.uf.sportsapi.datamodel.DescMarket;
+import com.testinzone.uf.sportsapi.datamodel.DescOutcomes;
+import com.testinzone.unifiedodds.sdk.domain.language.Translations;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeDescription;
+import com.testinzone.unifiedodds.sdk.testutil.generic.collections.Maps;
+import com.testinzone.utils.domain.names.LanguageHolder;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

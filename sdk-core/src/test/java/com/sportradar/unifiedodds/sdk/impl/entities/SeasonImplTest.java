@@ -1,10 +1,10 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
-import static com.sportradar.utils.Urns.SportEvents.urnForAnySeason;
-import static com.sportradar.utils.Urns.Sports.urnForAnySport;
+import static com.testinzone.utils.Urns.SportEvents.urnForAnySeason;
+import static com.testinzone.utils.Urns.Sports.urnForAnySport;
 import static java.util.Arrays.asList;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;
@@ -14,15 +14,15 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.times;
 
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.SportEntityFactory;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
-import com.sportradar.unifiedodds.sdk.entities.Competition;
-import com.sportradar.unifiedodds.sdk.entities.Season;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.SportEntityFactory;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportEventCacheImpl;
+import com.testinzone.unifiedodds.sdk.entities.Competition;
+import com.testinzone.unifiedodds.sdk.entities.Season;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.utils.Urn;
 import java.util.List;
 import java.util.Locale;
 import org.junit.Test;

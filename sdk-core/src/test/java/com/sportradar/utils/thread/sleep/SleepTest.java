@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.thread.sleep;
+package com.testinzone.utils.thread.sleep;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;
 import static org.hamcrest.Matchers.equalTo;
 
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.LogsMock;
 import java.util.Optional;
 import lombok.val;
 import org.junit.Test;

@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.markets;
+package com.testinzone.unifiedodds.sdk.impl.markets;
 
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.EVEN_OUTCOME_ID;
-import static com.sportradar.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.ODD_OUTCOME_ID;
-import static com.sportradar.unifiedodds.sdk.entities.SportEvents.any;
-import static com.sportradar.utils.domain.markets.MarketIds.anyMarketId;
-import static com.sportradar.utils.domain.specifiers.MarketSpecifiers.anySpecifiers;
-import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.EVEN_OUTCOME_ID;
+import static com.testinzone.unifiedodds.sdk.conn.marketids.OddEvenMarketIds.ODD_OUTCOME_ID;
+import static com.testinzone.unifiedodds.sdk.entities.SportEvents.any;
+import static com.testinzone.utils.domain.markets.MarketIds.anyMarketId;
+import static com.testinzone.utils.domain.specifiers.MarketSpecifiers.anySpecifiers;
+import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
 import static java.util.Collections.singletonList;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -16,10 +16,10 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.impl.markets.NameProviderImpl.StatusMessage;
-import com.sportradar.unifiedodds.sdk.testutil.generic.collections.Maps;
-import com.sportradar.utils.domain.names.Languages;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.impl.markets.NameProviderImpl.StatusMessage;
+import com.testinzone.unifiedodds.sdk.testutil.generic.collections.Maps;
+import com.testinzone.utils.domain.names.Languages;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;

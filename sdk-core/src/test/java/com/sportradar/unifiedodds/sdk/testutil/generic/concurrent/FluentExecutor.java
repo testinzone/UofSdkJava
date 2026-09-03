@@ -1,9 +1,9 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
+package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
 
-import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables.voidCallable;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables.voidCallable;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

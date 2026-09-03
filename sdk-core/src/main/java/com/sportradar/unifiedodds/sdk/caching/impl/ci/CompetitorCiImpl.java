@@ -1,29 +1,29 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import com.sportradar.uf.sportsapi.datamodel.*;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.CompetitorCi;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterManager;
-import com.sportradar.unifiedodds.sdk.caching.ci.*;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCompetitorCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
-import com.sportradar.unifiedodds.sdk.entities.Division;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
-import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.sportradar.utils.SdkHelper;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.*;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.CompetitorCi;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterManager;
+import com.testinzone.unifiedodds.sdk.caching.ci.*;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCacheItem;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCompetitorCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
+import com.testinzone.unifiedodds.sdk.entities.Division;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DataRouterStreamException;
+import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.testinzone.utils.SdkHelper;
+import com.testinzone.utils.Urn;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;

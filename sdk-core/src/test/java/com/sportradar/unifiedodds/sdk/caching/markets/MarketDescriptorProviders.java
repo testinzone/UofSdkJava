@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 
-import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.sportradar.utils.domain.names.LanguageHolder;
+import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.testinzone.utils.domain.names.LanguageHolder;
 import java.util.List;
 import java.util.Locale;
 import lombok.Getter;

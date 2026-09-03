@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching;
+package com.testinzone.unifiedodds.sdk.caching;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
@@ -10,22 +10,22 @@ import static org.mockito.Mockito.mock;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.inject.Injector;
-import com.sportradar.uf.sportsapi.datamodel.SapiFixture;
-import com.sportradar.uf.sportsapi.datamodel.SapiSportCategoriesEndpoint;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterImpl;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportData;
-import com.sportradar.unifiedodds.sdk.caching.impl.SportsDataCacheImpl;
-import com.sportradar.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
-import com.sportradar.unifiedodds.sdk.conn.UofConnListener;
-import com.sportradar.unifiedodds.sdk.di.TestInjectorFactory;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.sportradar.unifiedodds.sdk.shared.RestMessageBuilder;
-import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
-import com.sportradar.unifiedodds.sdk.shared.TestDataRouterManager;
-import com.sportradar.unifiedodds.sdk.shared.TestFeed;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiFixture;
+import com.testinzone.uf.sportsapi.datamodel.SapiSportCategoriesEndpoint;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterImpl;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportData;
+import com.testinzone.unifiedodds.sdk.caching.impl.SportsDataCacheImpl;
+import com.testinzone.unifiedodds.sdk.caching.impl.ci.CacheItemFactory;
+import com.testinzone.unifiedodds.sdk.conn.UofConnListener;
+import com.testinzone.unifiedodds.sdk.di.TestInjectorFactory;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.testinzone.unifiedodds.sdk.shared.RestMessageBuilder;
+import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.testinzone.unifiedodds.sdk.shared.TestDataRouterManager;
+import com.testinzone.unifiedodds.sdk.shared.TestFeed;
+import com.testinzone.utils.Urn;
 import java.util.Locale;
 import java.util.Random;
 import lombok.val;
@@ -71,7 +71,7 @@ public class SportDataCacheTests {
         assertEquals(0, categoriesCache.size());
     }
 
-    @Test(expected = com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException.class)
+    @Test(expected = com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException.class)
     public void retrieveNonExistingSport() throws IllegalCacheStateException, CacheItemNotFoundException {
         assertNotNull(sportsCache);
         assertNotNull(categoriesCache);
@@ -80,7 +80,7 @@ public class SportDataCacheTests {
         assertNull(sportData);
     }
 
-    @Test(expected = com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException.class)
+    @Test(expected = com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException.class)
     public void retrieveNonExistingCategory() throws IllegalCacheStateException, CacheItemNotFoundException {
         assertNotNull(sportsCache);
         assertNotNull(categoriesCache);

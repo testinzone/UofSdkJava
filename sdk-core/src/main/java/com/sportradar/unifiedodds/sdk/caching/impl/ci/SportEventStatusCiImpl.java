@@ -1,17 +1,17 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.caching.impl.ci;
+package com.testinzone.unifiedodds.sdk.caching.impl.ci;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCi;
-import com.sportradar.unifiedodds.sdk.entities.EventClock;
-import com.sportradar.unifiedodds.sdk.entities.EventResult;
-import com.sportradar.unifiedodds.sdk.entities.EventStatus;
-import com.sportradar.unifiedodds.sdk.entities.ReportingStatus;
-import com.sportradar.unifiedodds.sdk.impl.dto.*;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCi;
+import com.testinzone.unifiedodds.sdk.entities.EventClock;
+import com.testinzone.unifiedodds.sdk.entities.EventResult;
+import com.testinzone.unifiedodds.sdk.entities.EventStatus;
+import com.testinzone.unifiedodds.sdk.entities.ReportingStatus;
+import com.testinzone.unifiedodds.sdk.impl.dto.*;
+import com.testinzone.utils.Urn;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;

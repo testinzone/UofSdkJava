@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
 
 import static java.util.Optional.ofNullable;
 import static org.junit.Assert.assertFalse;
@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Envelope;
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 import lombok.val;

@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn.marketids;
+package com.testinzone.unifiedodds.sdk.conn.marketids;
 
 import static java.util.Arrays.asList;
 
-import com.sportradar.unifiedodds.sdk.conn.MarketVariant;
-import com.sportradar.unifiedodds.sdk.oddsentities.MarketWithOdds;
-import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeOdds;
+import com.testinzone.unifiedodds.sdk.conn.MarketVariant;
+import com.testinzone.unifiedodds.sdk.oddsentities.MarketWithOdds;
+import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeOdds;
 import java.util.List;
 
 public class FreeTextMarketIds {

@@ -1,19 +1,19 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.impl;
+package com.testinzone.unifiedodds.sdk.caching.impl;
 
-import static com.sportradar.unifiedodds.sdk.caching.impl.ProfileCaches.BuilderStubbingOutDataRouterManager.stubbingOutDataRouterManager;
-import static com.sportradar.unifiedodds.sdk.caching.impl.ProfileCaches.exportAndImportTheOnlyItemIn;
-import static com.sportradar.unifiedodds.sdk.caching.impl.SportEntityFactories.BuilderStubbingOutAllCachesAndStatusFactory.stubbingOutAllCachesAndStatusFactory;
-import static com.sportradar.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.*;
-import static com.sportradar.unifiedodds.sdk.impl.CompetitorDataProviders.failingFirstAndThenProviding;
-import static com.sportradar.unifiedodds.sdk.impl.CompetitorDataProviders.failingToProvide;
-import static com.sportradar.unifiedodds.sdk.impl.CompetitorDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.impl.SummaryDataProviders.providing;
-import static com.sportradar.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.with;
-import static com.sportradar.utils.Urns.CompetitorProfiles.urnForAnyCompetitor;
-import static com.sportradar.utils.domain.names.LanguageHolder.in;
+import static com.testinzone.unifiedodds.sdk.caching.impl.ProfileCaches.BuilderStubbingOutDataRouterManager.stubbingOutDataRouterManager;
+import static com.testinzone.unifiedodds.sdk.caching.impl.ProfileCaches.exportAndImportTheOnlyItemIn;
+import static com.testinzone.unifiedodds.sdk.caching.impl.SportEntityFactories.BuilderStubbingOutAllCachesAndStatusFactory.stubbingOutAllCachesAndStatusFactory;
+import static com.testinzone.unifiedodds.sdk.conn.SapiMatchSummaries.Euro2024.*;
+import static com.testinzone.unifiedodds.sdk.impl.CompetitorDataProviders.failingFirstAndThenProviding;
+import static com.testinzone.unifiedodds.sdk.impl.CompetitorDataProviders.failingToProvide;
+import static com.testinzone.unifiedodds.sdk.impl.CompetitorDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.impl.SummaryDataProviders.providing;
+import static com.testinzone.unifiedodds.sdk.testutil.generic.naturallanguage.Prepositions.with;
+import static com.testinzone.utils.Urns.CompetitorProfiles.urnForAnyCompetitor;
+import static com.testinzone.utils.domain.names.LanguageHolder.in;
 import static java.util.Arrays.asList;
 import static java.util.Locale.ENGLISH;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -21,16 +21,16 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import com.sportradar.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiMatchSummaryEndpoint;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.conn.SapiTeams;
-import com.sportradar.unifiedodds.sdk.conn.SapiTeams.Germany2024Uefa;
-import com.sportradar.unifiedodds.sdk.conn.SapiTeams.VirtualCompetitor;
-import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiCompetitorProfileEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiMatchSummaryEndpoint;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.conn.SapiTeams;
+import com.testinzone.unifiedodds.sdk.conn.SapiTeams.Germany2024Uefa;
+import com.testinzone.unifiedodds.sdk.conn.SapiTeams.VirtualCompetitor;
+import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.utils.Urn;
 import lombok.val;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Nested;

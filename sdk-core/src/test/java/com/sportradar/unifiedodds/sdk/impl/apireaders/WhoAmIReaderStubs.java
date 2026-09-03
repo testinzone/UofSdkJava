@@ -1,13 +1,13 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl.apireaders;
+package com.testinzone.unifiedodds.sdk.impl.apireaders;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
 import java.time.Duration;
 import java.util.Date;
 

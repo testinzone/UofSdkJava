@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<tournament_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2018-04-25T12:11:21+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/bsa/unified/v1/xml/endpoints/unified/tournament_info.xsd">
+<tournament_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2018-04-25T12:11:21+00:00" xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.testinzone.com/sportsapi/v1/unified http://schemas.testinzone.com/bsa/unified/v1/xml/endpoints/unified/tournament_info.xsd">
   <tournament id="sr:simple_tournament:11111" name="U21 Algerian Ligue 1 - DE">
     <tournament_length start_date="2005-01-01" end_date="2040-01-01"/>
     <sport id="sr:sport:999" name="Soccer"/>

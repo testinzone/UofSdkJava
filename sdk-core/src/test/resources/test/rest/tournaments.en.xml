@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<tournaments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2017-06-13T08:34:16+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/unified http://schemas.sportradar.com/bsa/v1/endpoints/unified/tournaments.xsd">
+<tournaments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2017-06-13T08:34:16+00:00" xmlns="http://schemas.testinzone.com/sportsapi/v1/unified" xsi:schemaLocation="http://schemas.testinzone.com/sportsapi/v1/unified http://schemas.testinzone.com/bsa/v1/endpoints/unified/tournaments.xsd">
     <tournament id="sr:tournament:1" name="European Championship">
         <sport id="sr:sport:1" name="Soccer"/>
         <category id="sr:category:4" name="International"/>

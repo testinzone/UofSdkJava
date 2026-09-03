@@ -1,17 +1,17 @@
-package com.sportradar.unifiedodds.sdk.impl.entities;
+package com.testinzone.unifiedodds.sdk.impl.entities;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.SCHEDULE_MSG_URI;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.SCHEDULE_MSG_URI;
 import static org.junit.Assert.assertEquals;
 
 import com.google.common.collect.ImmutableMap;
-import com.sportradar.uf.sportsapi.datamodel.SapiScheduleEndpoint;
-import com.sportradar.uf.sportsapi.datamodel.SapiVenue;
-import com.sportradar.unifiedodds.sdk.caching.ci.VenueCi;
-import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableVenueCi;
-import com.sportradar.unifiedodds.sdk.entities.Venue;
-import com.sportradar.unifiedodds.sdk.exceptions.internal.DeserializationException;
-import com.sportradar.unifiedodds.sdk.impl.XmlMessageReader;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.sportsapi.datamodel.SapiScheduleEndpoint;
+import com.testinzone.uf.sportsapi.datamodel.SapiVenue;
+import com.testinzone.unifiedodds.sdk.caching.ci.VenueCi;
+import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableVenueCi;
+import com.testinzone.unifiedodds.sdk.entities.Venue;
+import com.testinzone.unifiedodds.sdk.exceptions.internal.DeserializationException;
+import com.testinzone.unifiedodds.sdk.impl.XmlMessageReader;
+import com.testinzone.utils.Urn;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;

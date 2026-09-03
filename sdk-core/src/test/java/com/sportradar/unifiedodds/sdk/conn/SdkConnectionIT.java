@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
-import static com.sportradar.unifiedodds.sdk.conn.WaitingUofListenerDi.createWaitingUofListenerFactory;
-import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
-import static com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
+import static com.testinzone.unifiedodds.sdk.conn.WaitingUofListenerDi.createWaitingUofListenerFactory;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials.with;
+import static com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqClientFactory.createRabbitMqClient;
 import static org.junit.Assert.*;
 
 import com.github.tomakehurst.wiremock.client.WireMock;
@@ -16,19 +16,19 @@ import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.rabbitmq.http.client.Client;
 import com.rabbitmq.http.client.domain.ChannelInfo;
 import com.rabbitmq.http.client.domain.ConnectionInfo;
-import com.sportradar.uf.datamodel.UfSnapshotComplete;
-import com.sportradar.unifiedodds.sdk.MessageInterest;
-import com.sportradar.unifiedodds.sdk.RuntimeConfiguration;
-import com.sportradar.unifiedodds.sdk.UofSdk;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.impl.Constants;
-import com.sportradar.unifiedodds.sdk.oddsentities.OddsChange;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.unifiedodds.sdk.shared.*;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup;
-import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation;
+import com.testinzone.uf.datamodel.UfSnapshotComplete;
+import com.testinzone.unifiedodds.sdk.MessageInterest;
+import com.testinzone.unifiedodds.sdk.RuntimeConfiguration;
+import com.testinzone.unifiedodds.sdk.UofSdk;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.impl.Constants;
+import com.testinzone.unifiedodds.sdk.oddsentities.OddsChange;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.shared.*;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqUserSetup;
+import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.VhostLocation;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.*;
@@ -109,7 +109,7 @@ public class SdkConnectionIT {
         feed = new TestFeed(sdkListener, config, sdkListener);
         GlobalVariables variables = new GlobalVariables();
         variables.setProducer(ProducerId.LIVE_ODDS);
-        variables.setSportEventUrn(com.sportradar.unifiedodds.sdk.conn.SportEvent.ANY);
+        variables.setSportEventUrn(com.testinzone.unifiedodds.sdk.conn.SportEvent.ANY);
         feedMessageBuilder = new FeedMessageBuilder(variables);
 
         // establish connection to the test rabbit server for rabbit producer

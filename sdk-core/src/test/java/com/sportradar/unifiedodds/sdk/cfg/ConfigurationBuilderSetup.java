@@ -1,21 +1,21 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.cfg;
+package com.testinzone.unifiedodds.sdk.cfg;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
-import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
-import com.sportradar.unifiedodds.sdk.shared.TestProducersProvider;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
+import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
+import com.testinzone.unifiedodds.sdk.shared.TestProducersProvider;
+import com.testinzone.utils.SdkHelper;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

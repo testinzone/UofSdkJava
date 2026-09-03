@@ -1,26 +1,26 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.processing.pipeline;
+package com.testinzone.unifiedodds.sdk.impl.processing.pipeline;
 
 import com.google.common.base.Preconditions;
-import com.sportradar.uf.datamodel.UfBetSettlement;
-import com.sportradar.uf.datamodel.UfBetStop;
-import com.sportradar.uf.datamodel.UfFixtureChange;
-import com.sportradar.uf.datamodel.UfOddsChange;
-import com.sportradar.unifiedodds.sdk.ProducerScope;
-import com.sportradar.unifiedodds.sdk.caching.DataRouterListener;
-import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
-import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCache;
-import com.sportradar.unifiedodds.sdk.impl.FeedMessageProcessor;
-import com.sportradar.unifiedodds.sdk.impl.RoutingKeyInfo;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
-import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
-import com.sportradar.utils.Urn;
+import com.testinzone.uf.datamodel.UfBetSettlement;
+import com.testinzone.uf.datamodel.UfBetStop;
+import com.testinzone.uf.datamodel.UfFixtureChange;
+import com.testinzone.uf.datamodel.UfOddsChange;
+import com.testinzone.unifiedodds.sdk.ProducerScope;
+import com.testinzone.unifiedodds.sdk.caching.DataRouterListener;
+import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
+import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCache;
+import com.testinzone.unifiedodds.sdk.impl.FeedMessageProcessor;
+import com.testinzone.unifiedodds.sdk.impl.RoutingKeyInfo;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.testinzone.utils.Urn;
 import java.util.Collection;
 import java.util.Set;
 import java.util.UUID;

@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
+package com.testinzone.unifiedodds.sdk.testutil.rabbit.libraryfixtures;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

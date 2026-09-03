@@ -1,7 +1,7 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.conn;
+package com.testinzone.unifiedodds.sdk.conn;
 
 import java.io.StringWriter;
 import javax.xml.bind.JAXBContext;
@@ -17,7 +17,7 @@ public final class JaxbContexts {
 
         static {
             try {
-                SPORTS_API_JAXB_CONTEXT = JAXBContext.newInstance("com.sportradar.uf.sportsapi.datamodel");
+                SPORTS_API_JAXB_CONTEXT = JAXBContext.newInstance("com.testinzone.uf.sportsapi.datamodel");
             } catch (JAXBException e) {
                 throw new IllegalStateException("JAXB contexts creation failed, ex: ", e);
             }

@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.utils.thread.sleep;
+package com.testinzone.utils.thread.sleep;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

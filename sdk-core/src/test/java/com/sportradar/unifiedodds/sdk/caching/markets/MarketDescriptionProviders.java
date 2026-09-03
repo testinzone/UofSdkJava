@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.caching.markets;
+package com.testinzone.unifiedodds.sdk.caching.markets;
 
 import static java.util.Optional.ofNullable;
 import static org.mockito.Mockito.mock;
 
-import com.sportradar.uf.sportsapi.datamodel.MarketDescriptions;
-import com.sportradar.uf.sportsapi.datamodel.VariantDescriptions;
-import com.sportradar.unifiedodds.sdk.impl.DataProvider;
+import com.testinzone.uf.sportsapi.datamodel.MarketDescriptions;
+import com.testinzone.uf.sportsapi.datamodel.VariantDescriptions;
+import com.testinzone.unifiedodds.sdk.impl.DataProvider;
 import java.util.function.Function;
 import lombok.val;
 

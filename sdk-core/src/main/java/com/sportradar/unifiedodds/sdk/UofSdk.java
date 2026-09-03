@@ -1,11 +1,11 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
 import static java.util.Arrays.asList;
 
 import com.google.common.base.Preconditions;
@@ -14,27 +14,27 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
-import com.sportradar.unifiedodds.sdk.caching.*;
-import com.sportradar.unifiedodds.sdk.caching.impl.DataRouterImpl;
-import com.sportradar.unifiedodds.sdk.cfg.*;
-import com.sportradar.unifiedodds.sdk.di.ConfigurationInjectingModule;
-import com.sportradar.unifiedodds.sdk.di.CustomisableSdkModule;
-import com.sportradar.unifiedodds.sdk.di.InternalCachesProvider;
-import com.sportradar.unifiedodds.sdk.di.MasterInjectionModule;
-import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
-import com.sportradar.unifiedodds.sdk.exceptions.InitException;
-import com.sportradar.unifiedodds.sdk.exceptions.InvalidBookmakerDetailsException;
-import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
-import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.sportradar.unifiedodds.sdk.impl.SdkProducerManager;
-import com.sportradar.unifiedodds.sdk.impl.SdkTaskScheduler;
-import com.sportradar.unifiedodds.sdk.impl.UofSessionImpl;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactory;
-import com.sportradar.unifiedodds.sdk.impl.recovery.SingleRecoveryManagerSupervisor;
-import com.sportradar.unifiedodds.sdk.replay.ReplayManager;
-import com.sportradar.utils.Urn;
-import com.sportradar.utils.jacoco.ExcludeFromJacocoGeneratedReportAsDiIsNotTestedAtUnitTestLevel;
+import com.testinzone.unifiedodds.sdk.caching.*;
+import com.testinzone.unifiedodds.sdk.caching.impl.DataRouterImpl;
+import com.testinzone.unifiedodds.sdk.cfg.*;
+import com.testinzone.unifiedodds.sdk.di.ConfigurationInjectingModule;
+import com.testinzone.unifiedodds.sdk.di.CustomisableSdkModule;
+import com.testinzone.unifiedodds.sdk.di.InternalCachesProvider;
+import com.testinzone.unifiedodds.sdk.di.MasterInjectionModule;
+import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
+import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.testinzone.unifiedodds.sdk.exceptions.InvalidBookmakerDetailsException;
+import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.testinzone.unifiedodds.sdk.impl.SdkProducerManager;
+import com.testinzone.unifiedodds.sdk.impl.SdkTaskScheduler;
+import com.testinzone.unifiedodds.sdk.impl.UofSessionImpl;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.AmqpConnectionFactory;
+import com.testinzone.unifiedodds.sdk.impl.recovery.SingleRecoveryManagerSupervisor;
+import com.testinzone.unifiedodds.sdk.replay.ReplayManager;
+import com.testinzone.utils.Urn;
+import com.testinzone.utils.jacoco.ExcludeFromJacocoGeneratedReportAsDiIsNotTestedAtUnitTestLevel;
 import java.io.IOException;
 import java.util.*;
 import java.util.AbstractMap.SimpleEntry;
@@ -621,7 +621,7 @@ public class UofSdk implements AutoCloseable {
             return;
         }
         String version = injector.getInstance(Key.get(String.class, Names.named("version")));
-        logger.info("Initializing the UofSdk instance (Sportradar Unified Odds SDK {})", version);
+        logger.info("Initializing the UofSdk instance (Testinzone Unified Odds SDK {})", version);
 
         // validate the client token
         WhoAmIReader whoAmI = injector.getInstance(WhoAmIReader.class);

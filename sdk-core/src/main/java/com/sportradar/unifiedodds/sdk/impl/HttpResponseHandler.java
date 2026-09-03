@@ -1,14 +1,14 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
 import com.google.common.base.Strings;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
-import com.sportradar.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
+import com.testinzone.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import org.apache.hc.core5.http.ClassicHttpResponse;

@@ -1,8 +1,8 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.di;
+package com.testinzone.unifiedodds.sdk.di;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -14,20 +14,20 @@ import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 import com.rabbitmq.client.ConnectionFactory;
-import com.sportradar.unifiedodds.sdk.*;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.impl.*;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
-import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.sportradar.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
-import com.sportradar.unifiedodds.sdk.impl.markets.MarketManagerImpl;
-import com.sportradar.unifiedodds.sdk.impl.markets.mappings.MappingValidatorFactoryImpl;
-import com.sportradar.unifiedodds.sdk.impl.oddsentities.FeedMessageFactoryImpl;
-import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.*;
-import com.sportradar.unifiedodds.sdk.impl.recovery.RecoveryManagerImpl;
-import com.sportradar.unifiedodds.sdk.impl.recovery.SingleRecoveryManagerSupervisor;
-import com.sportradar.unifiedodds.sdk.impl.util.MdcScheduledExecutorService;
+import com.testinzone.unifiedodds.sdk.*;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.impl.*;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.MessageAndActionExtractor;
+import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.testinzone.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
+import com.testinzone.unifiedodds.sdk.impl.markets.MarketManagerImpl;
+import com.testinzone.unifiedodds.sdk.impl.markets.mappings.MappingValidatorFactoryImpl;
+import com.testinzone.unifiedodds.sdk.impl.oddsentities.FeedMessageFactoryImpl;
+import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.*;
+import com.testinzone.unifiedodds.sdk.impl.recovery.RecoveryManagerImpl;
+import com.testinzone.unifiedodds.sdk.impl.recovery.SingleRecoveryManagerSupervisor;
+import com.testinzone.unifiedodds.sdk.impl.util.MdcScheduledExecutorService;
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.*;

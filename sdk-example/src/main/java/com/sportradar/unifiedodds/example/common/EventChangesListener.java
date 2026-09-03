@@ -1,8 +1,8 @@
-package com.sportradar.unifiedodds.example.common;
+package com.testinzone.unifiedodds.example.common;
 
-import com.sportradar.unifiedodds.sdk.EventChangeListener;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.utils.Urn;
+import com.testinzone.unifiedodds.sdk.EventChangeListener;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.utils.Urn;
 import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

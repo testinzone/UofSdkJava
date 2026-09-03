@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk;
+package com.testinzone.unifiedodds.sdk;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.sportradar.unifiedodds.sdk.cfg.Environment;
-import com.sportradar.unifiedodds.sdk.cfg.SdkConfigurationPropertiesReader;
-import com.sportradar.unifiedodds.sdk.cfg.SdkConfigurationYamlReader;
-import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
-import com.sportradar.utils.SdkHelper;
+import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.testinzone.unifiedodds.sdk.cfg.SdkConfigurationPropertiesReader;
+import com.testinzone.unifiedodds.sdk.cfg.SdkConfigurationYamlReader;
+import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
+import com.testinzone.utils.SdkHelper;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -107,14 +107,14 @@ public class SdkInternalConfiguration {
     }
 
     /**
-     * @return Host / IP for connection as provided by Sportradar
+     * @return Host / IP for connection as provided by Testinzone
      */
     public String getMessagingHost() {
         return host;
     }
 
     /**
-     * @return The Sportradar host used for API-access
+     * @return The Testinzone host used for API-access
      */
     public String getApiHost() {
         return apiHost;
@@ -222,7 +222,7 @@ public class SdkInternalConfiguration {
 
     /**
      * Returns the username of the broker to which you are currently connecting - this field should be null/blank if
-     * you are connecting to the default Sportradar AMQP servers
+     * you are connecting to the default Testinzone AMQP servers
      *
      * @return the username of the broker to which you are connecting
      */
@@ -232,7 +232,7 @@ public class SdkInternalConfiguration {
 
     /**
      * Returns the password of the broker to which you are connecting - this field should be null/blank if
-     * connecting to the default Sportradar AMQP servers
+     * connecting to the default Testinzone AMQP servers
      *
      * @return - the password of the broker to which you are connecting
      */

@@ -1,4 +1,4 @@
-package com.sportradar.unifiedodds.sdk.entities;
+package com.testinzone.unifiedodds.sdk.entities;
 
 public interface CompetitorResult {
     /**

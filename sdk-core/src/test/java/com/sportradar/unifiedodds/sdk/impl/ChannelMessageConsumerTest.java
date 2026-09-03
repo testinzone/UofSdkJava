@@ -1,14 +1,14 @@
-package com.sportradar.unifiedodds.sdk.impl;
+package com.testinzone.unifiedodds.sdk.impl;
 
-import static com.sportradar.unifiedodds.sdk.impl.Constants.ODDS_CHANGE_KEY;
+import static com.testinzone.unifiedodds.sdk.impl.Constants.ODDS_CHANGE_KEY;
 import static org.mockito.Mockito.*;
 
 import com.google.inject.*;
 import com.google.inject.name.Names;
 import com.google.inject.util.Modules;
-import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
-import com.sportradar.unifiedodds.sdk.di.MockedMasterModule;
-import com.sportradar.unifiedodds.sdk.di.TestingModule;
+import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
+import com.testinzone.unifiedodds.sdk.di.MockedMasterModule;
+import com.testinzone.unifiedodds.sdk.di.TestingModule;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;

@@ -1,16 +1,16 @@
 /*
- * Copyright (C) Sportradar AG. See LICENSE for full license governing this code
+ * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.sportradar.unifiedodds.sdk.impl.oddsentities;
+package com.testinzone.unifiedodds.sdk.impl.oddsentities;
 
-import com.sportradar.uf.datamodel.UfChangeType;
-import com.sportradar.uf.datamodel.UfFixtureChange;
-import com.sportradar.unifiedodds.sdk.entities.SportEvent;
-import com.sportradar.unifiedodds.sdk.oddsentities.FixtureChange;
-import com.sportradar.unifiedodds.sdk.oddsentities.FixtureChangeType;
-import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
+import com.testinzone.uf.datamodel.UfChangeType;
+import com.testinzone.uf.datamodel.UfFixtureChange;
+import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.testinzone.unifiedodds.sdk.oddsentities.FixtureChange;
+import com.testinzone.unifiedodds.sdk.oddsentities.FixtureChangeType;
+import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
 import java.util.Date;
 
 /**

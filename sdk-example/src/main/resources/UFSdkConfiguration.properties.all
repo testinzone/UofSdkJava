@@ -2,7 +2,7 @@
 
 # ==== MANDATORY PROPERTIES ====
 
-# the access token provided by Sportradar
+# the access token provided by Testinzone
 uf.sdk.accessToken=
 
 # the default language (en)
