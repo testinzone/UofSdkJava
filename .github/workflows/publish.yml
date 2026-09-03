@@ -42,3 +42,29 @@ jobs:
         env:
           MAVEN_USERNAME: ${{ github.actor }}
           MAVEN_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # A green `mvn deploy` is not proof of an upload: with nexus-staging's
+      # extensions=true the deploy phase silently did nothing. Read the artifact
+      # back out of the registry so the job fails if nothing was published.
+      - name: Verify the artifact is in the registry
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          VER=$(mvn -q -f sdk-core/pom.xml help:evaluate                     -Dexpression=project.version -DforceStdout)
+          BASE="https://maven.pkg.github.com/${{ github.repository }}/com/testinzone/unifiedodds/sdk/unified-feed-sdk"
+          echo "Looking for version '$VER'"
+          found=0
+          for url in "$BASE/maven-metadata.xml" "$BASE/$VER/maven-metadata.xml"; do
+            code=$(curl -s -o meta.xml -w '%{http_code}'                         -u "${{ github.actor }}:$GH_TOKEN" "$url" || true)
+            echo "--- $url -> HTTP $code"
+            if [ "$code" = "200" ]; then
+              cat meta.xml
+              if grep -q "$VER" meta.xml; then found=1; fi
+            fi
+          done
+          if [ "$found" != "1" ]; then
+            echo "::error::Deploy reported success but $VER is not in the registry."
+            exit 1
+          fi
+          echo "Confirmed: $VER is published."
