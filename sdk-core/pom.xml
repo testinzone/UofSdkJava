@@ -58,6 +58,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <!-- Deployment target for distributionManagement above. Defaults to GitHub Packages for
+             this repository; override with -Dsr.repository.url=... to publish elsewhere. The
+             matching <server><id> in settings.xml must equal sr.repository.id. -->
+        <sr.repository.id>github</sr.repository.id>
+        <sr.repository.url>https://maven.pkg.github.com/testinzone/UofSdkJava</sr.repository.url>
+        <sr.snapshotRepository.id>github</sr.snapshotRepository.id>
+        <sr.snapshotRepository.url>https://maven.pkg.github.com/testinzone/UofSdkJava</sr.snapshotRepository.url>
+
+        <!-- GitHub Packages does not require PGP signatures; enable with -Dgpg.skip=false -->
+        <gpg.skip>true</gpg.skip>
+
         <rabbitMQ.version>5.17.0</rabbitMQ.version>
         <apache.httpComponents.version>5.2.1</apache.httpComponents.version>
         <slf4j.version>2.0.7</slf4j.version>
@@ -274,6 +285,10 @@
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <!-- extensions=true replaces the standard deploy with a Sonatype staging
+                         upload. Skip it so `mvn deploy` uses distributionManagement (GitHub
+                         Packages). Set -DskipNexusStagingDeployMojo=false to stage to OSSRH. -->
+                    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
                 </configuration>
             </plugin>
             <plugin>
