@@ -8,7 +8,7 @@
 
     <groupId>com.testinzone.unifiedodds.sdk</groupId>
     <artifactId>unified-feed-sdk</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.0-SNAPSHOT</version>
 
     <name>Unified Odds Feed SDK</name>
 

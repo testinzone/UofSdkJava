@@ -3,6 +3,10 @@ name: Publish to GitHub Packages
 on:
   workflow_dispatch:
   push:
+    # A push to main publishes a SNAPSHOT build; snapshots may be republished
+    # freely. A v* tag publishes the release version, which is immutable.
+    branches:
+      - main
     tags:
       - 'v*'
 
