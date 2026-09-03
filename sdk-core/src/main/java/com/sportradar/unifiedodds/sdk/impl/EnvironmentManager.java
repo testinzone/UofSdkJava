@@ -71,10 +71,10 @@ public final class EnvironmentManager {
                 ),
                 new EnvironmentSetting(
                     Environment.GlobalIntegration,
-                    "global.stgmq.betradar.com",
-                    "global.stgapi.betradar.com",
+                    "rabbitmq-service.l1providers.com",
+                    "stage-catalog.mysportsfeed.io",
                     80,
-                    true,
+                    false, // broker has no TLS; nothing reads onlySsl today, see uf.sdk.messagingUseSsl
                     basicRetryList
                 ),
                 new EnvironmentSetting(
