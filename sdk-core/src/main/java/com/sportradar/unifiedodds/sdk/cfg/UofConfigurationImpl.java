@@ -175,6 +175,17 @@ public class UofConfigurationImpl implements UofConfiguration {
             if (environment != Environment.Custom) {
                 rabbitConfiguration.setHost(EnvironmentManager.getMqHost(environment));
                 apiConfiguration.setHost(EnvironmentManager.getApiHost(environment));
+
+                // Honour the environment's declared TLS capability. Rabbit config defaults to
+                // SSL, which selects port 5671; an environment whose broker has no TLS listener
+                // declares onlySsl=false and gets 5672 instead. Nothing read this before, so
+                // programmatic selectEnvironment(...) always assumed TLS and could not connect.
+                // Properties (uf.sdk.messagingUseSsl) are applied after this and still win.
+                com.testinzone.unifiedodds.sdk.impl.EnvironmentSetting envSetting =
+                    EnvironmentManager.getSetting(environment);
+                if (envSetting != null && Boolean.FALSE.equals(envSetting.isOnlySsl())) {
+                    rabbitConfiguration.useSsl(false);
+                }
             } else {
                 if (SdkHelper.stringIsNullOrEmpty(rabbitConfiguration.getHost())) {
                     rabbitConfiguration.setHost(EnvironmentManager.getMqHost(Environment.Integration));
@@ -206,7 +217,17 @@ public class UofConfigurationImpl implements UofConfiguration {
                 : EnvironmentManager.DEFAULT_MQ_HOST_PORT + 1;
             rabbitConfiguration.setPort(newPort);
             rabbitConfiguration.setUsername(accessToken);
-            rabbitConfiguration.setPassword(null);
+
+            // Sportradar's brokers take the token as the username with an empty password.
+            // A broker that refuses blank passwords declares tokenAsMessagingPassword and
+            // gets the token in both fields instead.
+            com.testinzone.unifiedodds.sdk.impl.EnvironmentSetting mqSetting =
+                EnvironmentManager.getSetting(environment);
+            if (mqSetting != null && mqSetting.usesTokenAsMessagingPassword()) {
+                rabbitConfiguration.setPassword(accessToken);
+            } else {
+                rabbitConfiguration.setPassword(null);
+            }
         }
     }
 

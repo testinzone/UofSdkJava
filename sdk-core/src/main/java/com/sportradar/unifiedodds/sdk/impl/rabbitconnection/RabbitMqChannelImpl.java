@@ -385,7 +385,11 @@ public class RabbitMqChannelImpl implements OnDemandChannelSupervisor {
         try {
             initChannelQueue(routingKeys, messageInterest);
         } catch (IOException e) {
-            logger.error(String.format("Error creating channel: %s", e.getMessage()));
+            // Pass the throwable: an IOException from queueDeclare/queueBind carries its
+            // reason in the cause (a ShutdownSignalException naming the resource), and
+            // getMessage() alone is null, which logged as "Error creating channel: null"
+            // and hid a missing `unifiedfeed` exchange behind an empty message.
+            logger.error(String.format("Error creating channel: %s", e.getMessage()), e);
         }
     }
 

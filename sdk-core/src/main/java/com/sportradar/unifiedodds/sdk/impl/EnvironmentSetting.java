@@ -12,6 +12,8 @@ public class EnvironmentSetting {
     private int apiPort;
     private Boolean onlySsl;
     private List<Environment> retryList;
+    /** Whether the broker expects the access token as the AMQP password rather than an empty one. */
+    private boolean tokenAsMessagingPassword;
 
     public EnvironmentSetting(
         Environment environment,
@@ -27,6 +29,30 @@ public class EnvironmentSetting {
         this.apiPort = apiPort;
         this.onlySsl = onlySsl;
         this.retryList = environmentRetryList == null ? Lists.newArrayList() : environmentRetryList;
+        this.tokenAsMessagingPassword = false;
+    }
+
+    @SuppressWarnings("ParameterNumber")
+    public EnvironmentSetting(
+        Environment environment,
+        String mqHost,
+        String apiHost,
+        int apiPort,
+        Boolean onlySsl,
+        List<Environment> environmentRetryList,
+        boolean tokenAsMessagingPassword
+    ) {
+        this(environment, mqHost, apiHost, apiPort, onlySsl, environmentRetryList);
+        this.tokenAsMessagingPassword = tokenAsMessagingPassword;
+    }
+
+    /**
+     * Sportradar's brokers authenticate the access token as the username with an empty
+     * password. A broker that instead expects the token as the password too sets this.
+     * @return whether the access token doubles as the AMQP password
+     */
+    public boolean usesTokenAsMessagingPassword() {
+        return tokenAsMessagingPassword;
     }
 
     /**

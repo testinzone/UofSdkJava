@@ -71,16 +71,17 @@ public final class EnvironmentManager {
                 ),
                 new EnvironmentSetting(
                     Environment.GlobalIntegration,
-                    "rabbitmq-service.l1providers.com",
+                    "172.26.1.152",
                     "stage-catalog.mysportsfeed.io",
                     80,
-                    false, // broker has no TLS; nothing reads onlySsl today, see uf.sdk.messagingUseSsl
+                    false, // broker has no TLS listener -> UofConfigurationImpl selects port 5672
                     // No retry list. WhoAmIReader falls back to the hosts named here when the
                     // configured one rejects the token, so basicRetryList would silently move a
                     // bad SAP token onto Sportradar Integration and then Production - observed
                     // connecting to bookmaker 34948 and consuming a live feed. Empty means a bad
                     // token fails loudly against the catalog instead.
-                    Lists.newArrayList()
+                    Lists.newArrayList(),
+                    true // broker rejects blank passwords; the token doubles as the password
                 ),
                 new EnvironmentSetting(
                     Environment.ProxySingapore,
