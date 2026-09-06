@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.datamodel.UfMarketMetadata;
-import com.testinzone.unifiedodds.sdk.oddsentities.MarketMetadata;
+import com.sportradar.uf.datamodel.UfMarketMetadata;
+import com.sportradar.unifiedodds.sdk.oddsentities.MarketMetadata;
 
 /**
  * An implementation of the {@link MarketMetadata} instance which uses data provided by the feed to define metadata information

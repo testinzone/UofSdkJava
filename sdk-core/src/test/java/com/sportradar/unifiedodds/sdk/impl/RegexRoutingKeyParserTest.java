@@ -1,8 +1,8 @@
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import static org.junit.Assert.assertEquals;
 
-import com.testinzone.utils.Urn;
+import com.sportradar.utils.Urn;
 import org.junit.Assert;
 import org.junit.Test;
 

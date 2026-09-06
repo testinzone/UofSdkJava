@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.integrationtest.preconditions;
+package com.sportradar.unifiedodds.sdk.integrationtest.preconditions;
 
-import com.testinzone.unifiedodds.sdk.impl.Constants;
-import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
+import com.sportradar.unifiedodds.sdk.impl.Constants;
+import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;

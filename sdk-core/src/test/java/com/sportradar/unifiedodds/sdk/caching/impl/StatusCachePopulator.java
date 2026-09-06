@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.impl;
+package com.sportradar.unifiedodds.sdk.caching.impl;
 
-import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.sportradar.utils.Urn;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor

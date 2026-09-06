@@ -2,17 +2,17 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
-import com.testinzone.unifiedodds.sdk.exceptions.InvalidBookmakerDetailsException;
-import com.testinzone.unifiedodds.sdk.impl.ProducerData;
-import com.testinzone.unifiedodds.sdk.impl.ProducerDataProvider;
-import com.testinzone.unifiedodds.sdk.impl.ProducerImpl;
-import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
+import com.sportradar.unifiedodds.sdk.exceptions.InvalidBookmakerDetailsException;
+import com.sportradar.unifiedodds.sdk.impl.ProducerData;
+import com.sportradar.unifiedodds.sdk.impl.ProducerDataProvider;
+import com.sportradar.unifiedodds.sdk.impl.ProducerImpl;
+import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
 import java.util.List;
 import java.util.function.Function;
 

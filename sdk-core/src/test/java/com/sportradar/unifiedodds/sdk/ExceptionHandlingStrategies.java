@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
+import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy.Throw;
 
 public class ExceptionHandlingStrategies {
 

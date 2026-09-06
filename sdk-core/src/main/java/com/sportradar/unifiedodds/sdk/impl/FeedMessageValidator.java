@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
-import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 
 /**
- * A class used to validate {@link com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage} objects
+ * A class used to validate {@link com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage} objects
  */
 public interface FeedMessageValidator {
     /**

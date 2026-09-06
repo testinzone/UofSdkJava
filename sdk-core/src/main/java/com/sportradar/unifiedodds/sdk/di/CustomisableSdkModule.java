@@ -2,16 +2,16 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.di;
+package com.sportradar.unifiedodds.sdk.di;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Binder;
 import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
 import com.google.inject.name.Names;
-import com.testinzone.uf.sportsapi.datamodel.MarketDescriptions;
-import com.testinzone.unifiedodds.sdk.SnapshotRequestManager;
-import com.testinzone.unifiedodds.sdk.impl.*;
+import com.sportradar.uf.sportsapi.datamodel.MarketDescriptions;
+import com.sportradar.unifiedodds.sdk.SnapshotRequestManager;
+import com.sportradar.unifiedodds.sdk.impl.*;
 
 /**
  * An injection module which is used to customise some of the SDK internal components

@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities.status;
+package com.sportradar.unifiedodds.sdk.impl.entities.status;
 
-import com.testinzone.unifiedodds.sdk.caching.LocalizedNamedValueCache;
-import com.testinzone.unifiedodds.sdk.caching.SportEventStatusCi;
-import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatistics;
-import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatus;
+import com.sportradar.unifiedodds.sdk.caching.LocalizedNamedValueCache;
+import com.sportradar.unifiedodds.sdk.caching.SportEventStatusCi;
+import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatistics;
+import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatus;
 
 /**
  * Provides methods used to access soccer status information

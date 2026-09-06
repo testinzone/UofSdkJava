@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.util;
+package com.sportradar.unifiedodds.sdk.impl.util;
 
 import com.google.common.base.Preconditions;
 import java.util.Collection;

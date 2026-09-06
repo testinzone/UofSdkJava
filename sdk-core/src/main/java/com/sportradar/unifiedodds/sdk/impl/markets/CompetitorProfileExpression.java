@@ -2,15 +2,15 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.markets;
+package com.sportradar.unifiedodds.sdk.impl.markets;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.testinzone.unifiedodds.sdk.caching.CompetitorCi;
-import com.testinzone.unifiedodds.sdk.caching.ProfileCache;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.caching.CompetitorCi;
+import com.sportradar.unifiedodds.sdk.caching.ProfileCache;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.sportradar.utils.Urn;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;

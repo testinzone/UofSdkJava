@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
-import com.testinzone.unifiedodds.sdk.entities.HomeAway;
-import com.testinzone.unifiedodds.sdk.entities.TeamCompetitor;
+import com.sportradar.unifiedodds.sdk.entities.HomeAway;
+import com.sportradar.unifiedodds.sdk.entities.TeamCompetitor;
 
 /**
  * Describes a player outcome. A player outcome is an outcome that is related to a player profile.

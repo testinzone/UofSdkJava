@@ -1,9 +1,9 @@
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
 import static org.junit.Assert.*;
 
-import com.testinzone.unifiedodds.sdk.entities.ResourceTypeGroup;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.entities.ResourceTypeGroup;
+import com.sportradar.utils.Urn;
 import org.junit.Test;
 
 @SuppressWarnings({ "MagicNumber", "MultipleStringLiterals" })

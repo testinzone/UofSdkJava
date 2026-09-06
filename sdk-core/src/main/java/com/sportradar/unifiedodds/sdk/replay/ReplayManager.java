@@ -2,27 +2,27 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.replay;
+package com.sportradar.unifiedodds.sdk.replay;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import com.testinzone.uf.sportsapi.datamodel.*;
-import com.testinzone.unifiedodds.sdk.LoggerDefinitions;
-import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
-import com.testinzone.unifiedodds.sdk.SportDataProvider;
-import com.testinzone.unifiedodds.sdk.SportEntityFactory;
-import com.testinzone.unifiedodds.sdk.entities.ReplaySportEvent;
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.testinzone.unifiedodds.sdk.impl.DataProvider;
-import com.testinzone.unifiedodds.sdk.impl.Deserializer;
-import com.testinzone.unifiedodds.sdk.impl.LogHttpDataFetcher;
-import com.testinzone.unifiedodds.sdk.impl.apireaders.HttpHelper;
-import com.testinzone.unifiedodds.sdk.impl.entities.ReplaySportEventImpl;
-import com.testinzone.utils.Urn;
+import com.sportradar.uf.sportsapi.datamodel.*;
+import com.sportradar.unifiedodds.sdk.LoggerDefinitions;
+import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.sportradar.unifiedodds.sdk.SportDataProvider;
+import com.sportradar.unifiedodds.sdk.SportEntityFactory;
+import com.sportradar.unifiedodds.sdk.entities.ReplaySportEvent;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.sportradar.unifiedodds.sdk.impl.DataProvider;
+import com.sportradar.unifiedodds.sdk.impl.Deserializer;
+import com.sportradar.unifiedodds.sdk.impl.LogHttpDataFetcher;
+import com.sportradar.unifiedodds.sdk.impl.apireaders.HttpHelper;
+import com.sportradar.unifiedodds.sdk.impl.entities.ReplaySportEventImpl;
+import com.sportradar.utils.Urn;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;

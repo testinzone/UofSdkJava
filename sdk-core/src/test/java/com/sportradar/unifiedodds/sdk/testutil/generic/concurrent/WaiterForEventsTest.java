@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
+package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
 
-import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_HAPPENED;
-import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_NOT_HAPPENED;
+import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_HAPPENED;
+import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.WaitingStatus.EVENT_NOT_HAPPENED;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;

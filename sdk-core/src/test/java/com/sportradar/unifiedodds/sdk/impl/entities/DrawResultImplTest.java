@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
-import static com.testinzone.unifiedodds.sdk.impl.entities.DrawResultAssertions.assertThat;
+import static com.sportradar.unifiedodds.sdk.impl.entities.DrawResultAssertions.assertThat;
 import static java.util.Collections.emptyMap;
 import static java.util.Locale.ENGLISH;
 import static java.util.Locale.FRENCH;

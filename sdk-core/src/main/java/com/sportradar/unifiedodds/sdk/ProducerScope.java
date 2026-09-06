@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
 /**
- * An indication of what type of event messages may be dispatched by a specific {@link com.testinzone.unifiedodds.sdk.oddsentities.Producer}
+ * An indication of what type of event messages may be dispatched by a specific {@link com.sportradar.unifiedodds.sdk.oddsentities.Producer}
  *
  */
 // Constant names should comply with a naming convention

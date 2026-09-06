@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.utils;
+package com.sportradar.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import com.google.common.collect.ImmutableMap;
-import com.testinzone.unifiedodds.sdk.entities.ResourceTypeGroup;
-import com.testinzone.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
+import com.sportradar.unifiedodds.sdk.entities.ResourceTypeGroup;
+import com.sportradar.unifiedodds.sdk.exceptions.UnsupportedUrnFormatException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.slf4j.Logger;

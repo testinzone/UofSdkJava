@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
 /**
  * An indication on how should be exceptions handled on the public API

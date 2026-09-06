@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
 @SuppressWarnings({ "VisibilityModifier" })
 public class MqUser {

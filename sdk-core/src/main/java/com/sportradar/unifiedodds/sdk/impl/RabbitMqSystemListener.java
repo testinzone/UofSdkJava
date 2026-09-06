@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import com.rabbitmq.client.RecoveryListener;
 import com.rabbitmq.client.ShutdownListener;
-import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.OnDemandChannelSupervisor;
+import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.OnDemandChannelSupervisor;
 
 /**
  * Defines methods invoked by the {@link OnDemandChannelSupervisor} regarding system events

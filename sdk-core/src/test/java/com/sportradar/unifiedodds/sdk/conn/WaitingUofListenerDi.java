@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.impl.TimeUtilsImpl;
-import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
+import com.sportradar.unifiedodds.sdk.impl.TimeUtilsImpl;
+import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
 
 public class WaitingUofListenerDi {
 

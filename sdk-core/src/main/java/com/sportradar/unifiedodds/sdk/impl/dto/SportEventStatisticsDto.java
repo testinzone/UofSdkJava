@@ -2,13 +2,13 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.dto;
+package com.sportradar.unifiedodds.sdk.impl.dto;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.testinzone.uf.datamodel.UfStatisticsType;
-import com.testinzone.uf.sportsapi.datamodel.SapiMatchStatistics;
-import com.testinzone.unifiedodds.sdk.entities.HomeAway;
+import com.sportradar.uf.datamodel.UfStatisticsType;
+import com.sportradar.uf.sportsapi.datamodel.SapiMatchStatistics;
+import com.sportradar.unifiedodds.sdk.entities.HomeAway;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

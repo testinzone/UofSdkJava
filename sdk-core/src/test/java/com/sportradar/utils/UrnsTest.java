@@ -1,13 +1,13 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils;
+package com.sportradar.utils;
 
-import static com.testinzone.utils.Urns.unique;
+import static com.sportradar.utils.Urns.unique;
 import static org.junit.Assert.*;
 
-import com.testinzone.unifiedodds.sdk.testutil.generic.generationassert.DataGenerationAssert;
-import com.testinzone.utils.domain.UniqueObjects;
+import com.sportradar.unifiedodds.sdk.testutil.generic.generationassert.DataGenerationAssert;
+import com.sportradar.utils.domain.UniqueObjects;
 import lombok.val;
 import org.junit.Assert;
 import org.junit.Test;

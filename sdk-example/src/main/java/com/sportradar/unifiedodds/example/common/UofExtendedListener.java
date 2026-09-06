@@ -2,13 +2,13 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.example.common;
+package com.sportradar.unifiedodds.example.common;
 
-import com.testinzone.uf.datamodel.UfOddsChange;
-import com.testinzone.unifiedodds.sdk.MessageInterest;
-import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
-import com.testinzone.unifiedodds.sdk.impl.RoutingKeyInfo;
-import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.sportradar.uf.datamodel.UfOddsChange;
+import com.sportradar.unifiedodds.sdk.MessageInterest;
+import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
+import com.sportradar.unifiedodds.sdk.impl.RoutingKeyInfo;
+import com.sportradar.unifiedodds.sdk.oddsentities.*;
 import java.net.URI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

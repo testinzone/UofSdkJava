@@ -1,20 +1,20 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static com.testinzone.unifiedodds.sdk.conn.ProducerId.LIVE_ODDS;
-import static com.testinzone.unifiedodds.sdk.conn.SapiProducers.buildActiveProducer;
-import static com.testinzone.unifiedodds.sdk.conn.SapiSports.allSports;
+import static com.sportradar.unifiedodds.sdk.conn.ProducerId.LIVE_ODDS;
+import static com.sportradar.unifiedodds.sdk.conn.SapiProducers.buildActiveProducer;
+import static com.sportradar.unifiedodds.sdk.conn.SapiSports.allSports;
 import static java.lang.String.format;
 
 import com.github.tomakehurst.wiremock.client.MappingBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.google.common.base.Charsets;
-import com.testinzone.uf.custombet.datamodel.CapiResponse;
-import com.testinzone.uf.sportsapi.datamodel.*;
+import com.sportradar.uf.custombet.datamodel.CapiResponse;
+import com.sportradar.uf.sportsapi.datamodel.*;
 import java.io.ByteArrayOutputStream;
 import java.util.Locale;
 import java.util.function.Consumer;

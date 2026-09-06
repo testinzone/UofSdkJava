@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.utils;
+package com.sportradar.utils;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

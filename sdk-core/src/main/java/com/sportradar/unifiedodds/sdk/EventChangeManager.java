@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import com.testinzone.unifiedodds.sdk.entities.FixtureChange;
-import com.testinzone.unifiedodds.sdk.entities.ResultChange;
+import com.sportradar.unifiedodds.sdk.entities.FixtureChange;
+import com.sportradar.unifiedodds.sdk.entities.ResultChange;
 import java.time.Duration;
 import java.util.Date;
 

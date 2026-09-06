@@ -1,16 +1,16 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
-import com.testinzone.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
+import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.sportradar.unifiedodds.sdk.impl.http.ApiResponseHandlingException;
 import java.io.IOException;
 import lombok.val;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;

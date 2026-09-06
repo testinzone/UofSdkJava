@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.example.common;
+package com.sportradar.unifiedodds.example.common;
 
 @SuppressWarnings({ "HideUtilityClassConstructor" })
 public class SdkConstants {

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.time;
+package com.sportradar.utils.time;
 
 public class TimeInterval {
 

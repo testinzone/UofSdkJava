@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.generic.testing;
+package com.sportradar.utils.generic.testing;
 
-import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
+import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.VoidCallables;
 
 public final class Exceptions {
 

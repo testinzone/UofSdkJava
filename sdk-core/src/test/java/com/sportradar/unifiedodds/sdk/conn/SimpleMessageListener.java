@@ -2,15 +2,15 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.UofListener;
-import com.testinzone.unifiedodds.sdk.UofSdk;
-import com.testinzone.unifiedodds.sdk.UofSession;
-import com.testinzone.unifiedodds.sdk.entities.LongTermEvent;
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.oddsentities.*;
-import com.testinzone.unifiedodds.sdk.shared.Helper;
+import com.sportradar.unifiedodds.sdk.UofListener;
+import com.sportradar.unifiedodds.sdk.UofSdk;
+import com.sportradar.unifiedodds.sdk.UofSession;
+import com.sportradar.unifiedodds.sdk.entities.LongTermEvent;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.oddsentities.*;
+import com.sportradar.unifiedodds.sdk.shared.Helper;
 import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -251,7 +251,7 @@ public class SimpleMessageListener implements UofListener {
      */
     @Override
     public void onUnparsableMessage(UofSession sender, UnparsableMessage unparsableMessage) {
-        com.testinzone.unifiedodds.sdk.oddsentities.Producer possibleProducer = unparsableMessage.getProducer(); // the SDK will try to provide the origin of the message
+        com.sportradar.unifiedodds.sdk.oddsentities.Producer possibleProducer = unparsableMessage.getProducer(); // the SDK will try to provide the origin of the message
         String message = String.format(
             "[%s]: event=%s, data=%s",
             listenerVersion,
@@ -286,7 +286,7 @@ public class SimpleMessageListener implements UofListener {
     private void logBaseMessageData(
         Message message,
         SportEvent event,
-        com.testinzone.unifiedodds.sdk.oddsentities.Producer producer
+        com.sportradar.unifiedodds.sdk.oddsentities.Producer producer
     ) {
         logger.info(
             "Received " +

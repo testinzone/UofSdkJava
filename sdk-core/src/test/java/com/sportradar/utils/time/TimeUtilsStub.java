@@ -1,12 +1,12 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.time;
+package com.sportradar.utils.time;
 
-import static com.testinzone.utils.time.TimeInterval.seconds;
+import static com.sportradar.utils.time.TimeInterval.seconds;
 
-import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
-import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
+import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
+import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.AtomicActionPerformer;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 

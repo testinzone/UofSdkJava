@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.caching.ci.EventPlayerCi;
-import com.testinzone.unifiedodds.sdk.entities.EventPlayer;
-import com.testinzone.unifiedodds.sdk.entities.Player;
+import com.sportradar.unifiedodds.sdk.caching.ci.EventPlayerCi;
+import com.sportradar.unifiedodds.sdk.entities.EventPlayer;
+import com.sportradar.unifiedodds.sdk.entities.Player;
 import java.util.HashMap;
 import java.util.Locale;
 

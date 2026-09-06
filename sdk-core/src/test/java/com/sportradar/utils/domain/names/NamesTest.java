@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.names;
+package com.sportradar.utils.domain.names;
 
-import static com.testinzone.unifiedodds.sdk.testutil.generic.generationassert.DataGenerationAssert.assertThatGeneratesDistinctAndNonNull;
+import static com.sportradar.unifiedodds.sdk.testutil.generic.generationassert.DataGenerationAssert.assertThatGeneratesDistinctAndNonNull;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;

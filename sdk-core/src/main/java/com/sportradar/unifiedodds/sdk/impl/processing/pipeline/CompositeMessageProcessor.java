@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.processing.pipeline;
+package com.sportradar.unifiedodds.sdk.impl.processing.pipeline;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.impl.CompositeFeedMessageProcessor;
-import com.testinzone.unifiedodds.sdk.impl.FeedMessageProcessor;
-import com.testinzone.unifiedodds.sdk.impl.RoutingKeyInfo;
-import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.sportradar.unifiedodds.sdk.impl.CompositeFeedMessageProcessor;
+import com.sportradar.unifiedodds.sdk.impl.FeedMessageProcessor;
+import com.sportradar.unifiedodds.sdk.impl.RoutingKeyInfo;
+import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
 import java.util.List;
 import java.util.UUID;
 

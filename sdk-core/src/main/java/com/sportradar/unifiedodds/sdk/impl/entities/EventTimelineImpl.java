@@ -2,13 +2,13 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.caching.ci.EventTimelineCi;
-import com.testinzone.unifiedodds.sdk.caching.ci.TimelineEventCi;
-import com.testinzone.unifiedodds.sdk.entities.EventTimeline;
-import com.testinzone.unifiedodds.sdk.entities.TimelineEvent;
+import com.sportradar.unifiedodds.sdk.caching.ci.EventTimelineCi;
+import com.sportradar.unifiedodds.sdk.caching.ci.TimelineEventCi;
+import com.sportradar.unifiedodds.sdk.entities.EventTimeline;
+import com.sportradar.unifiedodds.sdk.entities.TimelineEvent;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import com.google.common.collect.Maps;
-import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;

@@ -2,17 +2,17 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.testinzone.uf.sportsapi.datamodel.SapiProductInfo;
-import com.testinzone.uf.sportsapi.datamodel.SapiProductInfoLinks;
-import com.testinzone.uf.sportsapi.datamodel.SapiStreamingChannels;
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableProducerInfoCi;
-import com.testinzone.unifiedodds.sdk.entities.ProducerInfo;
-import com.testinzone.unifiedodds.sdk.entities.ProducerInfoLink;
-import com.testinzone.unifiedodds.sdk.entities.StreamingChannel;
+import com.sportradar.uf.sportsapi.datamodel.SapiProductInfo;
+import com.sportradar.uf.sportsapi.datamodel.SapiProductInfoLinks;
+import com.sportradar.uf.sportsapi.datamodel.SapiStreamingChannels;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableProducerInfoCi;
+import com.sportradar.unifiedodds.sdk.entities.ProducerInfo;
+import com.sportradar.unifiedodds.sdk.entities.ProducerInfoLink;
+import com.sportradar.unifiedodds.sdk.entities.StreamingChannel;
 import java.util.List;
 import java.util.stream.Collectors;
 

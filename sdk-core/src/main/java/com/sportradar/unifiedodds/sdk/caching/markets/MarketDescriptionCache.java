@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.markets;
+package com.sportradar.unifiedodds.sdk.caching.markets;
 
-import com.testinzone.unifiedodds.sdk.domain.language.Languages;
-import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
+import com.sportradar.unifiedodds.sdk.domain.language.Languages;
+import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.IllegalCacheStateException;
 
 /**
  * Created on 14/06/2017.

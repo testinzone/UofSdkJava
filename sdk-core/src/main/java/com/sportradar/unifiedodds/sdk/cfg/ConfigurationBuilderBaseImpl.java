@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
 import java.util.*;
 import java.util.stream.Collectors;
 

@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
+import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
 import java.util.Map;
 
 /**
@@ -71,7 +71,7 @@ public interface ProducerManager {
 
     /**
      * An indication if the producer is currently marked as down by the SDK
-     * @see com.testinzone.unifiedodds.sdk.oddsentities.ProducerDownReason
+     * @see com.sportradar.unifiedodds.sdk.oddsentities.ProducerDownReason
      *
      * @param producerId - the identifier of the producer for which to check
      * @return - <code>true</code> if the producer is down, otherwise <code>false</code>

@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.ci;
+package com.sportradar.unifiedodds.sdk.caching.ci;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.*;
 
-import com.testinzone.uf.sportsapi.datamodel.SapiBasicEvent;
+import com.sportradar.uf.sportsapi.datamodel.SapiBasicEvent;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;

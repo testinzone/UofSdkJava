@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities.markets;
+package com.sportradar.unifiedodds.sdk.entities.markets;
 
 /**
  * Defines methods used to access specifier type and name

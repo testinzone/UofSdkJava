@@ -1,12 +1,12 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
-import static com.testinzone.unifiedodds.sdk.impl.RoutingKeysTest.TokenName.*;
+import static com.sportradar.unifiedodds.sdk.impl.RoutingKeysTest.TokenName.*;
 import static org.junit.Assert.*;
 
-import com.testinzone.utils.Urns;
+import com.sportradar.utils.Urns;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

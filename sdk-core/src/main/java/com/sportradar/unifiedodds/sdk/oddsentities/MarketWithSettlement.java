@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
-import com.testinzone.unifiedodds.sdk.entities.NamedValue;
+import com.sportradar.unifiedodds.sdk.entities.NamedValue;
 import java.util.List;
 
 /**

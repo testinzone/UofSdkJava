@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,8 +9,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
-import com.testinzone.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
+import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.sportradar.unifiedodds.sdk.impl.util.javaclass.ClassResolver;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;

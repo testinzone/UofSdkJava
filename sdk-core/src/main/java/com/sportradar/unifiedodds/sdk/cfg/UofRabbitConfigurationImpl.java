@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import com.google.common.base.Strings;
-import com.testinzone.unifiedodds.sdk.impl.EnvironmentManager;
+import com.sportradar.unifiedodds.sdk.impl.EnvironmentManager;
 import java.time.Duration;
 import java.util.StringJoiner;
 

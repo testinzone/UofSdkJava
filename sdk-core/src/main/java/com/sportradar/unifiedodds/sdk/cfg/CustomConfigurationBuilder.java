@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 /**
  * Defines methods implemented by classes used to set general and custom configuration properties

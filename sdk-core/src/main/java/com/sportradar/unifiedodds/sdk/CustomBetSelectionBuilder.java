@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import com.testinzone.unifiedodds.sdk.custombetentities.Selection;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.custombetentities.Selection;
+import com.sportradar.utils.Urn;
 
 /**
  * Defines methods used to build selections

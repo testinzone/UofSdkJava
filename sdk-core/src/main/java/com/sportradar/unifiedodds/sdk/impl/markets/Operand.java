@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.markets;
+package com.sportradar.unifiedodds.sdk.impl.markets;
 
 /**
  * Created on 21/06/2017.

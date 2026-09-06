@@ -1,14 +1,14 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.extended;
+package com.sportradar.unifiedodds.sdk.extended;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 
-import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
 import org.junit.Test;
 
 public class UofSdkExtTest {

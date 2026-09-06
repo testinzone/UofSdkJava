@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.ci.matchers;
+package com.sportradar.unifiedodds.sdk.caching.ci.matchers;
 
-import com.testinzone.unifiedodds.sdk.domain.language.Translations;
-import com.testinzone.utils.domain.names.LanguageHolder;
-import com.testinzone.utils.domain.names.TranslationHolder;
+import com.sportradar.unifiedodds.sdk.domain.language.Translations;
+import com.sportradar.utils.domain.names.LanguageHolder;
+import com.sportradar.utils.domain.names.TranslationHolder;
 import java.util.Locale;
 import org.assertj.core.api.AbstractAssert;
 import org.assertj.core.api.Assertions;

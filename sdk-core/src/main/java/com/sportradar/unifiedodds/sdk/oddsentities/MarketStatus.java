@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
-import com.testinzone.uf.datamodel.UfMarketStatus;
+import com.sportradar.uf.datamodel.UfMarketStatus;
 
 /**
  * MarketStatus describes the status for a market (line) and it can be in one of three states

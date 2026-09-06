@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
-import com.testinzone.unifiedodds.sdk.caching.ci.PitcherCi;
-import com.testinzone.unifiedodds.sdk.entities.HomeAway;
-import com.testinzone.unifiedodds.sdk.entities.Pitcher;
-import com.testinzone.unifiedodds.sdk.entities.PitcherHand;
-import com.testinzone.unifiedodds.sdk.entities.Referee;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.caching.ci.PitcherCi;
+import com.sportradar.unifiedodds.sdk.entities.HomeAway;
+import com.sportradar.unifiedodds.sdk.entities.Pitcher;
+import com.sportradar.unifiedodds.sdk.entities.PitcherHand;
+import com.sportradar.unifiedodds.sdk.entities.Referee;
+import com.sportradar.utils.Urn;
 
 /**
  * Represents a sport event pitcher

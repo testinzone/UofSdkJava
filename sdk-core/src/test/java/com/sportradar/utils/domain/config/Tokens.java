@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.config;
+package com.sportradar.utils.domain.config;
 
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphanumeric;
 

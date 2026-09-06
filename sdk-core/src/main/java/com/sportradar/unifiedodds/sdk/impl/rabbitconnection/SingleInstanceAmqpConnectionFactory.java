@@ -2,15 +2,15 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
+package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import com.rabbitmq.client.*;
-import com.testinzone.unifiedodds.sdk.SdkConnectionStatusListener;
-import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
-import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
-import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.sportradar.unifiedodds.sdk.SdkConnectionStatusListener;
+import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
+import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;

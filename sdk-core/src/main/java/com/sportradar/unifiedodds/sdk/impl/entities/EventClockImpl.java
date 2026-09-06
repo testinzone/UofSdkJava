@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
-import com.testinzone.unifiedodds.sdk.entities.EventClock;
+import com.sportradar.unifiedodds.sdk.entities.EventClock;
 
 /**
  * Represents an event clock

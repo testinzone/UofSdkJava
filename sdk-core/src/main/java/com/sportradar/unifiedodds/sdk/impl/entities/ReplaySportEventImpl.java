@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.entities.ReplaySportEvent;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.entities.ReplaySportEvent;
+import com.sportradar.utils.Urn;
 
 /**
  * Represents the replay sport event

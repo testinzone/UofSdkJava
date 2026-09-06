@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils;
+package com.sportradar.utils;
 
-import static com.testinzone.utils.SdkHelper.extractHttpResponseMessage;
+import static com.sportradar.utils.SdkHelper.extractHttpResponseMessage;
 import static org.junit.Assert.assertEquals;
 
 import junitparams.JUnitParamsRunner;

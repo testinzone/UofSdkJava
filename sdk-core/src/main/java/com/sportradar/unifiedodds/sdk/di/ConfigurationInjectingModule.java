@@ -1,13 +1,13 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.di;
+package com.sportradar.unifiedodds.sdk.di;
 
 import com.google.inject.AbstractModule;
-import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
-import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
 
 public class ConfigurationInjectingModule extends AbstractModule {
 

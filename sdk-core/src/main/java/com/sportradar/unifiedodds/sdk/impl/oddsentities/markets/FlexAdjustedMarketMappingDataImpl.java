@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
 
-import com.testinzone.unifiedodds.sdk.entities.markets.MarketMappingData;
-import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeMappingData;
+import com.sportradar.unifiedodds.sdk.entities.markets.MarketMappingData;
+import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeMappingData;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;

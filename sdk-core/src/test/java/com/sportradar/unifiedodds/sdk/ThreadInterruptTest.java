@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
 import static org.assertj.core.api.Assertions.assertThatNoException;
 

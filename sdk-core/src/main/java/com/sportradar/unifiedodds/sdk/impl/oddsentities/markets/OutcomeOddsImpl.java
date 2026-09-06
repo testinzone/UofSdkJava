@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
 
-import com.testinzone.uf.datamodel.UfOutcomeActive;
-import com.testinzone.unifiedodds.sdk.impl.markets.NameProvider;
-import com.testinzone.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
-import com.testinzone.unifiedodds.sdk.oddsentities.OddsDisplayType;
-import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeDefinition;
-import com.testinzone.unifiedodds.sdk.oddsentities.OutcomeOdds;
+import com.sportradar.uf.datamodel.UfOutcomeActive;
+import com.sportradar.unifiedodds.sdk.impl.markets.NameProvider;
+import com.sportradar.unifiedodds.sdk.oddsentities.AdditionalProbabilities;
+import com.sportradar.unifiedodds.sdk.oddsentities.OddsDisplayType;
+import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeDefinition;
+import com.sportradar.unifiedodds.sdk.oddsentities.OutcomeOdds;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.util.Locale;
@@ -46,7 +46,7 @@ class OutcomeOddsImpl extends OutcomeProbabilitiesImpl implements OutcomeOdds {
     }
 
     /**
-     * Indicates if the outcome is {@link com.testinzone.unifiedodds.sdk.oddsentities.PlayerOutcomeOdds} instance
+     * Indicates if the outcome is {@link com.sportradar.unifiedodds.sdk.oddsentities.PlayerOutcomeOdds} instance
      *
      * @return <code>true</code> if the current outcome is a player outcome, otherwise <code>false</code>
      */

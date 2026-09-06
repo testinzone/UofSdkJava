@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain;
+package com.sportradar.utils.domain;
 
-import com.testinzone.utils.Urn;
+import com.sportradar.utils.Urn;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Predicate;

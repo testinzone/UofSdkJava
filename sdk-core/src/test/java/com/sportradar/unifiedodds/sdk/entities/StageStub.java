@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.entities;
+package com.sportradar.unifiedodds.sdk.entities;
 
-import com.testinzone.unifiedodds.sdk.entities.status.MatchStatus;
-import com.testinzone.utils.Urn;
-import com.testinzone.utils.Urns;
+import com.sportradar.unifiedodds.sdk.entities.status.MatchStatus;
+import com.sportradar.utils.Urn;
+import com.sportradar.utils.Urns;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;

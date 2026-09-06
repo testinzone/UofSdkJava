@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.oddsentities.*;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.oddsentities.*;
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingDeque;

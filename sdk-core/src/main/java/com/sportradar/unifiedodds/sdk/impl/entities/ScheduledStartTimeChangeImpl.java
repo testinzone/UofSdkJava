@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableScheduledStartTimeChangeCi;
-import com.testinzone.unifiedodds.sdk.entities.ScheduledStartTimeChange;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableScheduledStartTimeChangeCi;
+import com.sportradar.unifiedodds.sdk.entities.ScheduledStartTimeChange;
 import java.util.Date;
 
 /**

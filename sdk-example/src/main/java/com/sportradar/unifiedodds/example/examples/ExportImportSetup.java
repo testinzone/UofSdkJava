@@ -2,19 +2,19 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.example.examples;
+package com.sportradar.unifiedodds.example.examples;
 
-import com.testinzone.unifiedodds.example.common.GlobalEventsListener;
-import com.testinzone.unifiedodds.example.common.MessageListener;
-import com.testinzone.unifiedodds.example.common.SdkConstants;
-import com.testinzone.unifiedodds.sdk.MessageInterest;
-import com.testinzone.unifiedodds.sdk.SportDataProvider;
-import com.testinzone.unifiedodds.sdk.UofSdk;
-import com.testinzone.unifiedodds.sdk.caching.exportable.CacheType;
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableCi;
-import com.testinzone.unifiedodds.sdk.cfg.Environment;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.exceptions.InitException;
+import com.sportradar.unifiedodds.example.common.GlobalEventsListener;
+import com.sportradar.unifiedodds.example.common.MessageListener;
+import com.sportradar.unifiedodds.example.common.SdkConstants;
+import com.sportradar.unifiedodds.sdk.MessageInterest;
+import com.sportradar.unifiedodds.sdk.SportDataProvider;
+import com.sportradar.unifiedodds.sdk.UofSdk;
+import com.sportradar.unifiedodds.sdk.caching.exportable.CacheType;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableCi;
+import com.sportradar.unifiedodds.sdk.cfg.Environment;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.exceptions.InitException;
 import java.io.*;
 import java.util.List;
 import java.util.Locale;

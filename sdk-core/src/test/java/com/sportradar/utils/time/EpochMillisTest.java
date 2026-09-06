@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.time;
+package com.sportradar.utils.time;
 
-import static com.testinzone.utils.time.TimeInterval.minutes;
+import static com.sportradar.utils.time.TimeInterval.minutes;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

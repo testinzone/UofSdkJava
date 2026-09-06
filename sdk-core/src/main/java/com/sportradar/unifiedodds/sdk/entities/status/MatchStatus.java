@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities.status;
+package com.sportradar.unifiedodds.sdk.entities.status;
 
-import com.testinzone.unifiedodds.sdk.entities.EventClock;
-import com.testinzone.unifiedodds.sdk.entities.LocalizedNamedValue;
-import com.testinzone.unifiedodds.sdk.entities.PeriodScore;
+import com.sportradar.unifiedodds.sdk.entities.EventClock;
+import com.sportradar.unifiedodds.sdk.entities.LocalizedNamedValue;
+import com.sportradar.unifiedodds.sdk.entities.PeriodScore;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;

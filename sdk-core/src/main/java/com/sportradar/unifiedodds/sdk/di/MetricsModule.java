@@ -2,13 +2,13 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.di;
+package com.sportradar.unifiedodds.sdk.di;
 
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
-import com.testinzone.unifiedodds.sdk.impl.UnifiedOddsStatistics;
+import com.sportradar.unifiedodds.sdk.impl.UnifiedOddsStatistics;
 import java.lang.management.ManagementFactory;
 
 public class MetricsModule implements Module {

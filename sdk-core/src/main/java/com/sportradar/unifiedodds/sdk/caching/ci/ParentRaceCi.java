@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.ci;
+package com.sportradar.unifiedodds.sdk.caching.ci;
 
-import com.testinzone.uf.sportsapi.datamodel.SapiParentStage;
-import com.testinzone.utils.SdkHelper;
+import com.sportradar.uf.sportsapi.datamodel.SapiParentStage;
+import com.sportradar.utils.SdkHelper;
 import java.util.Locale;
 
 /**

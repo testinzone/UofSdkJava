@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.example.examples.replay;
+package com.sportradar.unifiedodds.example.examples.replay;
 
 import com.google.common.collect.ImmutableList;
-import com.testinzone.utils.Urn;
+import com.sportradar.utils.Urn;
 import java.util.List;
 
 /**

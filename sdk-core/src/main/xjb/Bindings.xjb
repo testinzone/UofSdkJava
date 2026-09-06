@@ -9,7 +9,7 @@
                jaxb:extensionBindingPrefixes="xjc" version="2.1">
   <jaxb:bindings schemaLocation="../../../target/uf-schema/xsd/messages/UnifiedFeed.xsd">
     <jaxb:globalBindings>
-        <xjc:superInterface name="com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage"/>
+        <xjc:superInterface name="com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage"/>
     </jaxb:globalBindings>
 
     <jaxb:schemaBindings>

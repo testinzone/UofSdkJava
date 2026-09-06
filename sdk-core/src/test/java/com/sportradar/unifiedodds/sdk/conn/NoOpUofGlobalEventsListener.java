@@ -1,12 +1,12 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.UofGlobalEventsListener;
-import com.testinzone.unifiedodds.sdk.oddsentities.ProducerStatus;
-import com.testinzone.unifiedodds.sdk.oddsentities.RecoveryInitiated;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.UofGlobalEventsListener;
+import com.sportradar.unifiedodds.sdk.oddsentities.ProducerStatus;
+import com.sportradar.unifiedodds.sdk.oddsentities.RecoveryInitiated;
+import com.sportradar.utils.Urn;
 
 public class NoOpUofGlobalEventsListener implements UofGlobalEventsListener {
 

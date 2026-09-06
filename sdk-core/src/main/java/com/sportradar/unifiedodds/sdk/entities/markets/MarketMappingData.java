@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities.markets;
+package com.sportradar.unifiedodds.sdk.entities.markets;
 
-import com.testinzone.utils.Urn;
+import com.sportradar.utils.Urn;
 import java.util.Map;
 import java.util.Set;
 

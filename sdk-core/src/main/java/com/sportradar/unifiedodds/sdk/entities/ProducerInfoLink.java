@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities;
+package com.sportradar.unifiedodds.sdk.entities;
 
 /**
  * An interface providing methods to access producer info link properties

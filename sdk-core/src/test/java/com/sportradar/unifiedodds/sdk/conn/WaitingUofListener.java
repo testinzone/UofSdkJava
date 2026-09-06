@@ -1,14 +1,14 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
 import static org.junit.Assert.assertNotNull;
 
-import com.testinzone.unifiedodds.sdk.UofSession;
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.oddsentities.OddsChange;
-import com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
+import com.sportradar.unifiedodds.sdk.UofSession;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.oddsentities.OddsChange;
+import com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.SignallingOnPollingQueue;
 import java.util.concurrent.TimeUnit;
 import lombok.val;
 

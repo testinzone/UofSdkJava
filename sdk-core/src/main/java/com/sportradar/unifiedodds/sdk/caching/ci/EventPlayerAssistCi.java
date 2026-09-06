@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.ci;
+package com.sportradar.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.sportsapi.datamodel.SapiEventPlayerAssist;
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableEventPlayerAssistCi;
+import com.sportradar.uf.sportsapi.datamodel.SapiEventPlayerAssist;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableEventPlayerAssistCi;
 
 /**
  * Created on 24/11/2017.

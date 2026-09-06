@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.utils;
+package com.sportradar.utils;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.sportsapi.datamodel.SapiTeam;
-import com.testinzone.uf.sportsapi.datamodel.SapiTeamCompetitor;
-import com.testinzone.unifiedodds.sdk.caching.ci.ReferenceIdCi;
-import com.testinzone.unifiedodds.sdk.entities.markets.Specifier;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CommunicationException;
+import com.sportradar.uf.sportsapi.datamodel.SapiTeam;
+import com.sportradar.uf.sportsapi.datamodel.SapiTeamCompetitor;
+import com.sportradar.unifiedodds.sdk.caching.ci.ReferenceIdCi;
+import com.sportradar.unifiedodds.sdk.entities.markets.Specifier;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CommunicationException;
 import java.security.InvalidParameterException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

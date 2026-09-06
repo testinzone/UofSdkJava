@@ -1,7 +1,7 @@
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import com.google.common.collect.Lists;
-import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.sportradar.unifiedodds.sdk.cfg.Environment;
 import java.util.List;
 
 @SuppressWarnings({ "DeclarationOrder", "HideUtilityClassConstructor", "LineLength", "MagicNumber" })

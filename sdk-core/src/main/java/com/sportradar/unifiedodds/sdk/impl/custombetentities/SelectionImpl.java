@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.custombetentities;
+package com.sportradar.unifiedodds.sdk.impl.custombetentities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.custombetentities.Selection;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.custombetentities.Selection;
+import com.sportradar.utils.Urn;
 
 /**
  * Implements methods used to provide an requested selection

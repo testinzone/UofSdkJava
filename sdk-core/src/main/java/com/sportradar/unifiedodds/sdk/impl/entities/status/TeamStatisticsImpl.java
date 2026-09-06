@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities.status;
+package com.sportradar.unifiedodds.sdk.impl.entities.status;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.entities.HomeAway;
-import com.testinzone.unifiedodds.sdk.entities.status.TeamStatistics;
-import com.testinzone.unifiedodds.sdk.impl.dto.TeamStatisticsDto;
+import com.sportradar.unifiedodds.sdk.entities.HomeAway;
+import com.sportradar.unifiedodds.sdk.entities.status.TeamStatistics;
+import com.sportradar.unifiedodds.sdk.impl.dto.TeamStatisticsDto;
 
 /**
  * Provides methods used to access team statistics

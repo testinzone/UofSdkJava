@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn.marketids;
+package com.sportradar.unifiedodds.sdk.conn.marketids;
 
 import static java.util.Arrays.asList;
 
-import com.testinzone.unifiedodds.sdk.conn.MarketVariant;
+import com.sportradar.unifiedodds.sdk.conn.MarketVariant;
 import java.util.List;
 
 public class ChampionshipFreeTextMarketIds {

@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
 /**
  * An interface implemented by all the feed schema message objects

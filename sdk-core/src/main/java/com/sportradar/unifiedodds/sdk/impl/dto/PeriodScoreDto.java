@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.dto;
+package com.sportradar.unifiedodds.sdk.impl.dto;
 
-import com.testinzone.uf.datamodel.UfPeriodScoreType;
-import com.testinzone.uf.sportsapi.datamodel.SapiPeriodScore;
+import com.sportradar.uf.datamodel.UfPeriodScoreType;
+import com.sportradar.uf.sportsapi.datamodel.SapiPeriodScore;
 import java.math.BigDecimal;
 
 /**
