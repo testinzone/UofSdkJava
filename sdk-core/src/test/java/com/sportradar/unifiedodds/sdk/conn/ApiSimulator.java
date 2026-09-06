@@ -30,7 +30,7 @@ public class ApiSimulator {
 
     public static final String XML_DECLARATION =
         "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n";
-    public static final String UNIFIED_XML_NAMESPACE = "http://schemas.testinzone.com/sportsapi/v1/unified";
+    public static final String UNIFIED_XML_NAMESPACE = "http://schemas.sportradar.com/sportsapi/v1/unified";
     private final Consumer<MappingBuilder> stubRegistrar;
 
     public ApiSimulator(WireMockRule wireMockRule) {
