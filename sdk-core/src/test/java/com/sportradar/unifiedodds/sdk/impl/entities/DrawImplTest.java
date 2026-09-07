@@ -2,18 +2,18 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 import com.google.common.collect.ImmutableList;
-import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.testinzone.unifiedodds.sdk.SportEntityFactory;
-import com.testinzone.unifiedodds.sdk.caching.DrawCi;
-import com.testinzone.unifiedodds.sdk.caching.SportEventCache;
-import com.testinzone.utils.Urn;
-import com.testinzone.utils.Urns;
+import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.sportradar.unifiedodds.sdk.SportEntityFactory;
+import com.sportradar.unifiedodds.sdk.caching.DrawCi;
+import com.sportradar.unifiedodds.sdk.caching.SportEventCache;
+import com.sportradar.utils.Urn;
+import com.sportradar.utils.Urns;
 import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;

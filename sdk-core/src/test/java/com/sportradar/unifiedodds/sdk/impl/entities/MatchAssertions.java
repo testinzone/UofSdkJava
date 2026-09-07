@@ -1,13 +1,13 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.assertNull;
 
-import com.testinzone.unifiedodds.sdk.entities.Match;
-import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.sportradar.unifiedodds.sdk.entities.Match;
+import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
 import java.util.Locale;
 import java.util.function.Consumer;
 import java.util.function.Supplier;

@@ -8,7 +8,7 @@
 
     <groupId>com.testinzone.unifiedodds.sdk</groupId>
     <artifactId>unified-feed-sdk</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.0-SNAPSHOT</version>
 
     <name>Unified Odds Feed SDK</name>
 
@@ -57,6 +57,17 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Deployment target for distributionManagement above. Defaults to GitHub Packages for
+             this repository; override with -Dsr.repository.url=... to publish elsewhere. The
+             matching <server><id> in settings.xml must equal sr.repository.id. -->
+        <sr.repository.id>github</sr.repository.id>
+        <sr.repository.url>https://maven.pkg.github.com/testinzone/UofSdkJava</sr.repository.url>
+        <sr.snapshotRepository.id>github</sr.snapshotRepository.id>
+        <sr.snapshotRepository.url>https://maven.pkg.github.com/testinzone/UofSdkJava</sr.snapshotRepository.url>
+
+        <!-- GitHub Packages does not require PGP signatures; enable with -Dgpg.skip=false -->
+        <gpg.skip>true</gpg.skip>
 
         <rabbitMQ.version>5.17.0</rabbitMQ.version>
         <apache.httpComponents.version>5.2.1</apache.httpComponents.version>
@@ -269,7 +280,12 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.13</version>
-                <extensions>true</extensions>
+                <!-- extensions=false is load-bearing: with extensions=true this plugin REPLACES
+                     maven-deploy-plugin in the deploy phase and uploads to oss.sonatype.org,
+                     ignoring distributionManagement. Keeping it false leaves the standard
+                     deploy:deploy bound, which is what publishes to GitHub Packages. Flip it
+                     back to true only to stage a release to OSSRH. -->
+                <extensions>false</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
@@ -440,15 +456,15 @@
                     <doctitle>Unified Odds SDK ${project.version} API</doctitle>
 
                     <excludePackageNames>
-                        com.testinzone.unifiedodds.sdk.impl
-                        :com.testinzone.unifiedodds.sdk.impl.*
-                        :com.testinzone.unifiedodds.sdk.di
-                        :com.testinzone.unifiedodds.sdk.di.*
-                        :com.testinzone.unifiedodds.sdk.caching
-                        :com.testinzone.unifiedodds.sdk.caching.*
-                        :com.testinzone.unifiedodds.sdk.exceptions.internal
-                        :com.testinzone.uf
-                        :com.testinzone.uf.*
+                        com.sportradar.unifiedodds.sdk.impl
+                        :com.sportradar.unifiedodds.sdk.impl.*
+                        :com.sportradar.unifiedodds.sdk.di
+                        :com.sportradar.unifiedodds.sdk.di.*
+                        :com.sportradar.unifiedodds.sdk.caching
+                        :com.sportradar.unifiedodds.sdk.caching.*
+                        :com.sportradar.unifiedodds.sdk.exceptions.internal
+                        :com.sportradar.uf
+                        :com.sportradar.uf.*
                     </excludePackageNames>
                     <failOnError>false</failOnError>
                     <doclint>all,-missing</doclint>
@@ -470,7 +486,7 @@
                             <sources>
                                 <source>${project.build.directory}/uf-schema/xsd/messages</source>
                             </sources>
-                            <packageName>com.testinzone.uf.datamodel</packageName>
+                            <packageName>com.sportradar.uf.datamodel</packageName>
                             <xjbSources>
                                 <xjbSource>${basedir}/src/main/xjb/Bindings.xjb
                                 </xjbSource>
@@ -518,7 +534,7 @@
                                 <source>${basedir}/src/main/resources/xsd/manual/UnifiedFeed_replay_list_scenarios.xsd</source>
                                 <source>${basedir}/src/main/resources/xsd/manual/UnifiedFeed_page_not_found.xsd</source>
                             </sources>
-                            <packageName>com.testinzone.uf.sportsapi.datamodel</packageName>
+                            <packageName>com.sportradar.uf.sportsapi.datamodel</packageName>
                             <xjbExcludeFilters>
                                 <filter implementation="org.codehaus.mojo.jaxb2.shared.filters.pattern.PatternFileFilter">
                                     <patterns>
@@ -542,7 +558,7 @@
                             <sources>
                                 <source>${project.build.directory}/schemas-custombet/v1/endpoints</source>
                             </sources>
-                            <packageName>com.testinzone.uf.custombet.datamodel</packageName>
+                            <packageName>com.sportradar.uf.custombet.datamodel</packageName>
                             <xjbSources>
                                 <xjbSource>
                                     ${basedir}/src/main/xjb/BindingsCustomBetAPI.xjb
@@ -671,27 +687,27 @@
                             <relocations>
                                 <relocation>
                                     <pattern>com.ibm</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.ibm</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.ibm</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.rabbitmq</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.rabbitmq</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.rabbitmq</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>com.google</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.google</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.google</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>javax.inject</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.javax.inject</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.javax.inject</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.apache</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.apache</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.aopalliance</pattern>
-                                    <shadedPattern>com.testinzone.unifiedodds.sdk.shaded.aopalliance</shadedPattern>
+                                    <shadedPattern>com.sportradar.unifiedodds.sdk.shaded.aopalliance</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -804,7 +820,7 @@
                         </goals>
                         <configuration>
                             <skip>${skipITs}</skip>
-                            <mainClass>com.testinzone.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests</mainClass>
+                            <mainClass>com.sportradar.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForProxiedRabbitIntegrationTests</mainClass>
                             <classpathScope>test</classpathScope>
                         </configuration>
                     </execution>
@@ -816,7 +832,7 @@
                         </goals>
                         <configuration>
                             <skip>${skipITs}</skip>
-                            <mainClass>com.testinzone.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForIntegrationTests</mainClass>
+                            <mainClass>com.sportradar.unifiedodds.sdk.integrationtest.preconditions.PreconditionsForIntegrationTests</mainClass>
                             <classpathScope>test</classpathScope>
                         </configuration>
                     </execution>

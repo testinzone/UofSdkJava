@@ -2,17 +2,17 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities.status;
+package com.sportradar.unifiedodds.sdk.impl.entities.status;
 
 import static java.util.Arrays.asList;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.entities.status.MatchStatistics;
-import com.testinzone.unifiedodds.sdk.entities.status.PeriodStatistics;
-import com.testinzone.unifiedodds.sdk.entities.status.SoccerStatistics;
-import com.testinzone.unifiedodds.sdk.entities.status.TeamStatistics;
-import com.testinzone.unifiedodds.sdk.impl.dto.PeriodStatisticsDto;
-import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatisticsDto;
+import com.sportradar.unifiedodds.sdk.entities.status.MatchStatistics;
+import com.sportradar.unifiedodds.sdk.entities.status.PeriodStatistics;
+import com.sportradar.unifiedodds.sdk.entities.status.SoccerStatistics;
+import com.sportradar.unifiedodds.sdk.entities.status.TeamStatistics;
+import com.sportradar.unifiedodds.sdk.impl.dto.PeriodStatisticsDto;
+import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatisticsDto;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

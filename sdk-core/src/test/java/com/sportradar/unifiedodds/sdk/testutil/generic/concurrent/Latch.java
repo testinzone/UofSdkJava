@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
+package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
 
-import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 

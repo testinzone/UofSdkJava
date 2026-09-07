@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.testutil.generic.concurrent;
+package com.sportradar.unifiedodds.sdk.testutil.generic.concurrent;
 
-import static com.testinzone.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.createWaiterForEvents;
+import static com.sportradar.unifiedodds.sdk.testutil.generic.concurrent.WaiterForEvents.createWaiterForEvents;
 import static org.junit.Assert.assertFalse;
 
 import java.util.concurrent.ExecutionException;

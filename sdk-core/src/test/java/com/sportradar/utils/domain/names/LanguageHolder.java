@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.names;
+package com.sportradar.utils.domain.names;
 
 import java.util.Locale;
 import lombok.AccessLevel;

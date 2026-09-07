@@ -2,13 +2,13 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.ci;
+package com.sportradar.unifiedodds.sdk.caching.ci;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.sportsapi.datamodel.SapiBonusDrumType;
-import com.testinzone.uf.sportsapi.datamodel.SapiLottery;
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableBonusInfoCi;
-import com.testinzone.unifiedodds.sdk.entities.BonusDrumType;
+import com.sportradar.uf.sportsapi.datamodel.SapiBonusDrumType;
+import com.sportradar.uf.sportsapi.datamodel.SapiLottery;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableBonusInfoCi;
+import com.sportradar.unifiedodds.sdk.entities.BonusDrumType;
 
 /**
  * A basic bonus info cache representation

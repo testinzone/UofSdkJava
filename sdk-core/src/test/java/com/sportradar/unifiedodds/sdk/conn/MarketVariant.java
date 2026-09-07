@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
 import com.google.common.collect.ImmutableMap;
-import com.testinzone.uf.sportsapi.datamodel.Mappings;
-import com.testinzone.uf.sportsapi.datamodel.Mappings.Mapping.MappingOutcome;
+import com.sportradar.uf.sportsapi.datamodel.Mappings;
+import com.sportradar.uf.sportsapi.datamodel.Mappings.Mapping.MappingOutcome;
 import java.util.List;
 import java.util.Map;
 import lombok.Value;

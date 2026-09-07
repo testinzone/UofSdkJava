@@ -1,12 +1,12 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.ci;
+package com.sportradar.unifiedodds.sdk.caching.ci;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.junit.Assert.*;
 
-import com.testinzone.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
+import com.sportradar.unifiedodds.sdk.caching.exportable.ExportableDivisionCi;
 import org.junit.Test;
 
 public class DivisionCiTest {

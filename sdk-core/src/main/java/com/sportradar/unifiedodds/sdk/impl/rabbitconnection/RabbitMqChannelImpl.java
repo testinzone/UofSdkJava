@@ -2,17 +2,17 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
+package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import com.rabbitmq.client.*;
-import com.testinzone.unifiedodds.sdk.impl.*;
-import com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
-import com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ChannelStatus.UnderlyingConnectionStatus;
-import com.testinzone.utils.SdkHelper;
-import com.testinzone.utils.thread.sleep.Sleep;
+import com.sportradar.unifiedodds.sdk.impl.*;
+import com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReader;
+import com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ChannelStatus.UnderlyingConnectionStatus;
+import com.sportradar.utils.SdkHelper;
+import com.sportradar.utils.thread.sleep.Sleep;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.*;
@@ -385,7 +385,11 @@ public class RabbitMqChannelImpl implements OnDemandChannelSupervisor {
         try {
             initChannelQueue(routingKeys, messageInterest);
         } catch (IOException e) {
-            logger.error(String.format("Error creating channel: %s", e.getMessage()));
+            // Pass the throwable: an IOException from queueDeclare/queueBind carries its
+            // reason in the cause (a ShutdownSignalException naming the resource), and
+            // getMessage() alone is null, which logged as "Error creating channel: null"
+            // and hid a missing `unifiedfeed` exchange behind an empty message.
+            logger.error(String.format("Error creating channel: %s", e.getMessage()), e);
         }
     }
 

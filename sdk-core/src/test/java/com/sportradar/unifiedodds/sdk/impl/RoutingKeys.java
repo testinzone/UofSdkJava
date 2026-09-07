@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
-import com.testinzone.utils.Urns;
+import com.sportradar.utils.Urns;
 import lombok.val;
 
 public class RoutingKeys {

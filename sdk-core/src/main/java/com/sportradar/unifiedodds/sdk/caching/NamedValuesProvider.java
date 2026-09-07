@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching;
+package com.sportradar.unifiedodds.sdk.caching;
 
 /**
  * Defines the possible provide methods used to access various {@link NamedValueCache} implementations

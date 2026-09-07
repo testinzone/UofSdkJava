@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
+package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

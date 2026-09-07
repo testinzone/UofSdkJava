@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.integrationtest.externalrabbit;
+package com.sportradar.unifiedodds.sdk.integrationtest.externalrabbit;
 
-import static com.testinzone.unifiedodds.sdk.impl.Constants.*;
-import static com.testinzone.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit.Action.DISABLE;
-import static com.testinzone.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit.Action.ENABLE;
+import static com.sportradar.unifiedodds.sdk.impl.Constants.*;
+import static com.sportradar.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit.Action.DISABLE;
+import static com.sportradar.unifiedodds.sdk.integrationtest.externalrabbit.ProxiedRabbit.Action.ENABLE;
 import static java.lang.String.format;
 
 import eu.rekawek.toxiproxy.Proxy;

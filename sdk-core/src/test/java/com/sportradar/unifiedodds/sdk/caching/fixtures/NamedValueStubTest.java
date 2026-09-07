@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.fixtures;
+package com.sportradar.unifiedodds.sdk.caching.fixtures;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

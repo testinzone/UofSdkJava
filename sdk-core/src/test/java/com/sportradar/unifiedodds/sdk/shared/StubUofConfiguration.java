@@ -2,18 +2,18 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.shared;
+package com.sportradar.unifiedodds.sdk.shared;
 
-import static com.testinzone.unifiedodds.sdk.impl.ProducerDataProviderStubs.anyProducerDataProvider;
-import static com.testinzone.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.anyBookmakerDetailsReader;
+import static com.sportradar.unifiedodds.sdk.impl.ProducerDataProviderStubs.anyProducerDataProvider;
+import static com.sportradar.unifiedodds.sdk.impl.apireaders.WhoAmIReaderStubs.anyBookmakerDetailsReader;
 
-import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
-import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.testinzone.unifiedodds.sdk.cfg.Environment;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
-import com.testinzone.unifiedodds.sdk.entities.BookmakerDetails;
-import com.testinzone.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
+import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
+import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.sportradar.unifiedodds.sdk.cfg.Environment;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.sportradar.unifiedodds.sdk.entities.BookmakerDetails;
+import com.sportradar.unifiedodds.sdk.impl.entities.BookmakerDetailsImpl;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

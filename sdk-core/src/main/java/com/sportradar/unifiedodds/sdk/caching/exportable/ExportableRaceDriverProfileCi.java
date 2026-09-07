@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching.exportable;
+package com.sportradar.unifiedodds.sdk.caching.exportable;
 
 @SuppressWarnings({ "HiddenField" })
 public class ExportableRaceDriverProfileCi extends ExportableCi {

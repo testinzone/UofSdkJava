@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.datamodel.UfOddsGenerationProperties;
-import com.testinzone.unifiedodds.sdk.oddsentities.OddsGeneration;
+import com.sportradar.uf.datamodel.UfOddsGenerationProperties;
+import com.sportradar.unifiedodds.sdk.oddsentities.OddsGeneration;
 
 /**
  * Represents odds generation properties

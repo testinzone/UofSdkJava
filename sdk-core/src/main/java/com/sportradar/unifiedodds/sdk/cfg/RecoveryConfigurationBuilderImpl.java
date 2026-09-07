@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
 import static java.time.Duration.of;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.RuntimeConfiguration;
+import com.sportradar.unifiedodds.sdk.RuntimeConfiguration;
 import java.time.temporal.ChronoUnit;
 
 /**

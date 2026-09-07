@@ -1,12 +1,12 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.producers;
+package com.sportradar.utils.domain.producers;
 
-import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
 
-import com.testinzone.utils.generic.testing.RandomInteger;
-import com.testinzone.utils.generic.testing.RandomObjectPicker;
+import com.sportradar.utils.generic.testing.RandomInteger;
+import com.sportradar.utils.generic.testing.RandomObjectPicker;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Collectors;

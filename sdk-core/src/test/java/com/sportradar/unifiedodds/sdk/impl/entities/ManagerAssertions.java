@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import static org.junit.Assert.assertNull;
 
-import com.testinzone.unifiedodds.sdk.entities.Manager;
+import com.sportradar.unifiedodds.sdk.entities.Manager;
 import java.util.Locale;
 import org.assertj.core.api.Assertions;
 

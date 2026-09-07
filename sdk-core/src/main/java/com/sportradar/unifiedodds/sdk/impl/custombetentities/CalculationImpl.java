@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.custombetentities;
+package com.sportradar.unifiedodds.sdk.impl.custombetentities;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
-import com.testinzone.uf.custombet.datamodel.CapiCalculationResponse;
-import com.testinzone.unifiedodds.sdk.custombetentities.AvailableSelections;
-import com.testinzone.unifiedodds.sdk.custombetentities.Calculation;
-import com.testinzone.utils.SdkHelper;
+import com.sportradar.uf.custombet.datamodel.CapiCalculationResponse;
+import com.sportradar.unifiedodds.sdk.custombetentities.AvailableSelections;
+import com.sportradar.unifiedodds.sdk.custombetentities.Calculation;
+import com.sportradar.utils.SdkHelper;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;

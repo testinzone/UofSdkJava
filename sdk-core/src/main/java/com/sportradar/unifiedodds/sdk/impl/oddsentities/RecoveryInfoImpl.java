@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities;
 
-import com.testinzone.unifiedodds.sdk.oddsentities.RecoveryInfo;
+import com.sportradar.unifiedodds.sdk.oddsentities.RecoveryInfo;
 import java.util.Date;
 
 @SuppressWarnings({ "UnnecessaryParentheses" })

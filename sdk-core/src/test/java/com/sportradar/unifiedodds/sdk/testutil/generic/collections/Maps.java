@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.testutil.generic.collections;
+package com.sportradar.unifiedodds.sdk.testutil.generic.collections;
 
 import java.util.HashMap;
 import java.util.Map;

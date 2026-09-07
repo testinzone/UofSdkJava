@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.uf.sportsapi.datamodel;
+package com.sportradar.uf.sportsapi.datamodel;
 
-import com.testinzone.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
+import com.sportradar.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
 import javax.xml.datatype.DatatypeConfigurationException;
 
 public class BookmakerDetailsDtos {

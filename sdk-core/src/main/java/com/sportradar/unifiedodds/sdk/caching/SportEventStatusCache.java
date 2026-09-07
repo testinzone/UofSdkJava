@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching;
+package com.sportradar.unifiedodds.sdk.caching;
 
-import com.testinzone.unifiedodds.sdk.impl.dto.SportEventStatusDto;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.impl.dto.SportEventStatusDto;
+import com.sportradar.utils.Urn;
 
 /**
  * Defines methods implemented by classes used to cache {@link SportEventStatusDto} instances

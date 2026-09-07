@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.sdk.entities;
+package com.sportradar.unifiedodds.sdk.entities;
 
 /**
  * Defines methods implemented by classes representing a hole

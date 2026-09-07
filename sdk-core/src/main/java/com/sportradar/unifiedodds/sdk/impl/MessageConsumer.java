@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
-import com.testinzone.unifiedodds.sdk.MessageInterest;
-import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.testinzone.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.MessageInterest;
+import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.sportradar.unifiedodds.sdk.oddsentities.UnmarshalledMessage;
+import com.sportradar.utils.Urn;
 
 /**
  * Defines methods implemented by classes that can consume messages

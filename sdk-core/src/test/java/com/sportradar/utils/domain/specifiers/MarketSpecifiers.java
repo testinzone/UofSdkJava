@@ -1,14 +1,14 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.specifiers;
+package com.sportradar.utils.domain.specifiers;
 
-import static com.testinzone.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
+import static com.sportradar.utils.generic.testing.RandomObjectPicker.pickOneRandomlyFrom;
 
 import com.google.common.collect.ImmutableMap;
-import com.testinzone.unifiedodds.sdk.conn.Identifiable;
-import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.testinzone.unifiedodds.sdk.testutil.generic.collections.Maps;
+import com.sportradar.unifiedodds.sdk.conn.Identifiable;
+import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.sportradar.unifiedodds.sdk.testutil.generic.collections.Maps;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

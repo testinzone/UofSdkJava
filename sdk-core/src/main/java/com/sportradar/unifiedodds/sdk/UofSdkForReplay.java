@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import com.testinzone.unifiedodds.sdk.cfg.*;
-import com.testinzone.unifiedodds.sdk.di.CustomisableSdkModule;
-import com.testinzone.unifiedodds.sdk.replay.ReplayManager;
+import com.sportradar.unifiedodds.sdk.cfg.*;
+import com.sportradar.unifiedodds.sdk.di.CustomisableSdkModule;
+import com.sportradar.unifiedodds.sdk.replay.ReplayManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

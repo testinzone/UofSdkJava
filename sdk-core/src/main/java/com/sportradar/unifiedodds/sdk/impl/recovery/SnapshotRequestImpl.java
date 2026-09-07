@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.recovery;
+package com.sportradar.unifiedodds.sdk.impl.recovery;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.SnapshotRequest;
+import com.sportradar.unifiedodds.sdk.SnapshotRequest;
 
 /**
  * Created on 17/09/2018.

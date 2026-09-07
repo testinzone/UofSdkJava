@@ -1,5 +1,5 @@
 ---
-sportradar:
+testinzone:
   sdk:
     uf:
       accessToken: test-token-yaml

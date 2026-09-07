@@ -2,14 +2,14 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.caching.NamedValuesProvider;
-import com.testinzone.unifiedodds.sdk.entities.NamedValue;
-import com.testinzone.unifiedodds.sdk.impl.markets.NameProvider;
-import com.testinzone.unifiedodds.sdk.oddsentities.MarketCancel;
-import com.testinzone.unifiedodds.sdk.oddsentities.MarketDefinition;
+import com.sportradar.unifiedodds.sdk.caching.NamedValuesProvider;
+import com.sportradar.unifiedodds.sdk.entities.NamedValue;
+import com.sportradar.unifiedodds.sdk.impl.markets.NameProvider;
+import com.sportradar.unifiedodds.sdk.oddsentities.MarketCancel;
+import com.sportradar.unifiedodds.sdk.oddsentities.MarketDefinition;
 import java.util.Locale;
 import java.util.Map;
 

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.domain.language;
+package com.sportradar.unifiedodds.sdk.domain.language;
 
 import static java.util.Arrays.asList;
 import static java.util.Locale.*;

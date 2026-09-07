@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities;
+package com.sportradar.unifiedodds.sdk.entities;
 
 /**
  * Describes a list of operations that are available on the basic type {@link NamedValue}

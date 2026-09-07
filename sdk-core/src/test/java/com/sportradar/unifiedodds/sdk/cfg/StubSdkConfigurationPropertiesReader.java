@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.cfg;
+package com.sportradar.unifiedodds.sdk.cfg;
 
-import com.testinzone.unifiedodds.sdk.impl.util.files.ResourceReader;
+import com.sportradar.unifiedodds.sdk.impl.util.files.ResourceReader;
 import java.util.HashMap;
 import java.util.Map;
 

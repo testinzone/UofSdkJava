@@ -1,4 +1,4 @@
-package com.testinzone.utils.time;
+package com.sportradar.utils.time;
 
 @SuppressWarnings({ "MagicNumber" })
 public class EpochMillis {

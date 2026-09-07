@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
 import com.google.common.collect.ImmutableSet;
-import com.testinzone.unifiedodds.sdk.ProducerScope;
+import com.sportradar.unifiedodds.sdk.ProducerScope;
 import java.util.Set;
 
 public class ProducerStubs {

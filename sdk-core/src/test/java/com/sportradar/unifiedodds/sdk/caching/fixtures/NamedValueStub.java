@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.fixtures;
+package com.sportradar.unifiedodds.sdk.caching.fixtures;
 
-import com.testinzone.unifiedodds.sdk.entities.NamedValue;
+import com.sportradar.unifiedodds.sdk.entities.NamedValue;
 
 public class NamedValueStub implements NamedValue {
 

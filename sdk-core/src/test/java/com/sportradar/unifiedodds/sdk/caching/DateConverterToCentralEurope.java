@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.sdk.caching;
+package com.sportradar.unifiedodds.sdk.caching;
 
 import java.time.ZoneId;
 import java.util.Calendar;

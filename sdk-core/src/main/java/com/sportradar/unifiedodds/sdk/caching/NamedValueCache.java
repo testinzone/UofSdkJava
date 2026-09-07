@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.caching;
+package com.sportradar.unifiedodds.sdk.caching;
 
-import com.testinzone.unifiedodds.sdk.entities.NamedValue;
+import com.sportradar.unifiedodds.sdk.entities.NamedValue;
 
 /**
  * Defines the available methods used to handle {@link NamedValue} caching

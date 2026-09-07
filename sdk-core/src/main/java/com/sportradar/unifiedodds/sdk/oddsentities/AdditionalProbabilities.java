@@ -1,4 +1,4 @@
-package com.testinzone.unifiedodds.sdk.oddsentities;
+package com.sportradar.unifiedodds.sdk.oddsentities;
 
 /**
  * Additional probability attributes for markets which potentially will be (partly) refunded

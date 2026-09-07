@@ -2,7 +2,7 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
+package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

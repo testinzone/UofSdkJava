@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
-import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.testinzone.unifiedodds.sdk.entities.BasicTournament;
-import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.sportradar.unifiedodds.sdk.entities.BasicTournament;
+import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
 import org.assertj.core.api.AbstractAssert;
 import org.assertj.core.api.Assertions;
 

@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer;
+import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.RabbitMqProducer;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

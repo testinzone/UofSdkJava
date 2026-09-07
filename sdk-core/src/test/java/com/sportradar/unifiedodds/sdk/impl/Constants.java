@@ -1,6 +1,6 @@
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
-import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
+import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
 
 @SuppressWarnings({ "HideUtilityClassConstructor" })
 public class Constants {

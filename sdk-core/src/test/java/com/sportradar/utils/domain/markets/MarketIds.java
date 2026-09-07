@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.domain.markets;
+package com.sportradar.utils.domain.markets;
 
 import java.util.Random;
 import java.util.stream.IntStream;

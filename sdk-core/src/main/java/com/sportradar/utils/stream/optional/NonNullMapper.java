@@ -1,7 +1,7 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.utils.stream.optional;
+package com.sportradar.utils.stream.optional;
 
 import static java.util.Optional.ofNullable;
 

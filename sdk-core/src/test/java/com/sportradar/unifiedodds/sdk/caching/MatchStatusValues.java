@@ -1,9 +1,9 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching;
+package com.sportradar.unifiedodds.sdk.caching;
 
-import com.testinzone.unifiedodds.sdk.entities.LocalizedNamedValue;
+import com.sportradar.unifiedodds.sdk.entities.LocalizedNamedValue;
 import java.util.List;
 import java.util.Locale;
 

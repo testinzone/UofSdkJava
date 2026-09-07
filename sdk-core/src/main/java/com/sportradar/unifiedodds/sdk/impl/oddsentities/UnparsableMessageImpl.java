@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities;
 
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.oddsentities.MessageTimestamp;
-import com.testinzone.unifiedodds.sdk.oddsentities.Producer;
-import com.testinzone.unifiedodds.sdk.oddsentities.UnparsableMessage;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.oddsentities.MessageTimestamp;
+import com.sportradar.unifiedodds.sdk.oddsentities.Producer;
+import com.sportradar.unifiedodds.sdk.oddsentities.UnparsableMessage;
 
 /**
  * The {@link UnparsableMessage} basic impl

@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.entities;
+package com.sportradar.unifiedodds.sdk.entities;
 
-import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
+import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
 import java.time.Duration;
 import java.util.Date;
 import org.apache.hc.core5.http.HttpStatus;

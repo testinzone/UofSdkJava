@@ -2,16 +2,16 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import static com.testinzone.unifiedodds.sdk.cfg.Environment.GlobalReplay;
-import static com.testinzone.unifiedodds.sdk.cfg.Environment.Replay;
+import static com.sportradar.unifiedodds.sdk.cfg.Environment.GlobalReplay;
+import static com.sportradar.unifiedodds.sdk.cfg.Environment.Replay;
 import static java.util.Arrays.asList;
 
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfigurationImpl;
-import com.testinzone.unifiedodds.sdk.di.CustomisableSdkModule;
-import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfigurationImpl;
+import com.sportradar.unifiedodds.sdk.di.CustomisableSdkModule;
+import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
 
 /**
  * An extension of the UofSdk that has the ability to customise some of the sdk components

@@ -1,7 +1,7 @@
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import com.google.common.collect.Lists;
-import com.testinzone.unifiedodds.sdk.cfg.Environment;
+import com.sportradar.unifiedodds.sdk.cfg.Environment;
 import java.util.List;
 
 @SuppressWarnings({ "DeclarationOrder", "HideUtilityClassConstructor", "LineLength", "MagicNumber" })
@@ -71,11 +71,17 @@ public final class EnvironmentManager {
                 ),
                 new EnvironmentSetting(
                     Environment.GlobalIntegration,
-                    "global.stgmq.betradar.com",
-                    "global.stgapi.betradar.com",
+                    "rabbitmq-service.l1providers.com",
+                    "stage-catalog.mysportsfeed.io",
                     80,
-                    true,
-                    basicRetryList
+                    false, // broker has no TLS listener -> UofConfigurationImpl selects port 5672
+                    // No retry list. WhoAmIReader falls back to the hosts named here when the
+                    // configured one rejects the token, so basicRetryList would silently move a
+                    // bad SAP token onto Sportradar Integration and then Production - observed
+                    // connecting to bookmaker 34948 and consuming a live feed. Empty means a bad
+                    // token fails loudly against the catalog instead.
+                    Lists.newArrayList(),
+                    true // broker rejects blank passwords; the token doubles as the password
                 ),
                 new EnvironmentSetting(
                     Environment.ProxySingapore,

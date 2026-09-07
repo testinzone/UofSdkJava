@@ -1,14 +1,14 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.impl.rabbitconnection;
+package com.sportradar.unifiedodds.sdk.impl.rabbitconnection;
 
-import static com.testinzone.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.HEALTHY;
+import static com.sportradar.unifiedodds.sdk.impl.rabbitconnection.ConnectionToBeProvided.ConnectionHealth.HEALTHY;
 import static java.util.Arrays.asList;
 
 import com.google.common.collect.Streams;
 import com.rabbitmq.client.Channel;
-import com.testinzone.unifiedodds.sdk.impl.TimeUtils;
+import com.sportradar.unifiedodds.sdk.impl.TimeUtils;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;

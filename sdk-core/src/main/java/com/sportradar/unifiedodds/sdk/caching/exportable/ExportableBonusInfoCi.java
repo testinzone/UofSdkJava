@@ -1,6 +1,6 @@
-package com.testinzone.unifiedodds.sdk.caching.exportable;
+package com.sportradar.unifiedodds.sdk.caching.exportable;
 
-import com.testinzone.unifiedodds.sdk.entities.BonusDrumType;
+import com.sportradar.unifiedodds.sdk.entities.BonusDrumType;
 import java.io.Serializable;
 
 @SuppressWarnings({ "HiddenField" })

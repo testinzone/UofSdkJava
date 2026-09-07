@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import static com.testinzone.utils.generic.testing.AnyEnumValue.anyFrom;
+import static com.sportradar.utils.generic.testing.AnyEnumValue.anyFrom;
 
-import com.testinzone.uf.datamodel.*;
+import com.sportradar.uf.datamodel.*;
 import java.math.BigDecimal;
 import lombok.val;
 

@@ -1,6 +1,6 @@
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
 
 @SuppressWarnings({ "MemberName", "VisibilityModifier" })
 public class FeedMessage {

@@ -2,15 +2,15 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.entities;
+package com.sportradar.unifiedodds.sdk.impl.entities;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.uf.datamodel.UfResultType;
-import com.testinzone.uf.sportsapi.datamodel.SapiResultScore;
-import com.testinzone.uf.sportsapi.datamodel.SapiStageResult;
-import com.testinzone.unifiedodds.sdk.entities.CompetitorResult;
-import com.testinzone.unifiedodds.sdk.entities.EventResult;
-import com.testinzone.utils.SdkHelper;
+import com.sportradar.uf.datamodel.UfResultType;
+import com.sportradar.uf.sportsapi.datamodel.SapiResultScore;
+import com.sportradar.uf.sportsapi.datamodel.SapiStageResult;
+import com.sportradar.unifiedodds.sdk.entities.CompetitorResult;
+import com.sportradar.unifiedodds.sdk.entities.EventResult;
+import com.sportradar.utils.SdkHelper;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;

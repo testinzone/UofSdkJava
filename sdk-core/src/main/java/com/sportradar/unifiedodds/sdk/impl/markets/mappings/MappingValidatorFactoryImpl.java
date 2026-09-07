@@ -2,11 +2,11 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.markets.mappings;
+package com.sportradar.unifiedodds.sdk.impl.markets.mappings;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.impl.markets.MappingValidator;
-import com.testinzone.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
+import com.sportradar.unifiedodds.sdk.impl.markets.MappingValidator;
+import com.sportradar.unifiedodds.sdk.impl.markets.MappingValidatorFactory;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

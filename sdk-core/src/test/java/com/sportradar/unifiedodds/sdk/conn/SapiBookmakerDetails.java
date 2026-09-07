@@ -1,11 +1,11 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import com.testinzone.uf.sportsapi.datamodel.BookmakerDetails;
-import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
-import com.testinzone.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
+import com.sportradar.uf.sportsapi.datamodel.BookmakerDetails;
+import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
+import com.sportradar.unifiedodds.sdk.testutil.jaxb.XmlGregorianCalendars;
 import lombok.SneakyThrows;
 
 public class SapiBookmakerDetails {

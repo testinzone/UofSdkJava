@@ -2,10 +2,10 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.apireaders;
+package com.sportradar.unifiedodds.sdk.impl.apireaders;
 
-import static com.testinzone.uf.sportsapi.datamodel.BookmakerDetailsDtos.bet365;
-import static com.testinzone.uf.sportsapi.datamodel.BookmakerDetailsDtos.notForRequestedEnvironment;
+import static com.sportradar.uf.sportsapi.datamodel.BookmakerDetailsDtos.bet365;
+import static com.sportradar.uf.sportsapi.datamodel.BookmakerDetailsDtos.notForRequestedEnvironment;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;
@@ -13,12 +13,12 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.testinzone.uf.sportsapi.datamodel.BookmakerDetails;
-import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
-import com.testinzone.unifiedodds.sdk.cfg.*;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
-import com.testinzone.unifiedodds.sdk.impl.*;
-import com.testinzone.unifiedodds.sdk.shared.StubUofConfiguration;
+import com.sportradar.uf.sportsapi.datamodel.BookmakerDetails;
+import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
+import com.sportradar.unifiedodds.sdk.cfg.*;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.sportradar.unifiedodds.sdk.impl.*;
+import com.sportradar.unifiedodds.sdk.shared.StubUofConfiguration;
 import java.time.ZonedDateTime;
 import java.util.Locale;
 import javax.xml.datatype.DatatypeConfigurationException;

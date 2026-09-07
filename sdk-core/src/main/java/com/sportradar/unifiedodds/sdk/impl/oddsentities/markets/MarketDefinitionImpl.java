@@ -2,20 +2,20 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl.oddsentities.markets;
+package com.sportradar.unifiedodds.sdk.impl.oddsentities.markets;
 
 import com.google.common.base.Preconditions;
-import com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategy;
-import com.testinzone.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
-import com.testinzone.unifiedodds.sdk.entities.SportEvent;
-import com.testinzone.unifiedodds.sdk.entities.markets.MarketAttribute;
-import com.testinzone.unifiedodds.sdk.entities.markets.MarketDescription;
-import com.testinzone.unifiedodds.sdk.entities.markets.MarketMappingData;
-import com.testinzone.unifiedodds.sdk.exceptions.ObjectNotFoundException;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
-import com.testinzone.unifiedodds.sdk.impl.UnifiedFeedConstants;
-import com.testinzone.unifiedodds.sdk.oddsentities.MarketDefinition;
-import com.testinzone.utils.Urn;
+import com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategy;
+import com.sportradar.unifiedodds.sdk.caching.markets.MarketDescriptionProvider;
+import com.sportradar.unifiedodds.sdk.entities.SportEvent;
+import com.sportradar.unifiedodds.sdk.entities.markets.MarketAttribute;
+import com.sportradar.unifiedodds.sdk.entities.markets.MarketDescription;
+import com.sportradar.unifiedodds.sdk.entities.markets.MarketMappingData;
+import com.sportradar.unifiedodds.sdk.exceptions.ObjectNotFoundException;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.CacheItemNotFoundException;
+import com.sportradar.unifiedodds.sdk.impl.UnifiedFeedConstants;
+import com.sportradar.unifiedodds.sdk.oddsentities.MarketDefinition;
+import com.sportradar.utils.Urn;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;

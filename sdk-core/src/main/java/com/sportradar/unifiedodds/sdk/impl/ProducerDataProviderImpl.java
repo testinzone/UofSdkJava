@@ -2,16 +2,16 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.impl;
+package com.sportradar.unifiedodds.sdk.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
-import com.testinzone.uf.sportsapi.datamodel.Producer;
-import com.testinzone.uf.sportsapi.datamodel.Producers;
-import com.testinzone.uf.sportsapi.datamodel.ResponseCode;
-import com.testinzone.unifiedodds.sdk.SdkInternalConfiguration;
-import com.testinzone.unifiedodds.sdk.cfg.Environment;
-import com.testinzone.unifiedodds.sdk.exceptions.internal.DataProviderException;
+import com.sportradar.uf.sportsapi.datamodel.Producer;
+import com.sportradar.uf.sportsapi.datamodel.Producers;
+import com.sportradar.uf.sportsapi.datamodel.ResponseCode;
+import com.sportradar.unifiedodds.sdk.SdkInternalConfiguration;
+import com.sportradar.unifiedodds.sdk.cfg.Environment;
+import com.sportradar.unifiedodds.sdk.exceptions.internal.DataProviderException;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;

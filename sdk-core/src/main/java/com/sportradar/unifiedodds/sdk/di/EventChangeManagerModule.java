@@ -2,12 +2,12 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk.di;
+package com.sportradar.unifiedodds.sdk.di;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Binder;
-import com.testinzone.unifiedodds.sdk.CustomBetSelectionBuilder;
-import com.testinzone.unifiedodds.sdk.CustomBetSelectionBuilderImpl;
+import com.sportradar.unifiedodds.sdk.CustomBetSelectionBuilder;
+import com.sportradar.unifiedodds.sdk.CustomBetSelectionBuilderImpl;
 
 /**
  * The DI module in charge of EventChangeManager

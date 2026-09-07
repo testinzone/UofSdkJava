@@ -1,10 +1,10 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.caching.markets;
+package com.sportradar.unifiedodds.sdk.caching.markets;
 
-import com.testinzone.unifiedodds.sdk.domain.language.Translations;
-import com.testinzone.unifiedodds.sdk.entities.markets.OutcomeDescription;
+import com.sportradar.unifiedodds.sdk.domain.language.Translations;
+import com.sportradar.unifiedodds.sdk.entities.markets.OutcomeDescription;
 import java.util.Collection;
 import java.util.Locale;
 import lombok.RequiredArgsConstructor;

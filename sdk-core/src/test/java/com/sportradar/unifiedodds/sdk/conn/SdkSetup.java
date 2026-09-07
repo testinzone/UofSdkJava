@@ -1,19 +1,19 @@
 /*
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
-package com.testinzone.unifiedodds.sdk.conn;
+package com.sportradar.unifiedodds.sdk.conn;
 
-import static com.testinzone.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
-import static com.testinzone.unifiedodds.sdk.impl.Constants.UF_VIRTUALHOST;
+import static com.sportradar.unifiedodds.sdk.ExceptionHandlingStrategies.anyErrorHandlingStrategy;
+import static com.sportradar.unifiedodds.sdk.impl.Constants.UF_VIRTUALHOST;
 
-import com.testinzone.unifiedodds.sdk.*;
-import com.testinzone.unifiedodds.sdk.cfg.UofConfiguration;
-import com.testinzone.unifiedodds.sdk.exceptions.InitException;
-import com.testinzone.unifiedodds.sdk.extended.UofExtListener;
-import com.testinzone.unifiedodds.sdk.extended.UofSdkExt;
-import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
-import com.testinzone.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
-import com.testinzone.utils.domain.names.Languages;
+import com.sportradar.unifiedodds.sdk.*;
+import com.sportradar.unifiedodds.sdk.cfg.UofConfiguration;
+import com.sportradar.unifiedodds.sdk.exceptions.InitException;
+import com.sportradar.unifiedodds.sdk.extended.UofExtListener;
+import com.sportradar.unifiedodds.sdk.extended.UofSdkExt;
+import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.BaseUrl;
+import com.sportradar.unifiedodds.sdk.testutil.rabbit.integration.Credentials;
+import com.sportradar.utils.domain.names.Languages;
 import java.util.Locale;
 import java.util.Optional;
 import lombok.AccessLevel;

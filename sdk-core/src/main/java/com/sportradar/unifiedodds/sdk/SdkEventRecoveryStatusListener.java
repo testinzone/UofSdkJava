@@ -2,9 +2,9 @@
  * Copyright (C) Testinzone AG. See LICENSE for full license governing this code
  */
 
-package com.testinzone.unifiedodds.sdk;
+package com.sportradar.unifiedodds.sdk;
 
-import com.testinzone.utils.Urn;
+import com.sportradar.utils.Urn;
 
 /**
  * Defines methods used as callbacks to notify the client about event recovery updates
