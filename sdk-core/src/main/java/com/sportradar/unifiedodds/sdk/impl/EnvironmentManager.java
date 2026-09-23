@@ -72,7 +72,7 @@ public final class EnvironmentManager {
                 new EnvironmentSetting(
                     Environment.GlobalIntegration,
                     "rabbitmq-service.l1providers.com",
-                    "stage-catalog.mysportsfeed.io",
+                    "stage-sap-sdk.mysportsfeed.io",
                     80,
                     false, // broker has no TLS listener -> UofConfigurationImpl selects port 5672
                     // No retry list. WhoAmIReader falls back to the hosts named here when the
