@@ -71,7 +71,7 @@ public final class EnvironmentManager {
                 ),
                 new EnvironmentSetting(
                     Environment.GlobalIntegration,
-                    "rabbitmq-service.l1providers.com",
+                    "stage-sap-rabbitmq.mysportsfeed.io",
                     "stage-sap-sdk.mysportsfeed.io",
                     80,
                     false, // broker has no TLS listener -> UofConfigurationImpl selects port 5672
